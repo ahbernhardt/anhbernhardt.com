@@ -17,7 +17,6 @@
     "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "clean": "gatsby clean",
-
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "lint:css": "stylelint './src/**/*.js'",
     "lint:js": "eslint './src/**/*.js'",
@@ -30,14 +29,15 @@
     "react",
     "gatsby",
     "portfolio"
-  ],"lint-staged": {
-  "*.{js,css,json,md}": [
-    "prettier --write"
   ],
-  "*.js": [
-    "eslint --fix"
-  ]
-},
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
