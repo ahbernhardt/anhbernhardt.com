@@ -16,6 +16,7 @@ yarn-error.log*
 
 # Build
 .DS_Store
+.idea
 
 # Project dependencies
 .cache

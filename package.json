@@ -8,7 +8,7 @@
   "homepage": "https://anhnguyen.page",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anguyen0208/anguyen0208.github.io"
+    "url": "https://github.com/anguyen0208/anhnguyen.page"
   },
   "scripts": {
     "start": "npm run develop",
