@@ -14,17 +14,13 @@ const ProfileIntroSection = ({ content }) =>
             alt="Anh Nguyen - Software Engineer"
             loader={({ isLoaded }) => <Loader isLoaded={isLoaded} />}
             sources={[{
-                media: 'max-width: 40rem',
+                media: 'max-width: 30rem',
                 srcset: [
-                    '/images/profile/me.JPG',
-                    // '/images/profile/michele-mazzucco-portrait-square-2x.jpg 2x',
-                    // '/images/profile/michele-mazzucco-portrait-square-3x.jpg 3x'
-                ]
+                    '/images/profile/me.jpg'
+            ]
             // },{
             //     srcset: [
-            //         '/images/profile/michele-mazzucco-portrait.jpg 1x',
-            //         '/images/profile/michele-mazzucco-portrait-2x.jpg 2x',
-            //         '/images/profile/michele-mazzucco-portrait-3x.jpg 3x'
+            //         '/images/profile/me-blackandwhite.JPG'
             //     ]
             }]}
         />

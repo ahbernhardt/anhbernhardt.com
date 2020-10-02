@@ -10,19 +10,20 @@ export const Wrapper = styled.section`
   ${media.sm`
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
-    grid-row-gap: 2rem;
+    grid-row-gap: .5rem;
   `}
 `
 
 export const StyledImage = styled(Image)`
-  grid-area: 1 / 4 / last-line / end;
+  grid-area: 1 / 5 / last-line / end;
   background: ${colors.blue900};
   position: relative;
   overflow: hidden;
+  margin-right: -150px;
+  margin-top: -100px;
 
   &::before {
     content: '';
-    padding-top: 150%;
     display: block;
     ${media.sm`
       padding-top: 100%;
@@ -48,7 +49,9 @@ export const StyledImage = styled(Image)`
   }
 
   ${media.sm`
-    grid-area: 1 / 1 / 1 / 1;
+    grid-area: 1 / 1 / 1 / 1 ;
+    margin-top: 0;
+    margin-right: 0;
     &:before {
       padding-top: 100%;
     }
@@ -63,6 +66,7 @@ export const InfoWrapper = styled.header`
     grid-column: 1 / 7;
   `}
   ${media.sm`
+    padding-top: 15px;
     grid-row: 2 / 3;
     grid-column: 1 / 1;
   `}
