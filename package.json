@@ -4,7 +4,7 @@
   "description": "Anh Nguyen's personal portfolio website",
   "private": true,
   "author": "Anh Nguyen <a.nguyen0208@gmail.com>",
-  "license": "MIT",
+  "license": "OBSD",
   "homepage": "https://anhnguyen.page",
   "repository": {
     "type": "git",
@@ -17,13 +17,7 @@
     "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "lint:css": "stylelint './src/**/*.js'",
-    "lint:js": "eslint './src/**/*.js'",
-    "precommit": "npm run lint:css && npm run lint:js",
-    "gzip": "gzip -r public",
-    "deploy": "./scripts/deploy.js",
-    "publish": "npm run build && npm run deploy"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "keywords": [
     "react",

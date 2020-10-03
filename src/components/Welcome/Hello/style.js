@@ -7,9 +7,29 @@ export const Wrapper = styled.div`
    z-index:0;
    cursor:none;
    ${getOuterSpace('padding')}
+  
+  ${media.xl`
+    position: static;
+    padding: 3% 0 0 20%;
+  `}
+  
+  ${media.lg`
+    position: static;
+    padding: 50% 0 0 15%;
+  `}
+  
   ${media.md`
-    // position: static;
-    padding: 30% 0 0 5%;
+    position: static;
+    padding: 21% 0 0 5%;
+  `}
+  
+  ${media.sm`
+    position: static;
+    padding: 50% 0 0 7%;
+  `}
+  ${media.xs`
+    position: static;
+    padding: 55% 0 0 7%;
   `}
 \`
 
@@ -27,17 +47,37 @@ export const Wrapper = styled.div`
   
   h1 {
     position: absolute;
-    transform: translate(35%, 25%);
+    // transform: translate(37%, 35%);
     margin-bottom: 0px !important;
-    ${media.md`
-        width: 300px;
-        height: 240px;
-        transform: translate(0%, 0%);
+    
+    ${media.xl`
+      width: 550px;
+      height: 500px;
+     transform: translate(0%, 0%);
   `}
+  
+    ${media.lg`
+      width: 400px;
+      height: 350px;
+     transform: translate(0%, 0%);
+  `}
+  
+    ${media.md`
+      width: 325px;
+      height: 300px;
+      transform: translate(0%, 0%);
+  `}
+  
+  ${media.sm`
+    width: 250px;
+    height: 200px;
+    transform: translate(0%, 0%);
+  `}
+  
   ${media.xs`
-        width: 200px;
-        height: 150px;
-        transform: translate(0%, 0%);
+    width: 200px;
+    height: 150px;
+    transform: translate(0%, 0%);
   `}
     }
     
