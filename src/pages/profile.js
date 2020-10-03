@@ -1,53 +1,59 @@
 import React from 'react'
-// import { StaticQuery } from 'gatsby'
-// , graphql
+import { StaticQuery, graphql} from 'gatsby'
 import Layout from '../components/layout'
 import ProfileContent from '../components/Profile/Content'
 
-// const profileQuery = graphql`
-//   query ProfileQuery {
-//     clients: allClientsJson {
-//       edges {
-//         client: node {
-//           name
-//         }
-//       }
-//     }
-//     events: allEventsJson {
-//       edges {
-//         event: node {
-//           year
-//           position
-//           company
-//         }
-//       }
-//     }
-//     mentions: allMentionsJson {
-//       edges {
-//         mention: node {
-//           name
-//           url
-//         }
-//       }
-//     }
-//     articles: allArticlesJson {
-//       edges {
-//         article: node {
-//           name
-//           url
-//         }
-//       }
-//     }
-//   }
-// `
+const profileQuery = graphql`
+  query ProfileQuery {
+    timelines: allTimelinesJson {
+      edges {
+        timeline: node {
+          year
+          position
+          company
+        }
+      }
+    }
+    
+    designs: allDesignsJson {
+      edges {
+        design: node {
+          name
+        }
+      }
+    }
+    
+    languages: allLanguagesJson {
+      edges {
+        language: node {
+          name
+        }
+      }
+    }
 
+    frameworks: allFrameworksJson {
+      edges {
+        framework: node {
+          name
+        }
+      }
+    }
+
+    tools: allToolsJson {
+      edges {
+        tool: node {
+          name
+        }
+      }
+    }
+  }
+`
 export default ({ location }) =>
-    // <StaticQuery
-        // query={profileQuery}
-        // render={data =>
+    <StaticQuery
+        query= {profileQuery}
+        render= {data =>
             <Layout location={location}>
-                <ProfileContent />
-                {/*data={data}*/}
+                <ProfileContent data={data} />
             </Layout>
-        // }
-    // />
+        }
+    />

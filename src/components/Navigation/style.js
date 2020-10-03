@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { media, getOuterSpace } from '../../style/constants'
+import { colors, media, getOuterSpace } from '../../style/constants'
 
 export const Wrapper = styled.div`
   ${media.md`
@@ -8,13 +8,14 @@ export const Wrapper = styled.div`
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
+    background-color: ${colors.blue900};
   `}
 `
 
 export const Shoable = styled.div`
   ${media.md`
-    background: transparent;
+    background: ${colors.blue900};
     transition: max-height .6s cubic-bezier(0.45, 0, .1, 1);
     will-change: max-height;
     ${props => props.open
@@ -31,6 +32,7 @@ export const Shoable = styled.div`
   `}
 
   ${media.sm`
+  background-color: ${colors.blue900};
     > div {
       padding: 0 2rem 2rem;
     }
@@ -43,7 +45,8 @@ export const Header = styled.header`
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    min-height: 15rem;
+    min-height: 6rem;
+    background-color: ${colors.blue900};
     ${getOuterSpace('padding')};
   `}
 `

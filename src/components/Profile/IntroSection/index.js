@@ -18,10 +18,6 @@ const ProfileIntroSection = ({ content }) =>
                 srcset: [
                     '/images/profile/me.jpg'
             ]
-            // },{
-            //     srcset: [
-            //         '/images/profile/me-blackandwhite.JPG'
-            //     ]
             }]}
         />
     </Wrapper>

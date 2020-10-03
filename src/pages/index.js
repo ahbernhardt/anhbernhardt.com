@@ -14,5 +14,6 @@ export default ({ location }) =>
         />
         <HelloMiddle />
         <Intro fixed={true} />
+
       </section>
     </Layout>

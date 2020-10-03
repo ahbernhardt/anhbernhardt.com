@@ -5,6 +5,7 @@ export const Wrapper = styled.footer`
   width: 100%;
   position: fixed;
   top: 45%;
+  // z-index:2;
   ${media.md`
     position: static;
     padding-top: 1.5rem;

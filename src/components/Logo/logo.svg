@@ -8,10 +8,11 @@
              stroke-width="5"/>
     <path d="M50.34,49.61,11.77,10.92V89l.66-.19H35.65v-21A16.6,16.6,0,0,1,50.34,51.36V88.7H89"
           fill="none"
-
           stroke-linecap="round"
           stroke-linejoin="round"
-          stroke-width="5"/>
+          stroke-width="5"
+    />
+
 </svg>
 
 <!--MEDIUM LOGO 75x75-->

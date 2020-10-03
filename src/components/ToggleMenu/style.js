@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { media } from '../../style/constants'
+import { colors, media } from '../../style/constants'
 
 export const Wrapper = styled.div`
   display: none;

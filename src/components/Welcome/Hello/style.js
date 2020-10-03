@@ -3,7 +3,7 @@ import { colors,media, getOuterSpace } from '../../../style/constants'
 
 export const Wrapper = styled.div`
    position: relative;
-   top: 25%;
+   top: 20%;
    z-index:0;
    cursor:none;
    ${getOuterSpace('padding')}
@@ -31,8 +31,8 @@ export const Wrapper = styled.div`
     margin-bottom: 0px !important;
     ${media.md`
         width: 300px;
-        height: 250px;
-        transform: translate(0%, 5%);
+        height: 240px;
+        transform: translate(0%, 0%);
   `}
   ${media.xs`
         width: 200px;
