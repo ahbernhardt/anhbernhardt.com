@@ -9,7 +9,7 @@ const Head = ({ title, description, image }) =>
         <meta property="og:title" content={title}/>
         <meta property="og:description" content={description}/>
         <meta property="og:image" content={image} />
-        <meta name="google-site-verification" content="w6QODQIo6PYp7OLUH3RI1ULc4NKzA0lt7tzXEeKJzjM" />
+        {/*<meta name="google-site-verification" content="w6QODQIo6PYp7OLUH3RI1ULc4NKzA0lt7tzXEeKJzjM" />*/}
         <link rel="stylesheet"
                   href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
                   integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
