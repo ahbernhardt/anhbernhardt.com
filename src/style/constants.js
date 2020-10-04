@@ -15,21 +15,21 @@ export const fonts = {
 }
 
 export const spaces = {
-    p500: '5rem',
-    p400: '4rem',
-    p300: '3rem',
-    p200: '2rem',
-    p100: '1rem',
-    p50: '.5rem',
-    p25: '.25rem'
+    p500: '5rem', //80px
+    p400: '4rem', //64px
+    p300: '3rem', //48px
+    p200: '2rem', //32px
+    p100: '1rem', //16px
+    p50: '.5rem', //8px
+    p25: '.25rem' //4px
 }
 
 export const mq = {
-    xs: '22em',
-    sm: '40em',
-    md: '54em',
-    lg: '78em',
-    xl: '125em'
+    xs: '22em', //352px
+    sm: '40em', //640px
+    md: '54em', //864px
+    lg: '78em', //1248px
+    xl: '125em' //2000px
 }
 
 export const media = {
