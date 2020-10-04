@@ -45,7 +45,7 @@ export const Header = styled.header`
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    min-height: 6rem;
+    min-height: 5.5rem;
     background-color: ${colors.blue900};
     ${getOuterSpace('padding')};
   `}

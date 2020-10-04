@@ -15,17 +15,18 @@ export const Wrapper = styled.div`
   
   ${media.lg`
     position: static;
-    padding: 50% 0 0 15%;
+    padding: 25% 0 0 20%;
   `}
   
   ${media.md`
     position: static;
-    padding: 21% 0 0 5%;
+    padding: 7% 0 0 60%;
+    opacity: 50%;
   `}
   
   ${media.sm`
     position: static;
-    padding: 50% 0 0 7%;
+    padding: 45% 0 0 7%;
   `}
   ${media.xs`
     position: static;
@@ -63,14 +64,14 @@ export const Wrapper = styled.div`
   `}
   
     ${media.md`
-      width: 325px;
-      height: 300px;
+      width: 250px;
+      height: 200px;
       transform: translate(0%, 0%);
   `}
   
   ${media.sm`
-    width: 250px;
-    height: 200px;
+    width: 225px;
+    height: 175px;
     transform: translate(0%, 0%);
   `}
   
