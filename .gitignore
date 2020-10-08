@@ -16,7 +16,6 @@ yarn-error.log*
 
 # Build
 .DS_Store
-.idea
 
 # Project dependencies
 .cache
@@ -27,4 +26,4 @@ package-lock.json
 # Hidden files
 .cache/
 .env
-
+.idea
