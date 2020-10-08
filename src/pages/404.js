@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 import Layout from '../components/layout'
 import { fonts, colors, media } from '../style/constants'
+import Middle404 from "../components/404/index";
 
 const Title = styled.h1`
   font-size: 2.2rem;
@@ -23,11 +24,11 @@ const Subtitle = styled.h1`
 `
 
 const Wrapper = styled.section`
-  position: absolute;
-  top: 50%;
+  position: static;
+  top: 0%;
   left: 0;
   right: 0;
-  transform: translateY(-50%);
+  transform: translateY(0%);
   text-align: center;
   ${media.sm`
     top: 45%;
@@ -51,6 +52,7 @@ export default ({ location }) =>
     <Layout location={location}>
         <Wrapper>
             <header>
+                <Middle404 />
                 <Title>Oops, sorry!</Title>
                 <Subtitle>This page cannot be found.</Subtitle>
                 <BackToHome to='/'>Go to index</BackToHome>

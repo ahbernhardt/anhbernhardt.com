@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+    <g id="left_4">
+        <line class="line" x1="49" y1="-6.0" x2="12.25" y2="52" stroke-width="12px"/>
+        <line class="line" x1="7" y1="55" x2="50" y2="55" stroke-width="12px"/>
+        <line class="line" x1="50" y1="-10" x2="50" y2="80" stroke-width="12px"/>
+    </g>
+    <g id="404_dot">
+        <circle class="dot" cx="70" cy="75" r="6"/>
+    </g>
+    <g id="hello_0">
+        <ellipse class="line" cx="105" cy="35" rx="25" ry="40" stroke-width="12px"/>
+    </g>
+    <g id="404_dot">
+        <circle class="dot" cx="138" cy="75" r="6"/>
+    </g>
+    <g id="right_4">
+        <line class="line" x1="189" y1="-6.0" x2="152.25" y2="52" stroke-width="12px"/>
+        <line class="line" x1="147" y1="55" x2="190" y2="55" stroke-width="12px"/>
+        <line class="line" x1="190" y1="-10" x2="190" y2="80" stroke-width="12px"/>
+    </g>
+
+
+
+</svg>

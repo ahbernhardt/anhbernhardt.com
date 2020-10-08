@@ -47,7 +47,7 @@ export default ({ data }) => {
             <ListsSection>
                 {designs.edges.length > 0 &&
                 <SkillsList
-                    title='Design Tools'
+                    title='Design'
                     list={() => designs.edges.map(({ design }, i) => (
                         <ProfileListItem
                             key={i}
@@ -80,7 +80,7 @@ export default ({ data }) => {
 
                 {tools.edges.length > 0 &&
                 <SkillsList
-                    title='Frameworks'
+                    title='Tools'
                     list={() => tools.edges.map(({ tool }, i) => (
                         <ProfileListItem
                             key={i}
