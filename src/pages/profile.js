@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql} from 'gatsby'
 import Layout from '../components/layout'
-import ProfileContent from '../components/Profile/Content'
+import ProfileContent from '../components/ProfilePage/Content'
 
 const profileQuery = graphql`
   query ProfileQuery {

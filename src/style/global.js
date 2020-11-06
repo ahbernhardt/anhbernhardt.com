@@ -59,4 +59,9 @@ export const GlobalStyle = createGlobalStyle`
     color: ${colors.yellow500};
     background: transparent;
   }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
 `;

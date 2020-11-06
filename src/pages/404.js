@@ -4,6 +4,9 @@ import Link from 'gatsby-link'
 import Layout from '../components/layout'
 import { fonts, colors, media } from '../style/constants'
 import Middle404 from "../components/404/index";
+import Head from "../components/Elements/Head";
+import {META} from "../utils/constants";
+
 
 const Title = styled.h1`
   font-size: 2.2rem;
@@ -44,13 +47,17 @@ const BackToHome = styled(Link)`
   display: inline-block;
   
   &:hover {
-    color: ${colors.yellow500};
+    color: #fff;
   }
 `
 
 export default ({ location }) =>
     <Layout location={location}>
         <Wrapper>
+            <Head
+                {...META.oops}
+                image={META.common.image}
+            />
             <header>
                 <Middle404 />
                 <Title>Oops, sorry!</Title>

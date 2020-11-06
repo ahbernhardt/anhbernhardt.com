@@ -1,7 +1,7 @@
 import React from 'react'
-import Navigation from './Navigation'
+import Navigation from './Elements/Navigation'
 import { GlobalStyle } from '../style/global'
-import CircleCursor from "./Cursor";
+import CircleCursor from "./Elements/Cursor";
 
 export default ({ children, location }) =>
     <main>
