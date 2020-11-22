@@ -1,39 +1,64 @@
-import styled, {css} from 'styled-components'
+import styled from 'styled-components'
 import { colors,media, getOuterSpace } from '../../../style/constants'
 
 export const Wrapper = styled.div`
    position: relative;
-   top: 20%;
-   z-index:0;
-   cursor:none;
+   opacity: 40%;
    ${getOuterSpace('padding')}
   
-  ${media.xl`
+  ${media.mon27`
     position: static;
     padding: 10% 0 0 20%;
-    opacity: 50%;
+  `}
+  
+  ${media.mon24`
+    position: static;
+    padding: 10% 0 0 20%;
+  `}
+  
+  ${media.mac15`
+    position: static;
+    padding: 22% 0 0 20%;
+  `}
+  
+  ${media.pro`
+    position: static;
+    padding: 20% 0 0 5%;
+  `}
+  
+  ${media.mac13`
+    position: static;
+    padding: 10% 0 0 18%;
   `}
   
   ${media.lg`
     position: static;
-    padding: 20% 0 0 20%;
-    opacity: 50%;
+    padding: 18% 0 0 13%;
   `}
   
   ${media.md`
     position: static;
-    padding: 30% 0 0 5%;
+    padding: 50% 0 0 10%;
+  `}
+  
+  // weird size (640px)
+  ${media.sm`
+    position: static;
+    padding: 10% 0 0 7%;
     opacity: 50%;
   `}
   
-  ${media.sm`
-    position: static;
-    padding: 50% 0 0 7%;
-    opacity: 50%;
-  `}
+  // iphone plus, pixel
   ${media.xs`
     position: static;
-    padding: 50% 0 0 7%;
+    padding: 22% 0 0 12%;
+    opacity: 50%;
+  `}
+  
+  // iphone x
+  ${media.xxs`
+    position: static;
+    padding: 22% 0 0 12%;
     opacity: 50%;
   `}
 \`
@@ -45,6 +70,7 @@ export const Wrapper = styled.div`
     -ms-transform: translateX(50%);
     -o-transform: translateX(50%);
   }
+  
   svg {
     width: 100%;
     height: 100%;
@@ -54,36 +80,70 @@ export const Wrapper = styled.div`
     position: absolute;
     margin-bottom: 0px !important;
     
-    ${media.xl`
-      width: 450px;
-      height: 450px;
-     transform: translate(0%, 0%);
-  `}
-  
-    ${media.lg`
-      width: 400px;
+  ${media.mon27`
+    width: 1000px;
+    height: 900px;
+    transform: translate(0%, 0%);
+`} 
+  ${media.mon24`
+    width: 750px;
+    height: 550px;
+    transform: translate(0%, 0%);
+`} 
+
+ ${media.mac15`
+    width: 650px;
+    height: 550px;
+    transform: translate(0%, 0%);
+`} 
+
+  ${media.pro`
+    width: 550px;
+    height: 500px;
+   transform: translate(0%, 0%);
+`} 
+
+  ${media.mac13`
+      width: 550px;
       height: 400px;
      transform: translate(0%, 0%);
   `}
   
+    // Tablet landscape
+    ${media.lg`
+      width: 650px;
+      height: 400px;
+     transform: translate(0%, 0%);
+  `}
+  
+    // Tablet
     ${media.md`
-      width: 300px;
-      height: 300px;
+      width: 550px;
+      height: 400px;
       transform: translate(0%, 0%);
   `}
   
+  // weird size
   ${media.sm`
     width: 250px;
     height: 250px;
     transform: translate(0%, 0%);
   `}
   
+  // iphone xl, pixel
   ${media.xs`
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     transform: translate(0%, 0%);
   `}
-    }
+  
+  ${media.xxs`
+    width: 275px;
+    height: 275px;
+    transform: translate(0%, 0%);
+  `}
+  
+}
     
   .line {
     fill: none;

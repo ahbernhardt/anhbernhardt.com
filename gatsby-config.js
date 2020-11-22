@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`, // or '.env'
+});
 
 module.exports = {
   pathPrefix: '/',
@@ -16,6 +19,12 @@ module.exports = {
         name: 'data',
         path: './src/data/'
       }
+    },{
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './static/images'
+      }
     },
     {
       resolve: 'gatsby-plugin-web-font-loader',
@@ -24,8 +33,7 @@ module.exports = {
           families: ['Roboto:300,400', 'Roboto Mono']
         }
       }
-    },
-    {
+    }, {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-113472346-1',
@@ -35,20 +43,21 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Anh Nguyen',
-        short_name: 'anguyen',
+        name: 'Anh Nguyen | Software Engineering',
+        short_name: 'Anh Nguyen',
         start_url: '/',
         background_color: '#1e2732',
         theme_color: '#1e2732',
         display: 'minimal-ui',
+        icon: `src/assets/favicon.png`,
         icons: [
           {
-            src: '/favicon/favicon-16x16.png',
+            src: '/favicons/favicon-16x16.png',
             sizes: '16x16',
             type: 'image/png'
           },
           {
-            src: '/favicon/favicon.png',
+            src: '/favicons/favicon-32x32.png',
             sizes: '32x32',
             type: 'image/png'
           }

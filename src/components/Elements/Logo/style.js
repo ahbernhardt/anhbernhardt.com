@@ -5,11 +5,16 @@ export const Wrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 12rem;
+  max-width: 10rem;
   ${getOuterSpace('padding')}
   ${media.md`
     position: static;
     padding: 0;
+  `}
+  
+  ${media.xs`
+    position: static;
+    padding: 0 0 2% 3%;
   `}
   
   > div {
@@ -23,15 +28,28 @@ export const Wrapper = styled.div`
   a {
     width: 2.5rem;
     left:50%;
-    ${media.lg`
+    
+    ${media.mon27`
+      width: 2.8rem;
+    `}
+    
+    ${media.mon24`
+      width: 2.5rem;
+    `}
+    
+    ${media.mac13`
       width: 2rem;
+    `}
+    
+    ${media.xs`
+      width: 1.8rem;
     `}
   }
 
   svg {
     width: 100%;
     height: 100%;
-    stroke:${colors.yellow500};
+    stroke:${colors.white};
   } 
 
   .logo {

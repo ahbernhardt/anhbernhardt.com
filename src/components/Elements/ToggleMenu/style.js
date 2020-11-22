@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { colors, media } from '../../../style/constants'
+import { media } from '../../../style/constants'
 
 export const Wrapper = styled.div`
   display: none;
@@ -11,7 +11,12 @@ export const Wrapper = styled.div`
   backface-visibility: hidden;
   transition: transform .45s cubic-bezier(.45, 0, .07, 1);
   will-change: transform;
-
+  
+  ${media.xs`
+      margin-right: 3%;
+      margin-bottom: 3%;
+  `}
+    
   span {
     display: inline-block;
     height: 1px;

@@ -18,8 +18,8 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
     height: 100%;
     font-size: 16px;
-    cursor:pointer;
-    ${media.xl`
+    // cursor:pointer;
+    ${media.lg`
       font-size: 14px;
     `}
   }

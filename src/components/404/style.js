@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
    cursor:none;
    ${getOuterSpace('padding')}
   
-  ${media.xl`
+  ${media.mac13`
     position: static;
     padding-top: 20%;
     margin: 0 0 0 33%;
@@ -50,7 +50,7 @@ export const Wrapper = styled.div`
     position: absolute;
     margin-bottom: 0px !important;
     
-    ${media.xl`
+    ${media.mac13`
       width: 400px;
       height: 300px;
       transform: translate(0%, -25%);

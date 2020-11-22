@@ -20,7 +20,7 @@ export const Item = styled.div`
   position: absolute;
   font-family: ${fonts.mono};
   color: ${colors.gray700};
-  font-size: .85rem;
+  font-size: .9rem;
   line-height: 1em;
   ${props => props.position === 'left'
     ? css`
@@ -33,6 +33,21 @@ export const Item = styled.div`
       transform-origin: right;
       ${getOuterSpace('right')}
     ` }
+  
+  ${media.mon27`
+      font-size: 1.3rem;
+      line-height: 1em;
+  `}
+  
+  ${media.mon24`
+      font-size: .9rem;
+      line-height: 1em;
+  `}
+  
+  ${media.mac13`
+      font-size: .7rem;
+      line-height: 1em;
+  `}
   
   ${media.md`
     position: static;

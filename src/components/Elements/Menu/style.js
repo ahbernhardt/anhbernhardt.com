@@ -56,6 +56,7 @@ export const Wrapper = styled.nav`
     position: static;
     padding: 0;
   `}
+  
 `
 
 export const Nav = styled.ul`
@@ -69,18 +70,33 @@ export const Nav = styled.ul`
 export const NavItem = styled.li`
   list-style: none;
   padding: .5rem 0;
-  line-height: 1em;
+  line-height: .9em;
   
   &:last-child {
     padding-bottom: 0;
   }
+  ${media.mon27`
+      padding: .7rem 0;
+  `}
+  
+  ${media.mon24`
+      padding: .5rem 0;
+  `}
+  
+  ${media.mac13`
+      padding: .4rem 0;
+  `}
+  
+  ${media.md`
+      padding: .6rem 0;
+  `}
 
   a {
     font-size: .9rem;
     font-family: ${fonts.mono};
     pointer-events: all;
     transition: color .1s ease;
-    line-height: 1em;
+    line-height: .9em;
     ${props => props.highlight
     ? css`
         color: ${colors.yellow500};
@@ -92,6 +108,26 @@ export const NavItem = styled.li`
     : css`
         color: ${colors.gray500};
       `}
+      
+      
+    ${media.mon27`
+      font-size: 1.2rem;
+      line-height: 1rem;
+  `}
+  
+  ${media.mon24`
+      font-size: .9rem;
+      line-height: .9rem;
+  `}
+   ${media.mac13`
+      font-size: .7rem;
+      line-height: .7em;
+  `}
+  
+  ${media.md`
+      font-size: .8rem;
+      line-height: .8em;
+  `}
   }
 `
 

@@ -1,16 +1,20 @@
 import React from 'react'
-import Intro from '../../HomePage/Intro'
-import { Wrapper, InfoWrapper, Content, StyledImage } from './style'
+// import Tagline from '../../HomePage/Intro'
+import { Wrapper, InfoWrapper, Content, StyledImage, TopWrapper, Title } from "./style"
 import { Loader } from '../../../style/shared'
 
 const ProfileIntroSection = ({ content }) =>
     <Wrapper>
         <InfoWrapper>
-            <Intro fixed={false} />
-            <Content>{content()}</Content>
+          <TopWrapper >
+              <Title>
+                My name is <span className="name">Anh Nguyen</span>, a software engineer graduate student based in Minneapolis, MN specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
+              </Title>
+          </TopWrapper>
+          <Content>{content()}</Content>
         </InfoWrapper>
         <StyledImage
-            src="/images/profile/me.JPG"
+            src="/images/profile/me.jpg"
             alt="Anh Nguyen - Software Engineer"
             loader={({ isLoaded }) => <Loader isLoaded={isLoaded} />}
             sources={[{

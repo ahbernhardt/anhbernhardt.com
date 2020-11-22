@@ -1,11 +1,11 @@
 import React from 'react'
 import { Wrapper, Title } from './style'
 
-const Intro = props =>
+const Tagline = props =>
     <Wrapper {...props} >
         <Title>
-            My name is <span className="name">Anh Nguyen</span>, a software engineer graduate student based in Minneapolis, MN specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
+            I'm <span className="name">Anh Nguyen</span>, design-minded front-end software engineer focused on building pixel-perfect and responsive interfaces and experiences.
         </Title>
     </Wrapper>
 
-export default Intro
+export default Tagline
