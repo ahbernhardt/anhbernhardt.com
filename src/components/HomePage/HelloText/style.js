@@ -25,12 +25,14 @@ export const Wrapper = styled.div`
     position: static;
     padding: 20% 0 0 5%;
   `}
-  
   ${media.mac13`
     position: static;
     padding: 10% 0 0 18%;
   `}
-  
+  ${media.ipadpro`
+    position: static;
+    padding: 10% 0 0 13%;
+  `}
   ${media.lg`
     position: static;
     padding: 18% 0 0 13%;
@@ -101,23 +103,27 @@ export const Wrapper = styled.div`
     width: 550px;
     height: 500px;
    transform: translate(0%, 0%);
-`} 
+  `} 
 
   ${media.mac13`
-      width: 550px;
-      height: 400px;
-     transform: translate(0%, 0%);
+    width: 550px;
+    height: 400px;
+    transform: translate(0%, 0%);
   `}
+  ${media.ipadpro`
+   width: 650px;
+   height: 700px;
+  `} 
   
-    // Tablet landscape
-    ${media.lg`
-      width: 650px;
-      height: 400px;
-     transform: translate(0%, 0%);
+  // Tablet landscape
+  ${media.lg`
+    width: 650px;
+    height: 400px;
+    transform: translate(0%, 0%);
   `}
   
     // Tablet
-    ${media.md`
+  ${media.md`
       width: 550px;
       height: 400px;
       transform: translate(0%, 0%);

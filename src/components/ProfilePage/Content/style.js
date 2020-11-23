@@ -10,6 +10,11 @@ export const TimelinesSection = styled.section`
   grid-row-gap: 3rem;
   padding: 1rem 5% 0 8rem;
   
+  ${media.ipadpro`
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    padding: 0 0 0 6%;
+  `}
   ${media.lg`
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0;

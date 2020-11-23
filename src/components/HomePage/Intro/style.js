@@ -35,7 +35,11 @@ export const Wrapper = styled.div`
     font-size: 1rem;
     line-height: 1.2em;
   `}
-  
+  ${media.ipadpro`
+    min-width: 42rem;
+    font-size: 1.5rem;
+    line-height: 1.3em;
+  `}
   ${media.lg`
     max-width: 32rem;
   `}
@@ -95,11 +99,4 @@ export const Title = styled.h1`
     color: ${colors.yellow500};
     font-weight: 700;
   }
-  
-  .sub-title{
-    color: ${colors.gray700};
-    font-size:1.2rem;
-    font-weight: 400;
-  }
-  
 `

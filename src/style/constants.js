@@ -73,6 +73,11 @@ export const media = {
       ${css(...a)}
     }
   `,
+  ipadpro: (...a) => css`
+    @media (min-height:1280px) and (max-height: ${mq.pro}) {
+      ${css(...a)}
+    }
+  `,
   pro: (...a) => css`
     @media (max-width: ${mq.pro}) {
       ${css(...a)}
@@ -114,8 +119,14 @@ export const getOuterSpace = p =>
     ${media.mac15`
       ${rule(p, spaces.p500)}
     `}
+    ${media.pro`
+      ${rule(p, spaces.p400)}
+    `}
     ${media.mac13`
       ${rule(p, spaces.p300)}
+    `}
+    ${media.ipadpro`
+      ${rule(p, spaces.p400)}
     `}
     ${media.lg`
       ${rule(p, spaces.p400)}

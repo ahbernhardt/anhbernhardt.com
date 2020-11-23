@@ -5,6 +5,10 @@ export const Wrapper = styled.footer`
   width: 100%;
   position: fixed;
   top: 45%;
+  ${media.ipadpro`
+    position: static;
+    padding-top: 1.5rem;
+  `}
   ${media.md`
     position: static;
     padding-top: 1.5rem;
@@ -48,7 +52,14 @@ export const Item = styled.div`
       font-size: .7rem;
       line-height: 1em;
   `}
-  
+  ${media.ipadpro`
+    position: static;
+    transform: rotate(0) translateX(0);
+    transform-origin: 0;
+    padding: .6rem 0 0;
+    text-align: center;
+    font-size: 1rem;
+  `}
   ${media.md`
     position: static;
     transform: rotate(0) translateX(0);

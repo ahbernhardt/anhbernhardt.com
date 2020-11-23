@@ -29,7 +29,10 @@ export const Wrapper = styled.section`
     grid-template-rows: repeat(2, 1fr);
     padding: 0 0 0 0;
   `}
-  
+  ${media.ipadpro`
+    grid-template-rows: repeat(1, 1fr);
+    padding: 0 0 0 6%;
+  `}
   ${media.lg`
     grid-template-rows: repeat(2, auto);
     padding: 0 0 0 6%;
@@ -71,7 +74,10 @@ export const InfoWrapper = styled.header`
     grid-column: 2 / 6;
     grid-row: 1 / 5;
   `}
-  
+  ${media.ipadpro`
+    grid-column: 1 / 8;
+    grid-row: 1 / 5;
+  `}
   ${media.lg`
     grid-column: 1 / 6;
     grid-row: 1 / 5;
@@ -116,7 +122,10 @@ export const TopWrapper = styled.div`
     font-size: 1.4rem;
     line-height: 1.4em;
   `}
-  
+  ${media.ipadpro`
+    font-size: 1.5rem;
+    line-height: 1.4em;
+  `}
   ${media.lg`
     max-width: 32rem;
   `}
@@ -180,6 +189,7 @@ export const StyledImage = styled(Image)`
   &::before {
     content: '';
     display: block;
+    
     ${media.sm`
       padding-top: 100%;
     `}
@@ -195,10 +205,14 @@ export const StyledImage = styled(Image)`
     bottom: 0;
     left: 0;
     mix-blend-mode: lighten;
-    opacity: .1;
+    opacity: .2;
     display: block;
     object-fit: cover;
     
+    ${media.ipadpro`
+      opacity: .2;
+      object-fit: cover;
+    `}
     ${media.md`
       opacity: .2;
       object-fit: cover;
@@ -258,7 +272,16 @@ export const StyledImage = styled(Image)`
           padding-top: 100%;
         }
   `}
-  
+  ${media.ipadpro`
+    width: 450px;
+    grid-row: 1 / 6;
+    grid-column: 1 / 8;
+    margin-top: -60px;
+    margin-right: 0;
+        &:before {
+          padding-top: 100%;
+        }
+  `}
   ${media.lg`
     width: 450px;
     grid-row: 1 / 6;

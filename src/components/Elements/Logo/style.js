@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   left: 0;
   max-width: 10rem;
   ${getOuterSpace('padding')}
+  ${media.ipadpro`
+    position: static;
+    padding: 0;
+  `}
   ${media.md`
     position: static;
     padding: 0;
@@ -36,7 +40,9 @@ export const Wrapper = styled.div`
     ${media.mon24`
       width: 2.5rem;
     `}
-    
+    ${media.ipadpro`
+      width: 3rem;
+    `}
     ${media.mac13`
       width: 2rem;
     `}

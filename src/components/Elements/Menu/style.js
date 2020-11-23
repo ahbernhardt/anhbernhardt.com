@@ -52,6 +52,10 @@ export const Wrapper = styled.nav`
     }
   }
   
+  ${media.ipadpro`
+    position: static;
+    padding: 0;
+  `}
   ${media.md`
     position: static;
     padding: 0;
@@ -85,6 +89,10 @@ export const NavItem = styled.li`
   
   ${media.mac13`
       padding: .4rem 0;
+  `}
+  
+  ${media.ipadpro`
+      padding: .5rem 0;
   `}
   
   ${media.md`
@@ -123,7 +131,10 @@ export const NavItem = styled.li`
       font-size: .7rem;
       line-height: .7em;
   `}
-  
+  ${media.ipadpro`
+      font-size: .9rem;
+      line-height: 1em;
+  `}
   ${media.md`
       font-size: .8rem;
       line-height: .8em;
