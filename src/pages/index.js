@@ -2,8 +2,8 @@ import React from 'react'
 import Layout from '../components/layout'
 import Intro from '../components/HomePage/Intro'
 import Head from '../components/Elements/Head'
-import HelloMiddle from '../components/HomePage/HelloText'
 import { META } from '../utils/constants'
+import Hero from "../components/HomePage/Hero/Hero"
 
 export default ({ location }) =>
     <Layout location={location}>
@@ -12,8 +12,8 @@ export default ({ location }) =>
             {...META.index}
             image={META.common.image}
         />
-        <HelloMiddle />
-        <Intro fixed={true} />
+      <Hero />
+      <Intro fixed={true} />
 
       </section>
     </Layout>

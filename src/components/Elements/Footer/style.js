@@ -49,7 +49,11 @@ export const Item = styled.div`
   `}
   
   ${media.mac13`
-      font-size: .7rem;
+      font-size: .8rem;
+      line-height: 1em;
+  `}
+  ${media.lg`
+      font-size: .8rem;
       line-height: 1em;
   `}
   ${media.ipadpro`

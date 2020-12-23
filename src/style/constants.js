@@ -30,19 +30,26 @@ export const spaces = {
 }
 
 export const mq = {
-    xxs:    '24em',   //375px
-    xs:     '25.9em', //414px
-    sm:     '40em',   //640px
-    md:     '54em',   //864px
-    lg:     '64em',   //1024px
-    mac13:  '80em',   //1280px
-    pro:    '85.4em', //1366.4px
-    mac15:  '90em',   //1440px
-    mon24:  '120em',  //1920px
-    mon27:  '160em',  //2560px
+  tiny:     '300px',      // 18.75em
+   xxs:     '375px',      // 25em
+    xs:     '480px',      // 30em
+    sm:     '640px',      // 40em
+  base:     '768px',      // 48em
+    md:     '864px',      // 54em
+    lg:     '1024px',     // 64em
+   pro:     '1366px',     // 85.375em
+ mac13:     '1280px',     // 80em
+ mac15:     '1440px',     // 90em
+ mon24:     '1920px',     // 120em
+ mon27:     '2560px',     // 160em
 }
 
 export const media = {
+  tiny: (...a) => css`
+    @media (max-width: ${mq.tiny}) {
+      ${css(...a)}
+    }
+  `,
   xxs: (...a) => css`
     @media (max-width: ${mq.xxs}) {
       ${css(...a)}
@@ -55,6 +62,11 @@ export const media = {
   `,
     sm: (...a) => css`
     @media (max-width: ${mq.sm}) {
+      ${css(...a)}
+    }
+  `,
+  base: (...a) => css`
+    @media (max-width: ${mq.base}) {
       ${css(...a)}
     }
   `,
@@ -134,10 +146,16 @@ export const getOuterSpace = p =>
     ${media.md`
       ${rule(p, spaces.p300)}
     `}
+    ${media.base`
+      ${rule(p, spaces.p200)}
+    `}
     ${media.sm`
       ${rule(p, spaces.p200)}
     `}
     ${media.xs`
+      ${rule(p, spaces.p100)}
+    `}
+    ${media.tiny`
       ${rule(p, spaces.p100)}
     `}
   `

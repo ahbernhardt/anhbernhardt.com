@@ -124,12 +124,16 @@ export const NavItem = styled.li`
   `}
   
   ${media.mon24`
-      font-size: .9rem;
-      line-height: .9rem;
+      font-size: .8rem;
+      line-height: .7rem;
   `}
    ${media.mac13`
-      font-size: .7rem;
-      line-height: .7em;
+      font-size: .8rem;
+      line-height: .8em;
+  `}
+  ${media.lg`
+      font-size: .8rem;
+      line-height: .8em;
   `}
   ${media.ipadpro`
       font-size: .9rem;

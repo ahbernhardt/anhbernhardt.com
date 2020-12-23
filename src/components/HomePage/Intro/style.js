@@ -41,7 +41,8 @@ export const Wrapper = styled.div`
     line-height: 1.3em;
   `}
   ${media.lg`
-    max-width: 32rem;
+    font-size: 1.1rem;
+    max-width: 35rem;
   `}
   ${media.md`
     max-width: 35rem;
