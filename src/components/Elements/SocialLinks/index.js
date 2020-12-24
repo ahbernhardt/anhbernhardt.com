@@ -1,7 +1,5 @@
 import { Nav, NavItem, Wrapper, Item } from "./style"
 import React from "react"
-import EmailLink from "../EmailLink"
-import { getCurrentYear } from "../../../utils/functions"
 
 const SocialLinks = () =>
   <Wrapper>

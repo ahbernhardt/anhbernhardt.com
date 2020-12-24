@@ -1,5 +1,4 @@
 import React from 'react'
-// import Tagline from '../../HomePage/Intro'
 import { Wrapper, InfoWrapper, Content, StyledImage, TopWrapper, Title } from "./style"
 import { Loader } from '../../../style/shared'
 
