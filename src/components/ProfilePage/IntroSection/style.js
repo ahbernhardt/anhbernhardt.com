@@ -147,6 +147,7 @@ export const TopWrapper = styled.div`
 
 export const Title = styled.h1`
   margin-bottom:5px; 
+  color: ${colors.gray500};
   
   .name {
     color: ${colors.yellow500};

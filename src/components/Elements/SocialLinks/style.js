@@ -4,17 +4,20 @@ import { colors, fonts, media, getOuterSpace } from '../../../style/constants'
 
 export const Wrapper = styled.nav`
   position: fixed;
-  top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
   width: 100%;
-  display: inline-flex;
+  padding: 0 25% 0 25%;
+  display: block;
+  text-align: center;
+  justify-content: space-between;
   pointer-events: none;
-  padding-left: 49%;
-  background: ${colors.black700};
-  z-index:1;
   ${getOuterSpace('padding')};
   
   ul:last-child li {
+    // text-align: right;
+    
     a {
       transition: color .4s ease;
       will-change: color;
@@ -27,7 +30,7 @@ export const Wrapper = styled.nav`
         background: ${colors.yellow500};
         border-radius: 100%;
         content: '';
-        display: flex;
+        display: block;
         height: .3rem;
         width: .3rem;
         transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
@@ -58,23 +61,26 @@ export const Wrapper = styled.nav`
     position: static;
     padding: 0;
   `}
+  
 `
 
 export const Nav = styled.ul`
   list-style: none;
-  padding: 0 0 0 32%;;
+  padding: 0 30% 0 33%;;
   margin: 0;
   width: 100%;
-  display: inline-flex;
-  align-item: flex-end;
 `
 
 export const NavItem = styled.li`
   list-style: none;
   padding: .5rem 0;
-  line-height: .9em;
-  margin-left: 3.5rem;
+  line-height: 1em;
+  display: inline-flex;
+  margin-left: 2.2rem;
   
+  &:last-child {
+    padding-bottom: 0;
+  }
   ${media.mon27`
       padding: .7rem 0;
   `}
@@ -96,22 +102,21 @@ export const NavItem = styled.li`
   `}
 
   a {
-    font-size: 1.2rem;
+    font-size: .9rem;
     font-family: ${fonts.mono};
-    text-transform: uppercase;
     pointer-events: all;
     transition: color .1s ease;
     line-height: .9em;
     ${props => props.highlight
-    ? css`
+  ? css`
         color: ${colors.yellow500};
         
         &:hover::before {
           display: none !important;
         }
       `
-    : css`
-        color: ${colors.gray700};
+  : css`
+        color: ${colors.gray500};
       `}
       
       
@@ -125,7 +130,7 @@ export const NavItem = styled.li`
       line-height: .7rem;
   `}
    ${media.mac13`
-      font-size: 1.2rem;
+      font-size: .8rem;
       line-height: .8em;
   `}
   ${media.lg`
@@ -144,7 +149,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLink = styled(Link).attrs({
-    activeClassName: 'active'
+  activeClassName: 'active'
 })`
   &.active {
     color: #fff;
@@ -154,4 +159,15 @@ export const NavLink = styled(Link).attrs({
       opacity: 1;
     }
   }
+`
+export const Item = styled.div`
+  font-family: ${fonts.mono};
+  color: ${colors.gray700};
+  font-size: .9rem;
+  line-height: 1.2em;
+  
+  span {
+    font-family: ${fonts.mono};
+    font-size:1.2rem;
+  } 
 `

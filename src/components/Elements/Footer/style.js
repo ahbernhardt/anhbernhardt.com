@@ -26,6 +26,7 @@ export const Item = styled.div`
   color: ${colors.gray700};
   font-size: .9rem;
   line-height: 1em;
+  letter-spacing: .1rem;
   ${props => props.position === 'left'
     ? css`
       transform: rotate(-90deg) translateX(-50%);
@@ -38,6 +39,18 @@ export const Item = styled.div`
       ${getOuterSpace('right')}
     ` }
   
+    ${props => props.highlight
+  ? css`
+        color: ${colors.yellow500};
+        
+        &:hover::before {
+          display: none !important;
+        }
+      `
+  : css`
+        color: ${colors.gray700};
+      `}
+      
   ${media.mon27`
       font-size: 1.3rem;
       line-height: 1em;

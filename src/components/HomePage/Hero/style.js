@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   `}
   ${media.mac13`
     position: static;
-    padding: 10% 0 0 18%;
+    padding: 10% 0 0 25%;
   `}
   ${media.ipadpro`
     position: static;
@@ -72,8 +72,8 @@ header {
   align-items: center;
 }
 .headerWrap {
-  width: 640px; 
-  height: 130px;
+  width: 825px; 
+  height: 200px;
   flex: 0 0 auto;
   margin-top: -27px;
   position: relative;

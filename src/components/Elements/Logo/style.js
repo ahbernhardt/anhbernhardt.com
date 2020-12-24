@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   top: 0;
   left: 0;
   max-width: 10rem;
+  z-index:2;
   ${getOuterSpace('padding')}
   ${media.ipadpro`
     position: static;
@@ -72,8 +73,8 @@ export const Wrapper = styled.div`
   }
 
   a:hover + .logo {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(7.5);
-    transition: transform 1s cubic-bezier(.45, 0, .1, 1), opacity .8s ease;
+    opacity: .2;
+    transform: translate(-50%, -50%) scale(5);
+    transition: transform 1s cubic-bezier(.4, 0, .1, 1), opacity .8s ease;
   }
 `

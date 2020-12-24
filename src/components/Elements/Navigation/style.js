@@ -83,7 +83,7 @@ export const Header = styled.header`
     align-items: flex-end;
     width: 100%;
     min-height: 5.5rem;
-    background-color: ${colors.blue900};
+    background-color: ${colors.black700};
     box-shadow: 0 0 15px 1px ${colors.gray700};
     ${getOuterSpace('padding')};
   `}
@@ -93,7 +93,7 @@ export const Header = styled.header`
     align-items: flex-end;
     width: 100%;
     min-height: 5rem;
-    background-color: ${colors.blue900};
+    background-color: ${colors.black700};
     box-shadow: 0 0 15px 1px ${colors.gray700};
     ${getOuterSpace('padding')};
   `}
@@ -104,7 +104,7 @@ export const Header = styled.header`
     align-items: flex-end;
     width: 100%;
     min-height: 5rem;
-    background-color: ${colors.blue900};
+    background-color: ${colors.black700};
     box-shadow: 0 0 15px 1px ${colors.gray700};
     ${getOuterSpace('padding')};
   `}

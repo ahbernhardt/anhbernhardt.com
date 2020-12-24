@@ -18,18 +18,7 @@ export default ({ data }) => {
                 image={META.common.image}
             />
 
-            <ProfileIntroSection
-                content={() =>
-                    <>
-                        As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product.
-                        I focus primarily on building, prototyping and implementing user interfaces that are usable and scalable for any web-based platform.{' '}
-                        <a href="https://codepen.io/ah_nguyen0208" target="_blank" rel="noopener noreferrer">I enjoy experimenting</a>,
-                        <a href="https://github.com/anguyen0208" target="_blank" rel="noopener noreferrer">building and trying</a> out new tools.
-
-                        <p>When I'm not in front of a computer screen, I'm probably camping, researching new local restaurants, building LEGO, or crossing off another item on my bucket list and share photos on <a href="https://www.instagram.com/ah_nguyen0208" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
-                    </>
-                }
-            />
+            <ProfileIntroSection />
 
             <TimelinesSection>
                 {timelines.edges.length > 0 &&
