@@ -27,4 +27,4 @@ package-lock.json
 .cache/
 .env
 .idea
-/src/data/
+#/src/data/
