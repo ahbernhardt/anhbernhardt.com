@@ -5,12 +5,14 @@ import { colors, fonts, media, getOuterSpace } from '../../../style/constants'
 export const Wrapper = styled.nav`
   position: fixed;
   top: 0;
-  right: 0;
-  width: 100%;
-  display: inline-flex;
+  left: 0;
+  width: 100vh;
+  height: 25px;
+  display: flex;
   pointer-events: none;
-  padding-left: 49%;
-  background: ${colors.black700};
+  border-bottom: solid 2px ${colors.black500};
+  transform-origin: left top; 
+  transform: rotate(-90deg) translate(-100%, -30%);
   z-index:1;
   ${getOuterSpace('padding')};
   
@@ -20,6 +22,7 @@ export const Wrapper = styled.nav`
       will-change: color;
       position: relative;
       
+      // orange dot
       &::before {
         position: absolute;
         left: -1.1rem;
@@ -62,11 +65,13 @@ export const Wrapper = styled.nav`
 
 export const Nav = styled.ul`
   list-style: none;
-  padding: 0 0 0 32%;;
-  margin: 0;
+  margin: 5% 5%;;
   width: 100%;
+  height: 100%;
   display: inline-flex;
   align-item: flex-end;
+  transform-origin: top; 
+  transform: rotate(180deg);
 `
 
 export const NavItem = styled.li`
@@ -147,7 +152,8 @@ export const NavLink = styled(Link).attrs({
     activeClassName: 'active'
 })`
   &.active {
-    color: #fff;
+    color: ${colors.white};
+    text-decoration: line-through;
     
     &::before {
       transform: translate(0, -50%);

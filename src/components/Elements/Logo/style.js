@@ -5,7 +5,8 @@ export const Wrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 10rem;
+  max-width: 9rem;
+  margin: -2.3% 0 0 -2.3%;
   z-index:2;
   ${getOuterSpace('padding')}
   ${media.ipadpro`
@@ -31,8 +32,8 @@ export const Wrapper = styled.div`
   }
 
   a {
-    width: 2.5rem;
-    left:50%;
+    width: 2rem;
+    left: -50%;
     
     ${media.mon27`
       width: 2.8rem;
@@ -61,8 +62,8 @@ export const Wrapper = styled.div`
 
   .logo {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 25%;
     transform: translate(-50%, -50%) scale(0);
     background: rgba(255, 255, 255, .05);
     height: 100%;

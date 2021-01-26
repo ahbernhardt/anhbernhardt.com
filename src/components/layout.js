@@ -9,13 +9,14 @@ import Footer from "./Elements/Footer"
 
 const Layout = ({children, location}) =>
       <main >
-          <GlobalStyle />
+        <GlobalStyle />
+        <Logo />
+        <Menu />
           {children}
           {/*<Navigation location={location}/>*/}
-          <Logo />
-          <Menu />
+
           {/*<Switch />*/}
-          <Footer />
+        <Footer />
           {/*<SocialLinks />*/}
       </main>
 
