@@ -12,7 +12,7 @@ export default ({ location }) =>
             {...META.index}
             image={META.common.image}
         />
-      <Hero />
-      <IntroSection fixed={true}/>
+        <Hero />
+        <IntroSection fixed={true} />
       </section>
     </Layout>

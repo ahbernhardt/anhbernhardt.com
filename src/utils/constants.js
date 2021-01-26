@@ -4,7 +4,7 @@ export const META = {
     common: {
         image: '/images/me.jpg',
     },
-    home: {
+    index: {
         title: 'Anh Nguyen | Software Engineer & Designer',
         description: 'Anh Nguyen, software engineer graduate student based in Minneapolis, MN. I focus primarily on building (and occasionally designing) usable, exceptional, and scalable websites, applications, and everything in between.'
     },

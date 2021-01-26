@@ -1,6 +1,6 @@
 import React from 'react'
-import Head from '../../Elements/Head'
-import { META } from '../../../utils/constants'
+// import Head from '../../Elements/Head'
+// import { META } from '../../../utils/constants'
 import { ContentWrapper } from '../../../style/shared'
 import AboutIntroSection from '../IntroSection'
 import TimelineListItem from '../TimelineSection/TimelineItem'
@@ -13,10 +13,10 @@ export default ({ data }) => {
     const { timelines, designs, languages, frameworks, tools } = data
     return (
         <ContentWrapper>
-            <Head
-                {...META.profile}
-                image={META.common.image}
-            />
+            {/*<Head*/}
+            {/*    {...META.profile}*/}
+            {/*    image={META.common.image}*/}
+            {/*/>*/}
 
             <AboutIntroSection />
 

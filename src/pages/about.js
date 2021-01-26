@@ -1,10 +1,12 @@
 import React from 'react'
 import { StaticQuery, graphql} from 'gatsby'
 import Layout from '../components/layout'
-import ProfileContent from '../components/ProfilePage/Content'
+import AboutContent from '../components/AboutPage/Content'
+import { META } from "../utils/constants"
+import Head from "../components/Elements/Head"
 
-const profileQuery = graphql`
-  query ProfileQuery {
+const AboutQuery = graphql`
+  query AboutQuery {
     timelines: allTimelinesJson {
       edges {
         timeline: node {
@@ -51,10 +53,14 @@ const profileQuery = graphql`
 `
 export default ({ location }) =>
     <StaticQuery
-        query= {profileQuery}
+        query= {AboutQuery}
         render= {data =>
             <Layout location={location}>
-                <ProfileContent data={data} />
+              <Head
+                {...META.profile}
+                image={META.common.image}
+              />
+                <AboutContent data={data} />
             </Layout>
         }
     />
