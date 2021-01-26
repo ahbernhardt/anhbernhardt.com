@@ -5,7 +5,7 @@ import { GlobalStyle } from '../style/global'
 import Menu from "./Elements/Menu"
 import Logo from "./Elements/Logo"
 import Footer from "./Elements/Footer"
-import Switch from "./Elements/Switch"
+// import Switch from "./Elements/Switch"
 
 const Layout = ({children, location}) =>
       <main >
@@ -14,7 +14,7 @@ const Layout = ({children, location}) =>
           {/*<Navigation location={location}/>*/}
           <Logo />
           <Menu />
-          <Switch />
+          {/*<Switch />*/}
           <Footer />
           {/*<SocialLinks />*/}
       </main>

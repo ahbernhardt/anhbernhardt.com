@@ -2,23 +2,27 @@
   {
   "year": "May 2019 - March 2020",
   "position": "Mail Assistant",
-  "company": "University of St. Thomas"
+  "company": "University of St. Thomas",
+  "description": "Student assistant for mail room"
 },
   {
-  "year": "Sep - Oct 2018",
+  "year": "September - October 2018",
   "position": "3D Render",
-  "company": "WORKSHOP"
+  "company": "WORKSHOP",
+  "description": "Student assistant for mail room"
 },{
-  "year": "Aug - Oct 2018",
+  "year": "August - October 2018",
   "position": "Freelance Designer",
-  "company": "CEP - Chicago Exhibit Productions, Inc"
+  "company": "CEP - Chicago Exhibit Productions, Inc",
+  "description": "Student assistant for mail room"
 },{
   "year": "2016 - 2018",
   "position": "Student Designer",
   "company": "TAD - Bemidji State University"
 },{
-  "year": "May - Jun 2017",
+  "year": "May - June 2017",
   "position": "Exhibit Design Intern",
-  "company": "Exhibit Partners"
+  "company": "Exhibit Partners",
+  "description": "Student assistant for mail room"
 }
 ]

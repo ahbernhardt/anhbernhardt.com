@@ -82,5 +82,6 @@ header {
   position: absolute;
   top: 0; 
   left: 0;
+  fill: #161616;
 }
 `

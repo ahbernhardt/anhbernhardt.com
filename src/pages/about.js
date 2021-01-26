@@ -11,6 +11,7 @@ const profileQuery = graphql`
           year
           position
           company
+          description
         }
       }
     }
