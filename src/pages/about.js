@@ -56,10 +56,10 @@ export default ({ location }) =>
         query= {AboutQuery}
         render= {data =>
             <Layout location={location}>
-              <Head
-                {...META.profile}
-                image={META.common.image}
-              />
+                <Head
+                  {...META.about}
+                  image={META.common.image}
+                />
                 <AboutContent data={data} />
             </Layout>
         }
