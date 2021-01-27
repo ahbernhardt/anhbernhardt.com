@@ -10,7 +10,7 @@ export const Wrapper = styled.nav`
   height: 25px;
   display: flex;
   pointer-events: none;
-  border-bottom: solid 2px ${colors.black500};
+  border-bottom: solid 2px ${colors.gray500};
   transform-origin: left top; 
   transform: rotate(-90deg) translate(-100%, -30%);
   z-index:1;
@@ -25,8 +25,8 @@ export const Wrapper = styled.nav`
       // orange dot
       &::before {
         position: absolute;
-        left: -1.1rem;
-        top: 50%;
+        left: 50%;
+        top: 2rem;
         background: ${colors.yellow500};
         border-radius: 100%;
         content: '';
@@ -39,14 +39,14 @@ export const Wrapper = styled.nav`
 
       &:not(.active)::before {
         opacity: 0;
-        transform: translate(-1rem, -50%);
+        transform: translate(-50%, -1rem);
       }
 
       &:hover {
-        color: #fff;
+        color: ${colors.white};
         
         &::before {
-          transform: translate(0, -50%);
+          transform: translate(0, 0);
           opacity: 1;
         }
       }
@@ -76,9 +76,9 @@ export const Nav = styled.ul`
 
 export const NavItem = styled.li`
   list-style: none;
-  padding: .5rem 0;
+  // padding: .3rem 0;
   line-height: .9em;
-  margin-left: 3.5rem;
+  margin-left: 2.5rem;
   
   ${media.mon27`
       padding: .7rem 0;
@@ -101,8 +101,10 @@ export const NavItem = styled.li`
   `}
 
   a {
-    font-size: 1.2rem;
-    font-family: ${fonts.mono};
+    font-size: 2rem;
+    font-family: ${fonts.inter};
+    font-weight: 500;
+    letter-spacing: 1px;
     text-transform: uppercase;
     pointer-events: all;
     transition: color .1s ease;
@@ -116,7 +118,7 @@ export const NavItem = styled.li`
         }
       `
     : css`
-        color: ${colors.gray700};
+        color: ${colors.gray300};
       `}
       
       
@@ -131,6 +133,7 @@ export const NavItem = styled.li`
   `}
    ${media.mac13`
       font-size: 1.2rem;
+      padding-left: 5px;
       line-height: .8em;
   `}
   ${media.lg`
@@ -156,7 +159,7 @@ export const NavLink = styled(Link).attrs({
     text-decoration: line-through;
     
     &::before {
-      transform: translate(0, -50%);
+      transform: translate(0, 0);
       opacity: 1;
     }
   }

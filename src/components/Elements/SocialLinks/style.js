@@ -103,7 +103,7 @@ export const NavItem = styled.li`
 
   a {
     font-size: .9rem;
-    font-family: ${fonts.mono};
+    font-family: ${fonts.upright};
     pointer-events: all;
     transition: color .1s ease;
     line-height: .9em;
@@ -116,7 +116,7 @@ export const NavItem = styled.li`
         }
       `
   : css`
-        color: ${colors.gray500};
+        color: ${colors.gray400};
       `}
       
       
@@ -161,13 +161,13 @@ export const NavLink = styled(Link).attrs({
   }
 `
 export const Item = styled.div`
-  font-family: ${fonts.mono};
-  color: ${colors.gray700};
+  font-family: ${fonts.upright};
+  color: ${colors.gray300};
   font-size: .9rem;
   line-height: 1.2em;
   
   span {
-    font-family: ${fonts.mono};
+    font-family: ${fonts.upright};
     font-size:1.2rem;
   } 
 `

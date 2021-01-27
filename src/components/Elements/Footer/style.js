@@ -15,15 +15,16 @@ export const Wrapper = styled.footer`
   `}
   
   span {
-    font-family: ${fonts.mono};
-    font-size:1.2rem;
+    font-family: ${fonts.inter};
+    font-size: 1rem;
+    opacity: 75%;
   } 
 `
 
 export const Item = styled.div`
   position: absolute;
-  font-family: ${fonts.mono};
-  color: ${colors.gray700};
+  font-family: ${fonts.inter};
+  color: ${colors.gray300};
   font-size: .9rem;
   line-height: 1em;
   letter-spacing: .1rem;

@@ -17,8 +17,8 @@ const Title = styled.h1`
 const Subtitle = styled.h1`
   text-align: center;
   font-size: 1.1rem;
-  font-family: ${fonts.mono};
-  color: ${colors.gray500};
+  font-family: ${fonts.upright};
+  color: ${colors.gray400};
   margin: 1rem 0;
   
   span {
@@ -40,7 +40,7 @@ const Wrapper = styled.section`
 
 const BackToHome = styled(Link)`
   color: ${colors.yellow500};
-  font-family: ${fonts.mono};
+  font-family: ${fonts.upright};
   font-size: .9rem;
   border-bottom: 1px dotted ${colors.yellow500};
   padding: 0 0 .1rem;

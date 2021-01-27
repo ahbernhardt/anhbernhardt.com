@@ -2,23 +2,39 @@ import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 import { colors, fonts, media } from './constants'
 
+
 export const GlobalStyle = createGlobalStyle`
   ${reset}
-
-/*============================
-    Fonts
-============================*/
-
-  @font-face {
-    font-family: stack-mono;
-    src: local(".SFNSText-Light");
-  }
-
-  @font-face {
-    font-family: stack-sans;
-    src: local(".SFNSText-Light");
-  }
   
+    @font-face {
+    font-family: GT-Display-Light;
+    src: url("../../static/fonts/gt-super/GT-Super-Display-Light.woff2");
+  }
+   @font-face {
+    font-family: GT-Display-Bold;
+    src: url("../../static/fonts/gt-super/GT-Super-Display-Bold.woff2");
+  }
+   @font-face {
+      font-family: GT-Italic-Light;
+      src: url("../../static/fonts/gt-super/GT-Super-Display-Light-Italic.woff2");
+    }
+     @font-face {
+      font-family: GT-Italic-Bold;
+      src: url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.woff2");
+    }
+    
+  @font-face {
+    font-family: Inter;
+    src: url("../../static/fonts/inter/Inter.woff2");
+  }
+  @font-face {
+    font-family: Inter-Up;
+    src: url("../../static/fonts/inter/Inter-upright.woff2");
+  }
+  @font-face {
+    font-family: Inter-Italic;
+    src: url("../../static/fonts/inter/Inter-italic.woff2");
+  }
 /*============================
     Base
 ============================*/
@@ -27,7 +43,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   :root {
-      font-size: 14px;
+    font-size: 14px;
   }
   
   html, body {
@@ -40,8 +56,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${colors.black700};
-    font-family: ${fonts.sansSerif};
+    background-color: ${colors.black};
+    font-family: ${fonts.inter};
     backface-visibility: hidden;
   }
 

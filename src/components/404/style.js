@@ -83,12 +83,12 @@ export const Wrapper = styled.div`
     
   .line {
     fill: none;
-    stroke:${colors.gray700};
+    stroke:${colors.gray300};
   }
       
   .dot {
     opacity: 75%;
-    fill:${colors.gray500};
+    fill:${colors.gray400};
   }
 `
 

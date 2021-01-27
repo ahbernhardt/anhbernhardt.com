@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from "react"
 // import Head from '../../Elements/Head'
 // import { META } from '../../../utils/constants'
 import { ContentWrapper } from '../../../style/shared'
@@ -8,10 +8,16 @@ import TimelineList from '../TimelineSection/TimelineList'
 import {ListsSection, TimelinesSection} from './style'
 import EachSkillList from '../SkillsSection/EachSkillList'
 import SkillListItem from '../SkillsSection/ListItem'
+import { srConfig } from '@config';
+// import { KEY_CODES } from '../../../utils';
+import sr from '@utils/sr';
 
 export default ({ data }) => {
-    const { timelines, designs, languages, frameworks, tools } = data
-    return (
+    const { timelines, designs, languages, frameworks, tools } = data;
+    const revealContainer = useRef(null);
+    useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
+
+  return (
         <ContentWrapper>
             {/*<Head*/}
             {/*    {...META.profile}*/}
@@ -33,7 +39,7 @@ export default ({ data }) => {
                 />}
             </TimelinesSection>
 
-            <ListsSection>
+            <ListsSection ref={revealContainer}>
                 {designs.edges.length > 0 &&
                 <EachSkillList
                     title='Design'

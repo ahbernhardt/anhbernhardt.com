@@ -147,7 +147,7 @@ export const TopWrapper = styled.div`
 
 export const Title = styled.h1`
   margin-bottom:5px; 
-  color: ${colors.gray500};
+  color: ${colors.gray400};
   
   .name {
     color: ${colors.yellow500};
@@ -159,7 +159,7 @@ export const Title = styled.h1`
 export const Content = styled.main`
   margin-top: 1rem;
   line-height: 1.8em;
-  color: ${colors.gray500};
+  color: ${colors.gray400};
   
   ${media.sm`
     margin-top: 1rem;
@@ -171,7 +171,7 @@ export const Content = styled.main`
 
   a {
     color: #fff;
-    border-bottom: 1px dotted ${colors.gray500};
+    border-bottom: 1px dotted ${colors.gray400};
     
     &:hover {
       border-bottom-color: ${colors.yellow500};

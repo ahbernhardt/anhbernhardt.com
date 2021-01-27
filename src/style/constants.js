@@ -1,18 +1,27 @@
 import { css } from 'styled-components'
 
 export const colors = {
-    white: '#f5f0e1',
-    gray500: '#bfc0c0',
-    gray700: '#556179',
-    black500: '#2c2c30',
-    black700: '#161616',
-    yellow500: '#fcaf5d',
-    yellow700: '#f69126'
+  white: '#f6f5f3',
+  black: '#040404',
+
+  gray200: '#6b7a8f',
+  gray300: '#393f4d',
+  gray400: '#3d3d3f',
+  gray500: '#2c2c30',
+  gray600: '#1d1e22',
+
+  yellow500: '#feda6a',
+  yellow700: '#f69126'
 }
 
 export const fonts = {
-    sansSerif: '\'Roboto\', stack-sans, sans-serif',
-    mono: '\'Roboto Mono\', stack-mono, monospace'
+    inter: 'Inter,\'Roboto\', sans-serif',
+    upright: 'Inter-Up,\'Roboto Mono\', monospace',
+    italic: 'Inter-Italic, monospace',
+    displayBold: 'GT-Display-Bold',
+    displayLight: 'GT-Display-Light',
+    displayItalicBold: 'GT-Italic-Bold',
+    displayItalicLight: 'GT-Italic-Light'
 }
 
 export const spaces = {

@@ -5,10 +5,8 @@ import { Wrapper } from './style'
 
 const Logo = () =>
     <Wrapper>
-        <div>
-            <Link to='/'><MainLogo width={100} height={100} /></Link>
-            <div className="logo svg" />
-        </div>
+        <Link to='/'><MainLogo width={50} height={50} /></Link>
+        <div className="logo svg" />
     </Wrapper>
 
 export default Logo

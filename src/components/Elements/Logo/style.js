@@ -5,23 +5,22 @@ export const Wrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 9rem;
-  margin: -2.3% 0 0 -2.3%;
   z-index:2;
-  ${getOuterSpace('padding')}
-  ${media.ipadpro`
-    position: static;
-    padding: 0;
-  `}
-  ${media.md`
-    position: static;
-    padding: 0;
-  `}
+  margin: 15px 0 0 15px;
   
-  ${media.xs`
-    position: static;
-    padding: 0 0 2% 3%;
-  `}
+  // ${media.ipadpro`
+  //   position: static;
+  //   padding: 0;
+  // `}
+  // ${media.md`
+  //   position: static;
+  //   padding: 0;
+  // `}
+  //
+  // ${media.xs`
+  //   position: static;
+  //   padding: 0 0 2% 3%;
+  // `}
   
   > div {
     position: relative;
@@ -62,8 +61,8 @@ export const Wrapper = styled.div`
 
   .logo {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 0;
+    left: 0;
     transform: translate(-50%, -50%) scale(0);
     background: rgba(255, 255, 255, .05);
     height: 100%;

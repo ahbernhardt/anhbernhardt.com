@@ -2,9 +2,9 @@ import styled,{css} from "styled-components"
 import { colors, getOuterSpace, media } from "../../../style/constants"
 
 export const Wrapper = styled.div`
-   font-size: 1.3rem;
-    max-width: 75rem;
-    line-height: 1.3em;
+  font-size: 1.3rem;
+  max-width: 75rem;
+  line-height: 1.3em;
    
   ${media.mon27`
     position: static;
@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   `}
   ${media.mac13`
     position: static;
-    padding: 10% 0 0 25%;
+    padding: 10% 0 0 22%;
   `}
   ${media.ipadpro`
     position: static;
@@ -86,5 +86,9 @@ export const Wrapper = styled.div`
 export const Content = styled.main`
   margin-top: 1rem;
   line-height: 1.8em;
-  color: ${colors.gray500};
+  color: ${colors.gray400};
+  
+  .name{
+    color: ${colors.yellow500}
+  }
 `

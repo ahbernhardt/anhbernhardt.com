@@ -8,18 +8,20 @@ export const Left = styled.div`
 `
 export const Year = styled.sup`
   font-size: 85%;
+  // color: ${colors.yellow500}
 `
 
 export const Position = styled.h1`
   font-size: 22px;
   letter-spacing: 1px;
   font-weight: 400;
+  color: ${colors.gray200}
 `
 export const Company = styled.span`
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 400;
-  color: ${colors.gray700};
+  color: ${colors.gray300};
 `
 export const Description = styled.h1`
   font-size: 16px;
@@ -33,7 +35,7 @@ export const Wrapper = styled.div`
   padding: 30px 0;
   display: inline-flex;
   width: 100%;
-  border-bottom: 1px dotted ${colors.gray700};
+  border-bottom: 1px dotted ${colors.gray300};
   
   div {
     transition: transform .3s cubic-bezier(.45, 0, .1, 1);

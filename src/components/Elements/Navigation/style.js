@@ -84,7 +84,7 @@ export const Header = styled.header`
     width: 100%;
     min-height: 5.5rem;
     background-color: ${colors.black700};
-    box-shadow: 0 0 15px 1px ${colors.gray700};
+    box-shadow: 0 0 15px 1px ${colors.gray300};
     ${getOuterSpace('padding')};
   `}
   ${media.md`
@@ -94,7 +94,7 @@ export const Header = styled.header`
     width: 100%;
     min-height: 5rem;
     background-color: ${colors.black700};
-    box-shadow: 0 0 15px 1px ${colors.gray700};
+    box-shadow: 0 0 15px 1px ${colors.gray300};
     ${getOuterSpace('padding')};
   `}
   
@@ -105,7 +105,7 @@ export const Header = styled.header`
     width: 100%;
     min-height: 5rem;
     background-color: ${colors.black700};
-    box-shadow: 0 0 15px 1px ${colors.gray700};
+    box-shadow: 0 0 15px 1px ${colors.gray300};
     ${getOuterSpace('padding')};
   `}
  

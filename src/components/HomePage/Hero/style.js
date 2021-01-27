@@ -4,7 +4,7 @@ import { colors,media, getOuterSpace } from '../../../style/constants'
 export const Wrapper = styled.div`
    position: relative;
    opacity: 100%;
-   ${getOuterSpace('padding')}
+   // ${getOuterSpace('padding')}
    
   ${media.mon27`
     position: static;
@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   `}
   ${media.mac13`
     position: static;
-    padding: 10% 0 0 25%;
+    padding: 10% 0 0 20%;
   `}
   ${media.ipadpro`
     position: static;
@@ -82,6 +82,6 @@ header {
   position: absolute;
   top: 0; 
   left: 0;
-  fill: #161616;
+  fill: ${colors.black};
 }
 `
