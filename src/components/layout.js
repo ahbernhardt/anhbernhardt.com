@@ -7,14 +7,13 @@ import Logo from "./Elements/Logo"
 import Footer from "./Elements/Footer"
 // import Switch from "./Elements/Switch"
 
-const Layout = ({children, location}) =>
+const Layout = ({children}) =>
       <main >
         <GlobalStyle />
         <Logo />
         <Menu />
           {children}
           {/*<Navigation location={location}/>*/}
-
           {/*<Switch />*/}
         <Footer />
           {/*<SocialLinks />*/}

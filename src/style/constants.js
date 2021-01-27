@@ -15,13 +15,13 @@ export const colors = {
 }
 
 export const fonts = {
-    inter: 'Inter,\'Roboto\', sans-serif',
-    upright: 'Inter-Up,\'Roboto Mono\', monospace',
-    italic: 'Inter-Italic, monospace',
+    inter: 'Inter, sans-serif',
+    upright: 'Inter-Up',
+    italic: 'Inter-Italic',
+    display: 'GT-Display',
     displayBold: 'GT-Display-Bold',
-    displayLight: 'GT-Display-Light',
+    displayItalic: 'GT-Italic',
     displayItalicBold: 'GT-Italic-Bold',
-    displayItalicLight: 'GT-Italic-Light'
 }
 
 export const spaces = {

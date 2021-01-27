@@ -1,46 +1,4 @@
 module.exports = {
-  // email: 'Welcome to Poncho Club',
-  //
-  // socialMedia: [
-  //   {
-  //     name: 'Instagram',
-  //     url: 'https://www.instagram.com/',
-  //   },
-  //   {
-  //     name: 'Twitter',
-  //     url: 'https://twitter.com/',
-  //   },
-  //   {
-  //     name: 'Twitch',
-  //     url: 'https://twitch.tv/',
-  //   },
-  // ],
-  //
-  // navLinks: [
-  //   {
-  //     name: 'About',
-  //     url: '/#about',
-  //   },
-  //   {
-  //     name: 'Menu',
-  //     url: '/#menus',
-  //   },
-  //   {
-  //     name: 'Staff',
-  //     url: '/#projects',
-  //   },
-  //   {
-  //     name: 'Contact',
-  //     url: '/#contact',
-  //   },
-  // ],
-  //
-  // colors: {
-  //   green: '#64ffda',
-  //   navy: '#0a192f',
-  //   darkNavy: '#020c1b',
-  // },
-
   srConfig: (delay = 200, viewFactor = 0.25) => ({
     origin: 'bottom',
     distance: '20px',

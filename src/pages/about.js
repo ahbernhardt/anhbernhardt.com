@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import AboutContent from '../components/AboutPage/Content'
 import { META } from "../utils/constants"
 import Head from "../components/Elements/Head"
+import PageHeader from "../components/Elements/PageHeader"
 
 const AboutQuery = graphql`
   query AboutQuery {
@@ -53,14 +54,15 @@ const AboutQuery = graphql`
 `
 export default ({ location }) =>
     <StaticQuery
-        query= {AboutQuery}
-        render= {data =>
-            <Layout location={location}>
-                <Head
-                  {...META.about}
-                  image={META.common.image}
-                />
-                <AboutContent data={data} />
-            </Layout>
-        }
+      query= {AboutQuery}
+      render= {data =>
+        <Layout location={location}>
+            <Head
+              {...META.about}
+              image={META.common.image}
+            />
+            <PageHeader title='About'/>
+            <AboutContent data={data} />
+        </Layout>
+      }
     />

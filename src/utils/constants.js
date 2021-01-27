@@ -16,7 +16,7 @@ export const META = {
         title: 'About | Anh Nguyen',
         description: 'Little bit about my background.'
     },
-    projects: {
+    work: {
         title: 'Projects | Anh Nguyen',
         description: 'A selection of the work which Websites, Web applications, coordinated design and more.'
     },

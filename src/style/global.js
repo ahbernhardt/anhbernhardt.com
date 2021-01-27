@@ -2,35 +2,51 @@ import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 import { colors, fonts, media } from './constants'
 
-
 export const GlobalStyle = createGlobalStyle`
   ${reset}
   
-    @font-face {
-    font-family: GT-Display-Light;
-    src: url("../../static/fonts/gt-super/GT-Super-Display-Light.woff2");
+  @font-face {
+    font-family: GT-Display;
+    font-weight: 300;
+    font-style: normal;
+    src: url("../../static/fonts/gt-super/GT-Super-Display-Light.woff2") format("woff2");
   }
+
    @font-face {
-    font-family: GT-Display-Bold;
-    src: url("../../static/fonts/gt-super/GT-Super-Display-Bold.woff2");
-  }
-   @font-face {
-      font-family: GT-Italic-Light;
-      src: url("../../static/fonts/gt-super/GT-Super-Display-Light-Italic.woff2");
+      font-family: GT-Display-Bold;
+      font-weight: 700;
+      font-style: normal;
+      src: url("../../static/fonts/gt-super/GT-Super-Display-Bold.woff2") format("woff2");
     }
-     @font-face {
+  
+   @font-face {
+      font-family: GT-Italic;
+      font-weight: 300;
+      font-style: italic;
+      src: url("../../static/fonts/gt-super/GT-Super-Display-Light-Italic.woff2") format("woff2");
+   }
+    
+   @font-face {
       font-family: GT-Italic-Bold;
-      src: url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.woff2");
-    }
+      font-weight: 700;
+      font-style: italic;
+      src: url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.eot") format("embedded-opentype"),
+           url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.woff2") format("woff2"),
+           url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.woff") format("woff"),
+            url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.ttf") format("ttf");
+      font-display: swap;
+   }
     
   @font-face {
     font-family: Inter;
     src: url("../../static/fonts/inter/Inter.woff2");
   }
+  
   @font-face {
     font-family: Inter-Up;
     src: url("../../static/fonts/inter/Inter-upright.woff2");
   }
+  
   @font-face {
     font-family: Inter-Italic;
     src: url("../../static/fonts/inter/Inter-italic.woff2");

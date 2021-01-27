@@ -39,7 +39,7 @@ export const Wrapper = styled.div`
     `}
     
     ${media.mon24`
-      width: 2.5rem;
+      width: 2.1rem;
     `}
     ${media.ipadpro`
       width: 3rem;

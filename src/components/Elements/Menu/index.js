@@ -1,6 +1,5 @@
 import React from 'react'
 import { Wrapper, Nav, NavItem, NavLink } from './style'
-import Logo from "../Logo"
 
 const Menu = () =>
     <Wrapper>
@@ -9,7 +8,7 @@ const Menu = () =>
                 <NavLink to='/'>Home</NavLink>
             </NavItem>
             <NavItem>
-                <NavLink to='/projects'>Projects</NavLink>
+                <NavLink to='/work'>Work</NavLink>
             </NavItem>
             <NavItem>
                 <NavLink to='/about'>About</NavLink>

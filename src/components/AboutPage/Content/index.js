@@ -11,6 +11,7 @@ import SkillListItem from '../SkillsSection/ListItem'
 import { srConfig } from '@config';
 // import { KEY_CODES } from '../../../utils';
 import sr from '@utils/sr';
+// import PageHeader from "../../Elements/PageHeader"
 
 export default ({ data }) => {
     const { timelines, designs, languages, frameworks, tools } = data;
@@ -19,11 +20,7 @@ export default ({ data }) => {
 
   return (
         <ContentWrapper>
-            {/*<Head*/}
-            {/*    {...META.profile}*/}
-            {/*    image={META.common.image}*/}
-            {/*/>*/}
-
+          {/*<PageHeader title='About' />*/}
             <AboutIntroSection />
 
             <TimelinesSection>

@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
    position: relative;
    z-index:0;
    cursor:none;
-   ${getOuterSpace('padding')}
+   // ${getOuterSpace('padding')}
   
   ${media.mac13`
     position: static;

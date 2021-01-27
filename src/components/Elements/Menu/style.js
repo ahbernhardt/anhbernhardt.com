@@ -7,14 +7,14 @@ export const Wrapper = styled.nav`
   top: 0;
   left: 0;
   width: 100vh;
-  height: 25px;
+  height: 60px;
   display: flex;
   pointer-events: none;
   border-bottom: solid 2px ${colors.gray500};
   transform-origin: left top; 
-  transform: rotate(-90deg) translate(-100%, -30%);
+  transform: rotate(-90deg) translate(-100%, 0);
   z-index:1;
-  ${getOuterSpace('padding')};
+
   
   ul:last-child li {
     a {
@@ -52,7 +52,7 @@ export const Wrapper = styled.nav`
       }
     }
   }
-  
+
   ${media.ipadpro`
     position: static;
     padding: 0;
@@ -65,18 +65,25 @@ export const Wrapper = styled.nav`
 
 export const Nav = styled.ul`
   list-style: none;
-  margin: 5% 5%;;
+  margin: 7% 10%;;
   width: 100%;
   height: 100%;
   display: inline-flex;
   align-item: flex-end;
   transform-origin: top; 
   transform: rotate(180deg);
+  
+  ${media.mon24`
+      margin: 5.5% 10%;;
+  `}
+  
+  ${media.mac13`
+      margin: 6.5% 10%;;
+  `}
 `
 
 export const NavItem = styled.li`
   list-style: none;
-  // padding: .3rem 0;
   line-height: .9em;
   margin-left: 2.5rem;
   
@@ -85,11 +92,12 @@ export const NavItem = styled.li`
   `}
   
   ${media.mon24`
-      padding: .5rem 0;
+      margin-left: 3rem;
   `}
   
   ${media.mac13`
-      padding: .4rem 0;
+    margin-left: 3rem;
+    padding: .4rem 0;
   `}
   
   ${media.ipadpro`
@@ -128,22 +136,27 @@ export const NavItem = styled.li`
   `}
   
   ${media.mon24`
-      font-size: .8rem;
-      line-height: .7rem;
+      font-size: 1.2rem;
+      padding-left: 15px;
+      line-height: 1em;
   `}
+  
    ${media.mac13`
       font-size: 1.2rem;
-      padding-left: 5px;
-      line-height: .8em;
+      padding-left: 15px;
+      line-height: 1em;
   `}
+  
   ${media.lg`
       font-size: .8rem;
       line-height: .8em;
   `}
+  
   ${media.ipadpro`
       font-size: .9rem;
       line-height: 1em;
   `}
+  
   ${media.md`
       font-size: .8rem;
       line-height: .8em;
