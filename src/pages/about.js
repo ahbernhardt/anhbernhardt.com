@@ -19,7 +19,7 @@ const AboutQuery = graphql`
       }
     }
     
-    designs: allDesignsJson {
+    designs: allMongodbSkillsDesigns {
       edges {
         design: node {
           name
@@ -27,7 +27,7 @@ const AboutQuery = graphql`
       }
     }
     
-    languages: allLanguagesJson {
+    languages: allMongodbSkillsLanguages {
       edges {
         language: node {
           name
@@ -35,7 +35,7 @@ const AboutQuery = graphql`
       }
     }
 
-    frameworks: allFrameworksJson {
+    frameworks: allMongodbSkillsFrameworks {
       edges {
         framework: node {
           name
@@ -43,7 +43,7 @@ const AboutQuery = graphql`
       }
     }
 
-    tools: allToolsJson {
+    tools: allMongodbSkillsTools {
       edges {
         tool: node {
           name
