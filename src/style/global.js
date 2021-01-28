@@ -65,7 +65,6 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
     height: 100%;
     font-size: 14px;
-    // cursor:pointer;
     ${media.lg`
       font-size: 16px;
     `}
@@ -100,5 +99,11 @@ export const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar {
     display: none;
   }
-
+  
+  .app{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+  }
 `;
+

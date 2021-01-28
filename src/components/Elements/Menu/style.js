@@ -1,6 +1,6 @@
 import Link from 'gatsby-link'
 import styled, { css } from 'styled-components'
-import { colors, fonts, media, getOuterSpace } from '../../../style/constants'
+import { colors, fonts, media } from '../../../style/constants'
 
 export const Wrapper = styled.nav`
   position: fixed;
@@ -8,13 +8,38 @@ export const Wrapper = styled.nav`
   left: 0;
   width: 100vh;
   height: 60px;
-  display: flex;
+  display: block;
   pointer-events: none;
   border-bottom: solid 2px ${colors.gray500};
+  vertical-align: baseline;
   transform-origin: left top; 
   transform: rotate(-90deg) translate(-100%, 0);
-  z-index:1;
 
+  ${media.mac13`
+    position: fixed;
+    top: 0;
+    width: 100vh;
+  `}
+  ${media.lg`
+    position: fixed;
+    top: 0;
+    width: 100vh;
+  `}
+  ${media.md`
+    position: fixed;
+    top: 0;
+    width: 100vh;
+  `}
+  
+  ${media.sm`
+    background-color: ${colors.black};
+    border-left: solid 2px ${colors.gray500};
+    z-index: 1;
+    top: 0;
+    width: 100vh;
+    transform-origin: top; 
+    transform: translate(0, 0);
+  `}
   
   ul:last-child li {
     a {
@@ -26,7 +51,7 @@ export const Wrapper = styled.nav`
       &::before {
         position: absolute;
         left: 50%;
-        top: 2rem;
+        top: 1.7rem;
         background: ${colors.yellow500};
         border-radius: 100%;
         content: '';
@@ -53,63 +78,67 @@ export const Wrapper = styled.nav`
     }
   }
 
-  ${media.ipadpro`
-    position: static;
-    padding: 0;
-  `}
-  ${media.md`
-    position: static;
-    padding: 0;
-  `}
 `
 
 export const Nav = styled.ul`
+  display: grid;
+  grid-auto-flow: column;
+  align-items:center;
+  padding: 0 1.1rem;
+  position: absolute;
   list-style: none;
-  margin: 7% 10%;;
-  width: 100%;
-  height: 100%;
-  display: inline-flex;
-  align-item: flex-end;
+  width: 90%;
+  height: 70%;
   transform-origin: top; 
   transform: rotate(180deg);
-  
-  ${media.mon24`
-      margin: 5.5% 10%;;
+
+  ${media.mac13`
+    right: 20px;
+    margin-top: 50px;
+  `}
+  ${media.lg`
+    width: 75%;
+    right: 20px;
+    margin-top: 50px;
+  `}
+  ${media.md`
+    width: 75%;
+    right: 20px;
+    margin-top: 50px;
   `}
   
-  ${media.mac13`
-      margin: 6.5% 10%;;
+  ${media.sm`
+    width: 50%;
+    margin-top: 7px;
+    left: 35px;
+    transform-origin: top; 
+    transform: rotate(0deg);
   `}
 `
 
 export const NavItem = styled.li`
   list-style: none;
-  line-height: .9em;
-  margin-left: 2.5rem;
+  line-height: 1;
+  margin-left: 2rem;
   
-  ${media.mon27`
-      padding: .7rem 0;
-  `}
-  
-  ${media.mon24`
-      margin-left: 3rem;
+  ${media.mac13`
+    margin-left: 1rem;
   `}
   
   ${media.mac13`
-    margin-left: 3rem;
-    padding: .4rem 0;
-  `}
-  
-  ${media.ipadpro`
-      padding: .5rem 0;
+      margin-left: 1rem;
   `}
   
   ${media.md`
-      padding: .6rem 0;
+    margin-left: 1rem;
+  `}
+  
+  ${media.sm`
+    margin-left: .5rem;
   `}
 
   a {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: ${fonts.inter};
     font-weight: 500;
     letter-spacing: 1px;
@@ -129,38 +158,9 @@ export const NavItem = styled.li`
         color: ${colors.gray300};
       `}
       
-      
-    ${media.mon27`
-      font-size: 1.2rem;
-      line-height: 1rem;
-  `}
-  
-  ${media.mon24`
-      font-size: 1.2rem;
-      padding-left: 15px;
-      line-height: 1em;
-  `}
-  
-   ${media.mac13`
-      font-size: 1.2rem;
-      padding-left: 15px;
-      line-height: 1em;
-  `}
-  
-  ${media.lg`
-      font-size: .8rem;
-      line-height: .8em;
-  `}
-  
-  ${media.ipadpro`
-      font-size: .9rem;
-      line-height: 1em;
-  `}
-  
-  ${media.md`
-      font-size: .8rem;
-      line-height: .8em;
-  `}
+    ${media.sm`
+      font-size: 1rem;
+    `}
   }
 `
 

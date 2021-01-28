@@ -40,86 +40,38 @@ export const spaces = {
 }
 
 export const mq = {
-  tiny:     '300px',      // 18.75em
-   xxs:     '375px',      // 25em
-    xs:     '480px',      // 30em
-    sm:     '640px',      // 40em
-  base:     '768px',      // 48em
-    md:     '864px',      // 54em
-    lg:     '1024px',     // 64em
-   pro:     '1366px',     // 85.375em
- mac13:     '1280px',     // 80em
- mac15:     '1440px',     // 90em
- mon24:     '1920px',     // 120em
- mon27:     '2560px',     // 160em
+    sm:     '480px',
+    md:     '768px',
+    lg:     '1080px',
+ mac13:     '1280px',
 }
 
 export const media = {
-  tiny: (...a) => css`
-    @media (max-width: ${mq.tiny}) {
-      ${css(...a)}
-    }
-  `,
-  xxs: (...a) => css`
-    @media (max-width: ${mq.xxs}) {
-      ${css(...a)}
-    }
-  `,
-    xs: (...a) => css`
-    @media (max-width: ${mq.xs}) {
-      ${css(...a)}
-    }
-  `,
-    sm: (...a) => css`
+
+  sm: (...a) => css`
     @media (max-width: ${mq.sm}) {
       ${css(...a)}
     }
   `,
-  base: (...a) => css`
-    @media (max-width: ${mq.base}) {
-      ${css(...a)}
-    }
-  `,
-    md: (...a) => css`
+
+  md: (...a) => css`
     @media (max-width: ${mq.md}) {
       ${css(...a)}
     }
   `,
-    lg: (...a) => css`
-    @media (max-width: ${mq.lg}) {
+
+  lg: (...a) => css`
+    @media (max-width: ${mq.lg}){
       ${css(...a)}
     }
   `,
-    mac13: (...a) => css`
-    @media (max-width: ${mq.mac13}) {
+
+  mac13: (...a) => css`
+    @media (min-width: ${mq.mac13}) {
       ${css(...a)}
     }
   `,
-  ipadpro: (...a) => css`
-    @media (min-height:1280px) and (max-height: ${mq.pro}) {
-      ${css(...a)}
-    }
-  `,
-  pro: (...a) => css`
-    @media (max-width: ${mq.pro}) {
-      ${css(...a)}
-    }
-  `,
-  mac15: (...a) => css`
-    @media (max-width: ${mq.mac15}) {
-      ${css(...a)}
-    }
-  `,
-  mon24: (...a) => css`
-    @media (max-width: ${mq.mon24}) {
-      ${css(...a)}
-    }
-  `,
-  mon27: (...a) => css`
-    @media (max-width: ${mq.mon27}) {
-      ${css(...a)}
-    }
-  `,
+
     hover: (...a) => css`
     @media not all and (hover: none) {
       ${css(...a)}
@@ -129,43 +81,3 @@ export const media = {
 
 const rule = (d, v) => `${d}: ${v};`
 
-export const getOuterSpace = p =>
-    css`
-    ${rule(p, spaces.p500)}
-    ${media.mon27`
-      ${rule(p, spaces.p800)}
-    `}
-    ${media.mon24`
-      ${rule(p, spaces.p500)}
-    `}
-    ${media.mac15`
-      ${rule(p, spaces.p500)}
-    `}
-    ${media.pro`
-      ${rule(p, spaces.p400)}
-    `}
-    ${media.mac13`
-      ${rule(p, spaces.p300)}
-    `}
-    ${media.ipadpro`
-      ${rule(p, spaces.p400)}
-    `}
-    ${media.lg`
-      ${rule(p, spaces.p400)}
-    `}
-    ${media.md`
-      ${rule(p, spaces.p300)}
-    `}
-    ${media.base`
-      ${rule(p, spaces.p200)}
-    `}
-    ${media.sm`
-      ${rule(p, spaces.p200)}
-    `}
-    ${media.xs`
-      ${rule(p, spaces.p100)}
-    `}
-    ${media.tiny`
-      ${rule(p, spaces.p100)}
-    `}
-  `

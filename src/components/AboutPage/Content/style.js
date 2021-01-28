@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { media } from '../../../style/constants'
-import ProfileList from '../SkillsSection/EachSkillList'
+// import ProfileList from '../SkillsSection/EachSkillList'
 
 export const TimelinesSection = styled.section`
   // display: grid;

@@ -61,7 +61,6 @@ export default ({ location }) =>
               {...META.about}
               image={META.common.image}
             />
-            <PageHeader title='About'/>
             <AboutContent data={data} />
         </Layout>
       }

@@ -1,11 +1,10 @@
 import styled, {css} from 'styled-components'
-import { colors,media, getOuterSpace } from '../../style/constants'
+import { colors,media } from '../../style/constants'
 
 export const Wrapper = styled.div`
    position: relative;
    z-index:0;
    cursor:none;
-   // ${getOuterSpace('padding')}
   
   ${media.mac13`
     position: static;
@@ -27,11 +26,7 @@ export const Wrapper = styled.div`
     position: relative;
     padding: 0% 0 0 0%;
   `}
-  
-  ${media.xs`
-    position: relative;
-    padding: 0% 0 0 0%;
-  `}
+
 \`
 
   .padding{
@@ -74,11 +69,6 @@ export const Wrapper = styled.div`
       transform: translate(0%, -45%);
     `}
 
-    ${media.xs`
-      width: 200px;
-      height: 150px;
-      transform: translate(0%, -45%);
-    `}
   }
     
   .line {

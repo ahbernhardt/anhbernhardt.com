@@ -7,32 +7,12 @@ export const Wrapper = styled.section`
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(2, 1fr);
   position: relative;
-  
-  ${media.mon27`
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0 0 0 0;
-  `}
-  
-  ${media.mon24`
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0 0 0 0;
-  `}
-  ${media.mac15`
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0 0 0 0;
-  `}
-  ${media.pro`
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0 0 0 0;
-  `}
+
   ${media.mac13`
     grid-template-rows: repeat(2, 1fr);
     padding: 0 0 0 0;
   `}
-  ${media.ipadpro`
-    grid-template-rows: repeat(1, 1fr);
-    padding: 0 0 0 6%;
-  `}
+
   ${media.lg`
     grid-template-rows: repeat(2, auto);
     padding: 0 0 0 6%;
@@ -53,31 +33,12 @@ export const InfoWrapper = styled.header`
   grid-row: 1 / 4;
   grid-column: 3 / 8;
   z-index: 1;
-  
-  ${media.mon27`
-    grid-column: 2 / 6;
-    grid-row: 1 / 5;
-  `}
-  ${media.mon24`
-    grid-column: 1 / 6;
-    grid-row: 1 / 5;
-  `}
-  ${media.mac15`
-    grid-column: 2 / 6;
-    grid-row: 1 / 5;
-  `}
-  ${media.pro`
-    grid-column: 2 / 6;
-    grid-row: 1 / 5;
-  `}
+
   ${media.mac13`
     grid-column: 2 / 6;
     grid-row: 1 / 5;
   `}
-  ${media.ipadpro`
-    grid-column: 1 / 8;
-    grid-row: 1 / 5;
-  `}
+
   ${media.lg`
     grid-column: 1 / 6;
     grid-row: 1 / 5;
@@ -98,34 +59,11 @@ export const TopWrapper = styled.div`
   font-size: 1.5rem;
   line-height: 1.5em;
   
-  ${media.mon27`
-    font-size: 1.7rem;
-    line-height: 1.7em;
-  `}
-  
-  ${media.mon24`
-    font-size: 1.3rem;
-    line-height: 1.3em;
-  `}
-  
-  ${media.mac15`
-    font-size: 1.3rem;
-    line-height: 1.3em;
-  `}
-  
-  ${media.pro`
-    font-size: 1.2rem;
-    line-height: 1.2em;
-  `}
-  
   ${media.mac13`
     font-size: 1.4rem;
     line-height: 1.4em;
   `}
-  ${media.ipadpro`
-    font-size: 1.5rem;
-    line-height: 1.4em;
-  `}
+
   ${media.lg`
     max-width: 32rem;
   `}
@@ -136,11 +74,6 @@ export const TopWrapper = styled.div`
   ${media.sm`
     max-width: 95%;
     font-size: 1.1rem;
-  `}
-  ${media.xs`
-    max-width: 95%;
-    font-size: 1.1rem;
-    line-spacing: 1rem;
   `}
 }
 `
@@ -210,10 +143,6 @@ export const StyledImage = styled(Image)`
     display: block;
     object-fit: cover;
     
-    ${media.ipadpro`
-      opacity: .2;
-      object-fit: cover;
-    `}
     ${media.md`
       opacity: .2;
       object-fit: cover;
@@ -223,46 +152,7 @@ export const StyledImage = styled(Image)`
       opacity: .2;
     `}
   }
-  ${media.mon27`
-    width: 650px;
-    grid-row: 1 / 12;
-    grid-column: 6 / 8;
-    margin-top: -100px;
-    margin-right: 0;
-        &:before {
-          padding-top: 100%;
-        }
-  `}
-  ${media.mon24`
-    width: 650px;
-    grid-row: 1 / 12;
-    grid-column: 5 / 8;
-    margin-top: -100px;
-    margin-right: 0;
-        &:before {
-          padding-top: 100%;
-        }
-  `}
-  ${media.mac15`
-    width: 450px;
-    grid-row: 1 / 12;
-    grid-column: 5 / 8;
-    margin-top: -100px;
-    margin-right: 0;
-        &:before {
-          padding-top: 100%;
-        }
-  `}
-  ${media.pro`
-    width: 450px;
-    grid-row: 1 / 12;
-    grid-column: 5 / 8;
-    margin-top: -100px;
-    margin-right: 0;
-        &:before {
-          padding-top: 100%;
-        }
-  `}
+ 
   ${media.mac13`
     width: 450px;
     grid-row: 1 / 12;
@@ -273,16 +163,7 @@ export const StyledImage = styled(Image)`
           padding-top: 100%;
         }
   `}
-  ${media.ipadpro`
-    width: 450px;
-    grid-row: 1 / 6;
-    grid-column: 1 / 8;
-    margin-top: -60px;
-    margin-right: 0;
-        &:before {
-          padding-top: 100%;
-        }
-  `}
+ 
   ${media.lg`
     width: 450px;
     grid-row: 1 / 6;
@@ -306,15 +187,6 @@ export const StyledImage = styled(Image)`
     `}
   
   ${media.sm`
-    grid-area: 1 / 1 / 1 / 1 ;
-    margin-top: 0;
-    margin-left: 0;
-    &:before {
-      padding-top: 100%;
-    }
-  `}
-    
-  ${media.xs`
     grid-area: 1 / 1 / 1 / 1 ;
     margin-top: 0;
     margin-left: 0;

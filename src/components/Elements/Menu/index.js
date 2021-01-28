@@ -1,9 +1,13 @@
 import React from 'react'
 import { Wrapper, Nav, NavItem, NavLink } from './style'
+import Logo from "../Logo"
 
 const Menu = () =>
     <Wrapper>
         <Nav>
+            <NavItem>
+                <Logo />
+            </NavItem>
             <NavItem>
                 <NavLink to='/'>Home</NavLink>
             </NavItem>

@@ -13,7 +13,6 @@ export const Wrapper = styled.nav`
   text-align: center;
   justify-content: space-between;
   pointer-events: none;
-  ${getOuterSpace('padding')};
   
   ul:last-child li {
     // text-align: right;

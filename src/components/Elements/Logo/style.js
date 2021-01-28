@@ -1,26 +1,31 @@
 import styled from 'styled-components'
-import { colors,media, getOuterSpace } from '../../../style/constants'
+import { colors, media } from '../../../style/constants'
 
 export const Wrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  z-index:2;
-  margin: 15px 0 0 15px;
+  margin-top: 5px;
   
-  // ${media.ipadpro`
-  //   position: static;
-  //   padding: 0;
-  // `}
-  // ${media.md`
-  //   position: static;
-  //   padding: 0;
-  // `}
-  //
-  // ${media.xs`
-  //   position: static;
-  //   padding: 0 0 2% 3%;
-  // `}
+ ${media.mac13`
+   transform-origin: left top; 
+   transform: rotate(-90deg) translate(-50%, 0);
+`}
+ ${media.lg`
+   transform-origin: left top; 
+   transform: rotate(-90deg) translate(-50%, 0);
+`}
+
+${media.md`
+    transform-origin: left top; 
+   transform: rotate(-90deg) translate(-50%, 0);
+`}
+
+${media.sm`
+  margin-top: 10px;
+  transform-origin: top; 
+  transform: rotate(0deg) translate(0, 0);
+`}
   
   > div {
     position: relative;
@@ -33,23 +38,9 @@ export const Wrapper = styled.div`
   a {
     width: 2rem;
     left: -50%;
-    
-    ${media.mon27`
-      width: 2.8rem;
-    `}
-    
-    ${media.mon24`
-      width: 2.1rem;
-    `}
-    ${media.ipadpro`
-      width: 3rem;
-    `}
-    ${media.mac13`
-      width: 2rem;
-    `}
-    
-    ${media.xs`
-      width: 1.8rem;
+
+    ${media.sm`
+      width: 1.5rem;
     `}
   }
 
