@@ -19,9 +19,6 @@ export const fonts = {
     upright: 'Inter-Up',
     italic: 'Inter-Italic',
     display: 'GT-Display',
-    displayBold: 'GT-Display-Bold',
-    displayItalic: 'GT-Italic',
-    displayItalicBold: 'GT-Italic-Bold',
 }
 
 export const spaces = {

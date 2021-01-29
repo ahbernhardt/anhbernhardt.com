@@ -17,16 +17,23 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
-        path: './src/data/'
+        path: `${__dirname}/src/data/`
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './static/images'
+        path: `${__dirname}/static/images`
       }
-    }, {
+    },{
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fonts",
+        path: `${__dirname}/static/fonts/`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-113472346-1',

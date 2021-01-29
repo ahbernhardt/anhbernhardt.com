@@ -1,57 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 import { colors, fonts, media } from './constants'
+import Fonts from "./fonts"
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
-  
-  @font-face {
-    font-family: GT-Display;
-    font-weight: 300;
-    font-style: normal;
-    src: url("../../static/fonts/gt-super/GT-Super-Display-Light.woff2") format("woff2");
-  }
-
-   @font-face {
-      font-family: GT-Display-Bold;
-      font-weight: 700;
-      font-style: normal;
-      src: url("../../static/fonts/gt-super/GT-Super-Display-Bold.woff2") format("woff2");
-    }
-  
-   @font-face {
-      font-family: GT-Italic;
-      font-weight: 300;
-      font-style: italic;
-      src: url("../../static/fonts/gt-super/GT-Super-Display-Light-Italic.woff2") format("woff2");
-   }
-    
-   @font-face {
-      font-family: GT-Italic-Bold;
-      font-weight: 700;
-      font-style: italic;
-      src: url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.eot") format("embedded-opentype"),
-           url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.woff2") format("woff2"),
-           url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.woff") format("woff"),
-            url("../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.ttf") format("ttf");
-      font-display: swap;
-   }
-    
-  @font-face {
-    font-family: Inter;
-    src: url("../../static/fonts/inter/Inter.woff2");
-  }
-  
-  @font-face {
-    font-family: Inter-Up;
-    src: url("../../static/fonts/inter/Inter-upright.woff2");
-  }
-  
-  @font-face {
-    font-family: Inter-Italic;
-    src: url("../../static/fonts/inter/Inter-italic.woff2");
-  }
-  
+  ${Fonts};
   
 /*============================
     Base
@@ -61,7 +15,9 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   :root {
-    font-size: 14px;
+    --font-display: 'GT-Display',serif;
+    --font-mono: 'Inter', 'Roboto Mono', san-serif, monospace;
+    // font-size: 16px;
     
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);

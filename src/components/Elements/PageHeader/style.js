@@ -7,7 +7,7 @@ export const Header = styled.div`
   top: 0;
   left: 0;
   margin-top: 100px;
-  margin-left: 130px;
+  margin-left: 150px;
   height: 100px;
   width: 10vw;
   transform-origin: top; 
@@ -15,7 +15,7 @@ export const Header = styled.div`
   
   ${media.mac13`
     margin-top: 130px;
-    margin-left: 130px;
+    margin-left: 160px;
   `}
   
   ${media.md`
@@ -39,16 +39,16 @@ export const Header = styled.div`
     border: none;
   `}
 `
-export const HeaderTitle = styled.h1`
-  font-family: ${fonts.display};
+export const HeaderTitle = styled.h2`
+  font-family: var(--font-display);
   color: ${colors.white};
   font-weight: 300 ;
   letter-spacing: 5px;
-  font-size: 8.5vw;
+  font-size: 9.5vw;
   text-transform: uppercase;
   white-space: nowrap;
   opacity: 0.3;
-  
+    
   ${media.md`
     font-size: 52px;
     content: "—" attr(data-title) "—";
@@ -60,7 +60,7 @@ export const HeaderTitle = styled.h1`
   `}
   
  &:before,
- &:after {
+ &::after {
     position: absolute;
     opacity: 0.2;
  }
