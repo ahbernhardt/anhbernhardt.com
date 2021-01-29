@@ -51,6 +51,8 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Inter-Italic;
     src: url("../../static/fonts/inter/Inter-italic.woff2");
   }
+  
+  
 /*============================
     Base
 ============================*/
@@ -60,6 +62,9 @@ export const GlobalStyle = createGlobalStyle`
   
   :root {
     font-size: 14px;
+    
+    --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   
   html, body {
@@ -105,5 +110,8 @@ export const GlobalStyle = createGlobalStyle`
     grid-auto-flow: column;
     justify-content: start;
   }
+  
+  $ease-out-editorial: cubic-bezier(0.645, 0.045, 0.355, 1);
+  $ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
 `;
 

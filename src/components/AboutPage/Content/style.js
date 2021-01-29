@@ -38,7 +38,7 @@ export const TimelinesSection = styled.section`
   // `}
 `
 
-export const ListsSection = styled.section`
+export const SkillsSection = styled.section`
   max-width: 75%;
   margin: 8rem auto 0;
   display: grid;
