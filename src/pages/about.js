@@ -1,9 +1,11 @@
 import React from 'react'
 import { StaticQuery, graphql} from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/Elements/Layout'
 import AboutContent from '../components/AboutPage/Content'
 import { META } from "../utils/constants"
 import Head from "../components/Elements/Head"
+import PageHeader from "../components/Elements/PageHeader"
+import Menu from "../components/Elements/Menu"
 
 const AboutQuery = graphql`
   query AboutQuery {
@@ -49,6 +51,7 @@ export default ({ location }) =>
             {...META.about}
             image={META.common.image}
           />
+          <PageHeader title='About'/>
           <AboutContent data={data} />
       </Layout>
     }

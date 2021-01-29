@@ -1,62 +1,67 @@
 import styled from 'styled-components'
 import { colors, fonts, media } from "../../../style/constants"
 
-export const Header = styled.div`
+export const Header = styled.header`
+  padding: 0 1rem; 
+  margin: 4rem 0 2rem;
   display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-top: 100px;
-  margin-left: 150px;
-  height: 100px;
-  width: 10vw;
-  transform-origin: top; 
-  transform: rotate(90deg);
+  // border: solid 2px ${colors.gray200};
+  width: 100%;
+
   
   ${media.mac13`
-    margin-top: 130px;
-    margin-left: 160px;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden:
+    position: sticky;
+    height: 100vh;
   `}
   
   ${media.md`
-    position: absolute;
-    margin-top: 0px;
-    margin-left: 60px;
+    margin-top: 7.5rem;
+    margin-bottom: 0;
     width: 100%;
     height: 150px;
-    padding: 3% 0 0 5%;
+    padding-bottom: 2rem;
     border-bottom: solid 2px ${colors.gray400};
-    transform-origin: top; 
-    transform: rotate(0deg);
   `}
   ${media.sm`
-    position: static;
-    margin-top: 90px;
-    margin-left: -25px;
-    height: 75px;
-    transform-origin: top; 
-    transform: rotate(0deg);
+    margin-top: 7.5rem;
+    margin-left: -3rem;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 2rem;
     border: none;
   `}
 `
-export const HeaderTitle = styled.h2`
+export const HeaderTitle = styled.h1`
   font-family: var(--font-display);
   color: ${colors.white};
   font-weight: 300 ;
   letter-spacing: 5px;
-  font-size: 9.5vw;
+  font-size: 7.5rem;
   text-transform: uppercase;
   white-space: nowrap;
+  transform: rotate(90deg);
   opacity: 0.3;
-    
+   
+  ${media.mac13`
+    top: 1rem;
+    bottom: 1rem;
+    margin-bottom: 1rem;
+    width: 10vw;
+  `}
+  
   ${media.md`
-    font-size: 52px;
-    content: "—" attr(data-title) "—";
+    transform: rotate(0deg);
+    font-size: 10vw;
   `}
   
   ${media.sm`
+    transform: rotate(0deg);
     font-size: 52px;
-    content: "—" attr(data-title) "—";
   `}
   
  &:before,
@@ -79,28 +84,20 @@ export const HeaderTitle = styled.h2`
   }
   
   &:after {
-    content: "—" attr(data-title) "—" attr(data-title) "—" attr(data-title) "—" ;
+    content: attr(data-title) "—" ;
   
     ${media.md`
-      opacity: 1;
-      border-bottom: solid 1px ${colors.white};
-      margin-top: -60px;
-      margin-left: 5px;
-      padding-bottom: 35px;
-      content: "—";
+      content: "";
     `}
+    
     ${media.sm`
-      opacity: 1;
-      border-bottom: solid 1px ${colors.white};
-      margin-top: -105px;
-      margin-left: 5px;
-      padding-bottom: 80px;
-      content: "—";
+      content: "";
     `}
   }
 
-  &:hover {
-    transform: translate(-25px, 0);
-    transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
-  }
+  // &:hover {
+  //   // transform-origin: center; 
+  //   // transform: translate(-25px, 5px);
+  //   transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
+  // }
 `

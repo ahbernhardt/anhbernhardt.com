@@ -24,14 +24,18 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   html, body {
-    height: 100%;
-    font-size: 14px;
+    font-size: 18px;
     ${media.lg`
       font-size: 16px;
     `}
   }
 
   body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: block;
     background-color: ${colors.black};
     font-family: ${fonts.inter};
     backface-visibility: hidden;
@@ -59,12 +63,6 @@ export const GlobalStyle = createGlobalStyle`
   
   ::-webkit-scrollbar {
     display: none;
-  }
-  
-  .app{
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
   }
   
   $ease-out-editorial: cubic-bezier(0.645, 0.045, 0.355, 1);

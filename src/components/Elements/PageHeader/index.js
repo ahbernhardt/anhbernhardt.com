@@ -3,7 +3,7 @@ import { Header, HeaderTitle} from './style'
 
 const PageHeader = ({title}) =>
     <Header>
-      <HeaderTitle data-title={title}>{title}</HeaderTitle>
+      <HeaderTitle data-title={title}>{title}—</HeaderTitle>
     </Header>
 
 export default PageHeader

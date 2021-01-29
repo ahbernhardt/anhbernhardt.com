@@ -1,12 +1,12 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Index from '../components/Elements/Layout'
 import Head from '../components/Elements/Head'
 import { META } from '../utils/constants'
 import Hero from "../components/HomePage/Hero/Hero"
 import IntroSection from "../components/HomePage/Intro"
 
 export default ({ location }) =>
-    <Layout location={location}>
+    <Index location={location}>
       <section>
         <Head
             {...META.index}
@@ -15,4 +15,4 @@ export default ({ location }) =>
         <Hero />
         <IntroSection fixed={true} />
       </section>
-    </Layout>
+    </Index>

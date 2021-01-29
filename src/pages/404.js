@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import Layout from '../components/layout'
+import Index from '../components/Elements/Layout'
 import { fonts, colors, media } from '../style/constants'
 import Middle404 from "../components/404/index";
 import Head from "../components/Elements/Head";
@@ -52,7 +52,7 @@ const BackToHome = styled(Link)`
 `
 
 export default ({ location }) =>
-    <Layout location={location}>
+    <Index location={location}>
         <Wrapper>
             <Head
                 {...META.oops}
@@ -65,4 +65,4 @@ export default ({ location }) =>
                 <BackToHome to='/'>Go to index</BackToHome>
             </header>
         </Wrapper>
-    </Layout>
+    </Index>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Wrapper, InfoWrapper, Content, StyledImage, TopWrapper, Title } from "./style"
 import { Loader } from '../../../style/shared'
 
-const ProfileIntroSection = () =>
+const AboutIntroSection = () =>
     <Wrapper>
         <InfoWrapper>
           <TopWrapper >
@@ -32,4 +32,4 @@ const ProfileIntroSection = () =>
         />
     </Wrapper>
 
-export default ProfileIntroSection
+export default AboutIntroSection
