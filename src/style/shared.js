@@ -21,6 +21,17 @@ export const ListItem = styled.li`
   line-height: 1.6em;
 `
 
+export const ListItemLine = styled.li`
+  font-size: 1rem;
+  color: ${colors.gray400};
+  padding: .1rem 0;
+  line-height: 1.2;
+  
+  ${media.sm`
+    font-size: .8rem;
+  `}
+`
+
 export const Loader = styled.div`
   position: absolute;
   top: 0;

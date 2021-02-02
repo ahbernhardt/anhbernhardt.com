@@ -4,6 +4,7 @@ import Head from '../components/Elements/Head'
 import { META } from '../utils/constants'
 import Hero from "../components/HomePage/Hero/Hero"
 import IntroSection from "../components/HomePage/Intro"
+import Status from "../components/Elements/Status"
 
 export default ({ location }) =>
     <Index location={location}>
@@ -13,6 +14,7 @@ export default ({ location }) =>
             image={META.common.image}
         />
         <Hero />
-        <IntroSection fixed={true} />
+        <Status/>
+        {/*<IntroSection fixed={true} />*/}
       </section>
     </Index>

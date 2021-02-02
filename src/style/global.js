@@ -17,17 +17,25 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --font-display: 'GT-Display',serif;
     --font-mono: 'Inter', 'Roboto Mono', san-serif, monospace;
-    // font-size: 16px;
+    --font-size: 18px;
+    --line-height: calc(var(--font-size)*1.5);
+    --baseline: calc(var(--line-height)/2)
+    --h1: 2.8rem;
+    --h2: 2.2rem;
+    --h3: 1.4rem;
+    --h4: 1.1rem;
     
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    // --ease-out-editorial: cubic-bezier(0.645, 0.045, 0.355, 1);
+    // --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   
   html, body {
     font-size: 18px;
-    ${media.lg`
-      font-size: 16px;
-    `}
+    // ${media.lg`
+    //   font-size: 16px;
+    // `}
   }
 
   body {
@@ -37,8 +45,9 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     display: block;
     background-color: ${colors.black};
-    font-family: ${fonts.inter};
+    font-family: 'Poppins', sans-serif;
     backface-visibility: hidden;
+    line-height: 1;
   }
 
   a {
@@ -65,7 +74,11 @@ export const GlobalStyle = createGlobalStyle`
     display: none;
   }
   
-  $ease-out-editorial: cubic-bezier(0.645, 0.045, 0.355, 1);
-  $ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+  .app{
+    min-height: 100vh;
+    display; grid;
+    grid-auto-flow: column;
+    justify-content: start;
+  }
 `;
 

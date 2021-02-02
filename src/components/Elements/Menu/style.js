@@ -35,6 +35,7 @@ export const Wrapper = styled.nav`
     background-color: ${colors.black};
     border-left: solid 2px ${colors.gray500};
     z-index: 1;
+    position: fixed;
     top: 0;
     width: 100vh;
     transform-origin: top; 
@@ -60,6 +61,14 @@ export const Wrapper = styled.nav`
         width: .3rem;
         transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
         will-change: transform, opacity;
+        
+        ${media.sm`
+          top: 1.5rem;
+          left: 45%;
+          height: .2rem;
+          width: .2rem;
+          border-radius: 100%;
+        `}
       }
 
       &:not(.active)::before {
@@ -138,14 +147,14 @@ export const NavItem = styled.li`
   `}
 
   a {
-    font-size: 1.2rem;
-    font-family: ${fonts.inter};
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: 'Poppins', san-serif;
+    font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
     pointer-events: all;
     transition: color .1s ease;
-    line-height: .9em;
+    line-height: .8em;
     ${props => props.highlight
     ? css`
         color: ${colors.yellow500};
@@ -159,7 +168,7 @@ export const NavItem = styled.li`
       `}
       
     ${media.sm`
-      font-size: 1rem;
+      font-size: .8rem;
     `}
   }
 `

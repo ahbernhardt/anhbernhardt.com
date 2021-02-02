@@ -36,7 +36,7 @@ ${media.sm`
   }
 
   a {
-    width: 2rem;
+    width: 1.8rem;
     left: -50%;
 
     ${media.sm`

@@ -1,11 +1,11 @@
 import React from 'react'
-import { ListItem } from '../../../../style/shared'
+import { ListItemLine } from '../../../../style/shared'
 
 const ProfileListItem = ({ name, url }) =>
-    <ListItem>
+    <ListItemLine>
         {url
             ? <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
             : name}
-    </ListItem>
+    </ListItemLine>
 
 export default ProfileListItem

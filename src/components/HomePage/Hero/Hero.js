@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Things from './things.svg'
-import { Wrapper } from "./style"
+import { Wrapper, BubbleText, BubbleWrapper, BubbleCanvas } from "./style"
 
 class Hero extends Component {
   componentDidMount() {
@@ -60,12 +60,12 @@ class Hero extends Component {
   } render() {
     return (
       <Wrapper>
-        <header>
-          <div className="headerWrap">
-            <canvas ref="particles"/>
-            <Things width={825} height={200}/>
-          </div>
-        </header>
+        <BubbleText>
+          <BubbleWrapper >
+            <BubbleCanvas ref="particles"/>
+            <Things/>
+          </BubbleWrapper>
+        </BubbleText>
       </Wrapper>
     )
   }

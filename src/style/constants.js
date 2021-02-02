@@ -1,12 +1,12 @@
 import { css } from 'styled-components'
 
 export const colors = {
-  white: '#f6f5f3',
+  white: '#f6f6f6',
   black: '#040404',
 
-  gray200: '#6b7a8f',
-  gray300: '#393f4d',
-  gray400: '#3d3d3f',
+  gray200: '#a0a0a0',
+  gray300: '#6e6e6e',
+  gray400: '#3e3e3e',
   gray500: '#2c2c30',
   gray600: '#1d1e22',
 
@@ -77,17 +77,47 @@ export const media = {
 }
 
 export const transition = {
-
   /* FADE UP */
-  fadeupEnter: css`
+  fadeUpEnter: css`
     opacity: 0.01;
     transform: translateY(20px);
     transition: opacity 300ms var(--easing), transform 300ms var(--easing);
   `,
 
-  fadeupEnterActive: css`
+  fadeUpEnterActive: css`
     opacity: 1;
     transform: translateY(0px);
     transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+  `,
+    /* Fade down */
+  fadeDownEnter:css`
+    opacity: 0.01;
+    transform: translateY(-20px);
+    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+  `,
+
+  fadeDownEnterActive:css`
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+  `,
+
+  /* Fade */
+  fadeEnter:css`
+    opacity: 0;
+  `,
+
+  fadeEnterActive:css`
+    opacity: 1;
+    transition: opacity 300ms var(--easing);
+  `,
+
+  fadeExit:css`
+    opacity: 1;
+  `,
+
+  fadeExitActive:css`
+    opacity: 0;
+    transition: opacity 300ms var(--easing);
   `
 }
