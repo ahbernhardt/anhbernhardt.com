@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Image from "../../Elements/Image"
 import { colors, fonts, media, transition } from "../../../style/constants"
 
-export const ContentWrapper = styled.main`
+export const ContentWrapper = styled.div`
   display: grid;
   grid-template-areas: unset;
   grid-template-columns: repeat(3,1fr);
@@ -12,6 +12,7 @@ export const ContentWrapper = styled.main`
   width: 90vw;
   margin: 0 auto;
   padding: 0 1rem 4rem;
+  z-index: 1;
   
   ${media.mac13`
     grid-template-areas: unset;

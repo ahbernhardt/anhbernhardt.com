@@ -25,10 +25,11 @@ export const GlobalStyle = createGlobalStyle`
     --h3: 1.4rem;
     --h4: 1.1rem;
     
+    --color-complement: #727272;
+    --left-margin: 17.2rem;
+    
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    // --ease-out-editorial: cubic-bezier(0.645, 0.045, 0.355, 1);
-    // --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   
   html, body {

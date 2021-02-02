@@ -8,7 +8,7 @@ import Status from "../components/Elements/Status"
 
 export default ({ location }) =>
     <Index location={location}>
-      <section>
+      {/*<section>*/}
         <Head
             {...META.index}
             image={META.common.image}
@@ -16,5 +16,5 @@ export default ({ location }) =>
         <Hero />
         <Status/>
         {/*<IntroSection fixed={true} />*/}
-      </section>
+      {/*</section>*/}
     </Index>

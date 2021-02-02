@@ -10,7 +10,8 @@ export const Wrapper = styled.nav`
   height: 60px;
   display: block;
   pointer-events: none;
-  border-bottom: solid 2px ${colors.gray500};
+  z-index: 1;
+  // border-bottom: solid 2px ${colors.gray500};
   vertical-align: baseline;
   transform-origin: left top; 
   transform: rotate(-90deg) translate(-100%, 0);
@@ -32,7 +33,7 @@ export const Wrapper = styled.nav`
   `}
   
   ${media.sm`
-    background-color: ${colors.black};
+    // background-color: ${colors.black};
     border-left: solid 2px ${colors.gray500};
     z-index: 1;
     position: fixed;
