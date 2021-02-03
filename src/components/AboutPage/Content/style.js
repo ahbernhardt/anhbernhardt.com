@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Image from "../../Elements/Image"
-import { colors, media } from "../../../style/constants"
+import { colors, fonts, media } from "../../../style/constants"
 
 export const ContentWrapper = styled.div`
   display: grid;
@@ -42,7 +42,7 @@ export const ContentWrapper = styled.div`
   `}
 `
 export const Subtitle = styled.h2`
-  font-family: var(--font-display);
+  font-family: ${fonts.display};
   text-transform: uppercase;
   color: ${colors.white};
   line-height: .9em;
@@ -66,7 +66,7 @@ export const Subtitle = styled.h2`
     
     span{
       font-size: 6vw;
-      font-family: var(--font-display);
+      font-family: ${fonts.display};
       font-style: italic;
     }
   `}
@@ -83,7 +83,7 @@ export const Subtitle = styled.h2`
     
     span{
       font-size: 6vw;
-      font-family: var(--font-display);
+      font-family: ${fonts.display};
       font-style: italic;
     }
   `}
@@ -100,7 +100,7 @@ export const Subtitle = styled.h2`
     
     span{
       font-size: 12vw;
-      font-family: var(--font-display);
+      font-family: ${fonts.display};
       font-style: italic;
     }
   `}

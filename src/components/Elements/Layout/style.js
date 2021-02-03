@@ -20,6 +20,10 @@ export const MainBody = styled.div`
   // `}
   
   ${media.md`
-    display: block
+    display: block;
+  `}
+  
+  ${media.sm`
+    display: block;
   `}
 `

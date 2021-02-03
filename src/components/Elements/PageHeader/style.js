@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors, media } from "../../../style/constants"
+import { colors, fonts, media } from "../../../style/constants"
 
 export const Header = styled.header`
   display: block;
@@ -8,7 +8,6 @@ export const Header = styled.header`
   margin-top: 0;
   height: 100%;
   // border: dotted 1px ${colors.yellow700};
-  // margin-left: -30px;
   
   ${media.mac13`
     top: 0;
@@ -30,8 +29,8 @@ export const Header = styled.header`
   
   ${media.sm`
     margin-top: 6.5rem;
-    margin-left: -3.5rem;
-    margin-bottom: 0;
+    margin-left: -5rem;
+    margin-bottom: .5rem;
     width: 100%;
     height: 100px;
     padding-bottom: 2rem;
@@ -39,7 +38,7 @@ export const Header = styled.header`
   `}
 `
 export const HeaderTitle = styled.h1`
-  font-family: var(--font-display);
+  font-family: ${fonts.display};
   color: ${colors.white};
   font-style: normal;
   font-weight: 200 ;

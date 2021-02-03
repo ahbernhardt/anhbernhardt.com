@@ -5,7 +5,6 @@ import AboutContent from '../components/AboutPage/Content'
 import { META } from "../utils/constants"
 import Head from "../components/Elements/Head"
 import PageHeader from "../components/Elements/PageHeader"
-import Menu from "../components/Elements/Menu"
 
 const AboutQuery = graphql`
   query AboutQuery {

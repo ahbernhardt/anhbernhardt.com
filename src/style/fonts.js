@@ -20,8 +20,10 @@ import Inter from '@fonts/inter/Inter.woff2';
 import InterUpright from '@fonts/inter/Inter-upright.woff2';
 import InterItalic from '@fonts/inter/Inter-italic.woff2';
 
-import HunnyStraws from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans-Outline.otf';
-import HunnyStrawsTTf from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans-Outline.ttf';
+import HunnyStraw from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans.otf';
+import HunnyStrawTTf from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans.ttf';
+import HunnyStrawOutline from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans-Outline.otf';
+import HunnyStrawOutlineTTf from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans-Outline.ttf';
 
 const gtNormalWeights = {
   200: [GTLightWoff, GTLightWoff2],
@@ -48,10 +50,12 @@ const interItalicWeights = {
   400: InterItalic
 };
 
-const hunnyStraws = {
-  400: [HunnyStraws,HunnyStrawsTTf],
+const hunnyStrawSans = {
+  400: [HunnyStraw,HunnyStrawTTf],
 };
-
+const hunnyStrawSansOutline = {
+  400: [HunnyStrawOutline,HunnyStrawOutlineTTf],
+};
 const GTDisplay = {
   name: 'GT-Display',
   normal: gtNormalWeights,
@@ -64,9 +68,13 @@ const inter = {
   italic: interItalicWeights,
 };
 
-const hunnyStraw = {
+const hunnyStrawsSansOutline = {
   name: 'HunnyStrawSansOutline',
-  normal: hunnyStraws,
+  normal: hunnyStrawSansOutline,
+}
+const hunnyStrawsSans = {
+  name: 'HunnyStrawSans',
+  normal: hunnyStrawSans,
 }
 const createFontFaces = (family, style = 'normal') => {
   let styles = '';
@@ -113,10 +121,11 @@ const gtItalic = createFontFaces(GTDisplay, 'italic');
 
 const interNormal = createFontFaces(inter);
 const interItalic = createFontFaces(inter, 'italic');
-const hunnyStrawsSanOutline = createFontFacesOutline(hunnyStraw);
+const hunnyStrawsSansFont = createFontFacesOutline(hunnyStrawsSans);
+const hunnyStrawsSanOutlineFont = createFontFacesOutline(hunnyStrawsSansOutline);
 
 const Fonts = css`
-  ${gtNormal + gtItalic + interNormal + interItalic + hunnyStrawsSanOutline}
+  ${gtNormal + gtItalic + interNormal + interItalic + hunnyStrawsSansFont + hunnyStrawsSanOutlineFont}
 `;
 
 export default Fonts;

@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components"
-import { colors, media } from "../../../style/constants"
+import { colors, fonts, media, transition } from "../../../style/constants"
 
 export const Wrapper = styled.div`
   font-size: 1rem;
@@ -14,22 +14,7 @@ export const Wrapper = styled.div`
   ${media.mac13`
     bottom: 0;
   `}
-  
-  // ${media.lg`
-  //   position: static;
-  //   padding: 18% 0 0 18%;
-  // `}
-  //
-  // ${media.md`
-  //   position: static;
-  //   padding: 50% 0 0 10%;
-  // `}
-  //
-  // ${media.sm`
-  //   position: static;
-  //   padding: 10% 0 0 7%;
-  //   opacity: 50%;
-  // `}
+
 `
 
 export const StatusLight = styled.div`
@@ -66,6 +51,11 @@ export const StatusRing = styled.div`
     opacity: 0;
     border: solid 3px ${colors.yellow500};
     border-radius: 100px; 
+    
+    ${media.sm`
+      width: 20px;
+      height: 20px;
+    `}
 `
 
 export const StatusLed = styled.div`
@@ -75,13 +65,23 @@ export const StatusLed = styled.div`
     border: 3px solid ${colors.yellow500};
     background-color: ${colors.yellow500};
     border-radius: 100%;
+    
+    ${media.sm`
+      width: 12px;
+      height: 12px;
+    `}
 `
 
 export const StatusMessage = styled.div`
-  font-family: var(--font-display);
+  font-family: ${fonts.display};
   font-style: italic;
   font-weight: 200;
   letter-spacing: 0.5px;
   margin-left: 15px;
   display: block;
+  
+    ${media.sm`
+      font-size: .8rem;
+      margin-left: 10px;
+    `}
 `

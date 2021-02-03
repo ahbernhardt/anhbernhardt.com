@@ -21,22 +21,9 @@ export const fonts = {
     italic: 'Inter-Italic',
     display: 'GT-Display',
     outline: 'HunnyStrawSansOutline',
+    hunny: 'HunnyStrawSans',
 }
 
-export const spaces = {
-    p1000: '6rem', //160px
-    p900:  '9rem', //144px
-    p800:  '8rem', //128px
-    p700:  '7rem', //112px
-    p600:  '6rem', //96px
-    p500:  '5rem', //80px
-    p400:  '4rem', //64px
-    p300:  '3rem', //48px
-    p200:  '2rem', //32px
-    p100:  '1rem', //16px
-    p50:  '.5rem', //8px
-    p25:  '.25rem' //4px
-}
 
 export const mq = {
     sm:     '480px',
@@ -78,48 +65,3 @@ export const media = {
   `
 }
 
-export const transition = {
-  /* FADE UP */
-  fadeUpEnter: css`
-    opacity: 0.01;
-    transform: translateY(20px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-  `,
-
-  fadeUpEnterActive: css`
-    opacity: 1;
-    transform: translateY(0px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-  `,
-    /* Fade down */
-  fadeDownEnter:css`
-    opacity: 0.01;
-    transform: translateY(-20px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-  `,
-
-  fadeDownEnterActive:css`
-    opacity: 1;
-    transform: translateY(0px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-  `,
-
-  /* Fade */
-  fadeEnter:css`
-    opacity: 0;
-  `,
-
-  fadeEnterActive:css`
-    opacity: 1;
-    transition: opacity 300ms var(--easing);
-  `,
-
-  fadeExit:css`
-    opacity: 1;
-  `,
-
-  fadeExitActive:css`
-    opacity: 0;
-    transition: opacity 300ms var(--easing);
-  `
-}

@@ -122,7 +122,7 @@ export const Nav = styled.ul`
   ${media.sm`
     width: 48%;
     margin-top: 7px;
-    left: 35px;
+    left: 33px;
     transform-origin: top; 
     transform: rotate(0deg);
     margin-bottom: 10px;
@@ -138,16 +138,12 @@ export const NavItem = styled.li`
     margin-left: 1rem;
   `}
   
-  ${media.mac13`
-      margin-left: 1rem;
-  `}
-  
   ${media.md`
     margin-left: 1rem;
   `}
   
   ${media.sm`
-    margin-left: .5rem;
+    margin-left: 0;
   `}
 
   a {
@@ -172,7 +168,7 @@ export const NavItem = styled.li`
       `}
       
     ${media.sm`
-      font-size: .8rem;
+      font-size: .75rem;
     `}
   }
 `

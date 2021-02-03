@@ -1,11 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
-import { colors, fonts, media } from './constants'
+import { colors } from './constants'
 import Fonts from "./fonts"
+import TransitionStyles from "./transition"
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
   ${Fonts};
+  ${TransitionStyles};
   
 /*============================
     Base
@@ -18,13 +20,17 @@ export const GlobalStyle = createGlobalStyle`
     --font-display: 'GT-Display',serif;
     --font-mono: 'Inter', 'Roboto Mono', san-serif, monospace;
     --font-outline: 'HunnyStrawSansOutline', sans-serif;
+    --font-hunny: 'HunnyStrawSans', sans-serif;
     --font-size: 18px;
+    
     --line-height: calc(var(--font-size)*1.5);
     --baseline: calc(var(--line-height)/2)
+    
     --h1: 2.8rem;
     --h2: 2.2rem;
     --h3: 1.4rem;
     --h4: 1.1rem;
+    
     --size-title: 9.2vw;
     
     --color-complement: #727272;
@@ -37,9 +43,6 @@ export const GlobalStyle = createGlobalStyle`
   
   html, body {
     font-size: 18px;
-    // ${media.lg`
-    //   font-size: 16px;
-    // `}
   }
 
   body {
@@ -78,11 +81,5 @@ export const GlobalStyle = createGlobalStyle`
     display: none;
   }
   
-  .app{
-    min-height: 100vh;
-    display; grid;
-    grid-auto-flow: column;
-    justify-content: start;
-  }
 `;
 

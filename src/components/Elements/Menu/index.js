@@ -5,7 +5,6 @@ import { BlockLines, Col, Lines } from "../Layout/style"
 
 const Menu = () =>
     <Wrapper>
-
         <Nav>
             <NavItem>
                 <Logo />

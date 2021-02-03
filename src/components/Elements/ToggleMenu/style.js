@@ -11,16 +11,6 @@ export const Wrapper = styled.div`
   backface-visibility: hidden;
   transition: transform .45s cubic-bezier(.45, 0, .07, 1);
   will-change: transform;
-  
-  ${media.ipadpro`
-    height: 20px;
-    width: 2rem;
-  `}
-  
-  ${media.xs`
-      margin-right: 3%;
-      margin-bottom: 3%;
-  `}
     
   span {
     display: inline-block;
@@ -60,9 +50,6 @@ export const Wrapper = styled.div`
         }
       }
     `}
-  ${media.ipadpro`
-    display: flex;
-  `}
   
   ${media.md`
     display: flex;

@@ -1,6 +1,6 @@
 import Link from 'gatsby-link'
 import styled, { css } from 'styled-components'
-import { colors, fonts, media, getOuterSpace } from '../../../style/constants'
+import { colors, fonts, media} from '../../../style/constants'
 
 export const Wrapper = styled.nav`
   position: fixed;
@@ -52,10 +52,6 @@ export const Wrapper = styled.nav`
     }
   }
   
-  ${media.ipadpro`
-    position: static;
-    padding: 0;
-  `}
   ${media.md`
     position: static;
     padding: 0;
@@ -80,20 +76,9 @@ export const NavItem = styled.li`
   &:last-child {
     padding-bottom: 0;
   }
-  ${media.mon27`
-      padding: .7rem 0;
-  `}
-  
-  ${media.mon24`
-      padding: .5rem 0;
-  `}
   
   ${media.mac13`
       padding: .4rem 0;
-  `}
-  
-  ${media.ipadpro`
-      padding: .5rem 0;
   `}
   
   ${media.md`
@@ -119,15 +104,6 @@ export const NavItem = styled.li`
       `}
       
       
-    ${media.mon27`
-      font-size: 1.2rem;
-      line-height: 1rem;
-  `}
-  
-  ${media.mon24`
-      font-size: .8rem;
-      line-height: .7rem;
-  `}
    ${media.mac13`
       font-size: .8rem;
       line-height: .8em;
@@ -136,10 +112,7 @@ export const NavItem = styled.li`
       font-size: .8rem;
       line-height: .8em;
   `}
-  ${media.ipadpro`
-      font-size: .9rem;
-      line-height: 1em;
-  `}
+
   ${media.md`
       font-size: .8rem;
       line-height: .8em;

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors,media, getOuterSpace } from '../../../style/constants'
+// import { colors,media, getOuterSpace } from '../../../style/constants'
 
 export const Wrapper = styled.div`
   display: flex;
