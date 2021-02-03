@@ -6,14 +6,16 @@ const BackgroundLines = () =>
       <Col>
         <Lines/>
         <Lines/>
-        {/*<Lines/>*/}
       </Col>
       <Col>
+        {/* 3 columns */}
         <Lines/>
         <Lines/>
         <Lines/>
         <Lines/>
-        <Lines/>
+
+        {/* add this to make 4 columns */}
+        {/*<Lines/>*/}
       </Col>
     </BlockLines>
 
