@@ -22,13 +22,13 @@ export const ListItem = styled.li`
 `
 
 export const ListItemLine = styled.li`
-  font-size: 1rem;
+  font-size: .8rem;
   color: ${colors.gray400};
   padding: .1rem 0;
   line-height: 1.2;
   
   ${media.sm`
-    font-size: .8rem;
+    font-size: .6rem;
   `}
 `
 

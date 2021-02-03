@@ -7,11 +7,10 @@ export const Wrapper = styled.nav`
   top: 0;
   left: 0;
   width: 100vh;
-  height: 60px;
+  height: 55px;
   display: block;
   pointer-events: none;
   z-index: 1;
-  // border-bottom: solid 2px ${colors.gray500};
   vertical-align: baseline;
   transform-origin: left top; 
   transform: rotate(-90deg) translate(-100%, 0);
@@ -118,7 +117,7 @@ export const Nav = styled.ul`
   `}
   
   ${media.sm`
-    width: 50%;
+    width: 48%;
     margin-top: 7px;
     left: 35px;
     transform-origin: top; 

@@ -1,25 +1,21 @@
 import styled from 'styled-components'
-import { colors, fonts, media } from "../../../style/constants"
+import { colors, media } from "../../../style/constants"
 
 export const Header = styled.header`
-  padding: 0 1rem; 
-  margin: 4rem 0 2rem;
   display: block;
   overflow: hidden:
   top: 0;
   margin-top: 0;
-  margin-bottom: 0;
-  // width: 100%;
-  height: 100vh;
-
+  height: 100%;
+  // border: dotted 1px ${colors.yellow700};
+  // margin-left: -30px;
   
   ${media.mac13`
     top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    left: 0;
     overflow: hidden:
     height: 100vh;
-    width: 13vw;
+    width: 10vw;
   `}
   
   ${media.md`
@@ -45,26 +41,22 @@ export const HeaderTitle = styled.h1`
   font-family: var(--font-display);
   color: ${colors.white};
   font-style: normal;
-  font-display: auto;
   font-weight: 200 ;
   letter-spacing: 5px;
-  font-size: 9rem;
+  font-size: 7rem;
   text-transform: uppercase;
   white-space: nowrap;
   transform: rotate(90deg);
   opacity: 0.3;
    
   ${media.mac13`
-    top: 1rem;
-    margin-bottom: 1rem;
-    width: 10vw;
+    width: 6.5vw;
     position: fixed;
   `}
   
   ${media.md`
     transform: rotate(0deg);
     font-size: 9vw;
-    // font-weight: 300;
     font-style: normal;
     font-display: auto;
     font-weight: 200 ;
@@ -105,10 +97,4 @@ export const HeaderTitle = styled.h1`
       content: "";
     `}
   }
-
-  // &:hover {
-  //   // transform-origin: center; 
-  //   // transform: translate(-25px, 5px);
-  //   transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
-  // }
 `

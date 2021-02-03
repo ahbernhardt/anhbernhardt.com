@@ -5,7 +5,7 @@ export const BlockLines = styled.div`
     // border: dotted 1px ${colors.yellow700};
     position: absolute;
     display: grid;
-    grid-template-columns: 171.2rem auto;
+    grid-template-columns: 171rem auto;
     grid-template-rows: 100%;
     height: inherit;
     top: 0;
@@ -24,7 +24,7 @@ export const BlockLines = styled.div`
     ${media.mac13`
       position: absolute;
       display: grid;
-      grid-template-columns:  50px auto;
+      grid-template-columns:  160px auto;
       grid-template-rows: 100%;
       height: inherit;
       top: 0;
@@ -34,10 +34,10 @@ export const BlockLines = styled.div`
       transition: opacity .5s cubic-bezier(.215,.61,.355,1),visibility .5s cubic-bezier(.215,.61,.355,1);
       z-index: 1;
       width: 100%;
-      height: 150%;
+      height: 103%;
       padding: 0 3.5rem;
       pointer-events: none;
-      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform: matrix3d(0,1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     `}   
 `
 
