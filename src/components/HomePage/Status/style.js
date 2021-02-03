@@ -5,21 +5,16 @@ export const Wrapper = styled.div`
   font-size: 1rem;
   color: ${colors.white};
   display: flex;
-  -webkit-box-align: center;
-  align-items:center;
-  margin-bottom: 25px;
-  margin-top: 22%;
-  margin-left: 100px;
+  align-items: center;
+  opacity: .4;
+  bottom: 0;
+  width: 100%;
+  // border: solid 1px #223232;
    
-  // ${media.mac13`
-  //   font-size: 1rem;
-  //   display: flex;
-  //   -webkit-box-align: center;
-  //   align-items:center;
-  //   margin-bottom: 25px;
-  //   margin-top: 25px;;
-  // `}
-  //
+  ${media.mac13`
+    bottom: 0;
+  `}
+  
   // ${media.lg`
   //   position: static;
   //   padding: 18% 0 0 18%;

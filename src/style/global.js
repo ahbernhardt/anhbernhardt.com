@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --font-display: 'GT-Display',serif;
     --font-mono: 'Inter', 'Roboto Mono', san-serif, monospace;
+    --font-outline: 'HunnyStrawSansOutline', sans-serif;
     --font-size: 18px;
     --line-height: calc(var(--font-size)*1.5);
     --baseline: calc(var(--line-height)/2)
@@ -24,8 +25,10 @@ export const GlobalStyle = createGlobalStyle`
     --h2: 2.2rem;
     --h3: 1.4rem;
     --h4: 1.1rem;
+    --size-title: 9.2vw;
     
     --color-complement: #727272;
+    --color-complement: #9b9b9b;
     --left-margin: 17.2rem;
     
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);

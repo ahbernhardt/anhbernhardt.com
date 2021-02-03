@@ -20,6 +20,8 @@ import Inter from '@fonts/inter/Inter.woff2';
 import InterUpright from '@fonts/inter/Inter-upright.woff2';
 import InterItalic from '@fonts/inter/Inter-italic.woff2';
 
+import HunnyStraws from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans-Outline.otf';
+import HunnyStrawsTTf from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans-Outline.ttf';
 
 const gtNormalWeights = {
   200: [GTLightWoff, GTLightWoff2],
@@ -46,6 +48,10 @@ const interItalicWeights = {
   400: InterItalic
 };
 
+const hunnyStraws = {
+  400: [HunnyStraws,HunnyStrawsTTf],
+};
+
 const GTDisplay = {
   name: 'GT-Display',
   normal: gtNormalWeights,
@@ -58,6 +64,10 @@ const inter = {
   italic: interItalicWeights,
 };
 
+const hunnyStraw = {
+  name: 'HunnyStrawSansOutline',
+  normal: hunnyStraws,
+}
 const createFontFaces = (family, style = 'normal') => {
   let styles = '';
 
@@ -79,15 +89,34 @@ const createFontFaces = (family, style = 'normal') => {
 
   return styles;
 };
+const createFontFacesOutline = (family, style = 'normal') => {
+  let styles = '';
 
+  for (const [weight, formats] of Object.entries(family[style])) {
+    const otf = formats[0];
+    const ttf = formats[1];
+
+    styles += `
+      @font-face {
+        font-family: '${family.name}';
+        src: url(${otf}) format('opentype'),
+              url(${ttf}) format('truetype');
+        font-weight: ${weight};
+      }
+    `;
+  }
+
+  return styles;
+};
 const gtNormal = createFontFaces(GTDisplay);
 const gtItalic = createFontFaces(GTDisplay, 'italic');
 
 const interNormal = createFontFaces(inter);
 const interItalic = createFontFaces(inter, 'italic');
+const hunnyStrawsSanOutline = createFontFacesOutline(hunnyStraw);
 
 const Fonts = css`
-  ${gtNormal + gtItalic + interNormal + interItalic}
+  ${gtNormal + gtItalic + interNormal + interItalic + hunnyStrawsSanOutline}
 `;
 
 export default Fonts;

@@ -4,6 +4,7 @@ export const colors = {
   white: '#f6f6f6',
   black: '#040404',
 
+  gray100: '#9b9b9b',
   gray200: '#a0a0a0',
   gray300: '#6e6e6e',
   gray400: '#3e3e3e',
@@ -19,6 +20,7 @@ export const fonts = {
     upright: 'Inter-Up',
     italic: 'Inter-Italic',
     display: 'GT-Display',
+    outline: 'HunnyStrawSansOutline',
 }
 
 export const spaces = {
