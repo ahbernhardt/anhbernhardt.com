@@ -29,15 +29,18 @@ export const Wrapper = styled.nav`
     position: fixed;
     top: 0;
     width: 100vh;
+    height: 60px;
+    border-bottom: solid 1px ${colors.gray400};
   `}
   
   ${media.sm`
-    // background-color: ${colors.black};
-    border-left: solid 2px ${colors.gray500};
+    background-color: ${colors.black};
+    border-bottom: solid 1px ${colors.gray500};
     z-index: 1;
     position: fixed;
     top: 0;
     width: 100vh;
+    height: 60px;
     transform-origin: top; 
     transform: translate(0, 0);
   `}
@@ -122,6 +125,7 @@ export const Nav = styled.ul`
     left: 35px;
     transform-origin: top; 
     transform: rotate(0deg);
+    margin-bottom: 10px;
   `}
 `
 

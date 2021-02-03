@@ -13,7 +13,7 @@ const BackgroundLines = () =>
         <Lines/>
         <Lines/>
         <Lines/>
-        {/*<Lines/>*/}
+        <Lines/>
       </Col>
     </BlockLines>
 

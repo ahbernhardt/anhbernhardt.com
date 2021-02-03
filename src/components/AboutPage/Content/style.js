@@ -19,23 +19,26 @@ export const ContentWrapper = styled.div`
     width: 100%;
     margin-right: 60px;
     padding-left: 120px;
+    margin-bottom: 2.2rem;
   `}
   
   ${media.md`
     width: 100%;
     padding-top: 2rem;
     padding-left: 2rem;
-     grid-template-columns: 1.3fr 1fr;
-     grid-column-gap: 2rem;
+    grid-template-columns: 1.2fr 1fr;
+    grid-column-gap: 1.3rem;
+    margin-bottom: 2rem;
   `}
   
   ${media.sm`
-    width: 110%;
+    width: 90vw;
     margin-top: -2rem;
-    margin-left: -3.5rem;
-    grid-template-columns: repeat(1, 2fr);
+    margin-left: -4rem;
+    grid-template-columns: repeat(1, 1.8fr);
     grid-row: 1;
     grid-column: 1;
+    margin-bottom: 1rem;
   `}
 `
 export const Subtitle = styled.h2`
@@ -72,12 +75,14 @@ export const Subtitle = styled.h2`
     grid-column: 1 / 2;
     grid-row: 1;
     align-self: unset;
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 1.2;
+    margin-top: 9rem;
+    margin-left: -1.5rem;
     bottom: 0;
     
     span{
-      font-size: 7vw;
+      font-size: 6vw;
       font-family: var(--font-display);
       font-style: italic;
     }
@@ -90,6 +95,7 @@ export const Subtitle = styled.h2`
     font-size: 6.5vw;
     line-height: 1.2;
     margin-top: 2rem;
+    margin-left: -1.5rem;
     bottom: 0;
     
     span{
@@ -117,12 +123,15 @@ export const StyledImage = styled(Image)`
   ${media.md`
     grid-row: 1;
     grid-column: 2;
-    padding-top 100%;
-    margin-inline-end: 10px;
+    padding: 100% 0 0 0;
+    margin-inline-end: -15px;
   `}
   ${media.sm`
     grid-row: 1;
     grid-column: 1;
+    padding-top: 100%;
+    margin-left: -2.2rem;
+    margin-top: -1.5rem;
   `}
   img {
     position: absolute;
@@ -178,11 +187,12 @@ export const ContentInfo = styled.div`
   ${media.md`
       grid-row: 2;
       grid-column: 1;
-      margin-top: -140px;
+      margin-top: 2rem;
+      margin-left: -2rem;
       
       p{
       color: ${colors.gray300};
-      font-size: 1rem;
+      font-size: .8rem;
       line-height: 1.2;
       margin-bottom: 1rem;
     }
@@ -191,7 +201,8 @@ export const ContentInfo = styled.div`
   ${media.sm`
       grid-row: 2;
       grid-column: 1;
-      margin-top: 140px;
+      margin-top: 145px;
+      margin-left: -1.5rem;
       
       p{
       color: ${colors.gray300};
@@ -221,11 +232,13 @@ export const ContentInfo2 = styled.div`
   ${media.md`
     grid-row: 3;
     grid-column: 2;
+    margin-top: -2rem;
   `}
   
    ${media.sm`
       grid-row: 4;
       grid-column: 1;
+      margin-left: -1.1rem;
   `}
   
 `
@@ -244,19 +257,22 @@ export const SkillsSection = styled.div`
     grid-row: 2;
     grid-column: 2;
     margin-top: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1em;
+    grid-template-columns: repeat(2, 1.3fr);
+    grid-column-gap: .8em;
     grid-row-gap: 1rem;
+    padding: 0;
   `}
   
   ${media.sm`
+    width: 100%;
     grid-row: 3;
     grid-column: 1;
-    margin-top: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1em;
+    margin-top: 1.5rem;
+    margin-left: -1.5rem;
+    grid-template-columns: repeat(2, 1.5fr);
+    grid-column-gap: .8em;
     grid-row-gap: 1rem;
-    font-size: .8rem;
+    padding: 0;
   `}
  
 `

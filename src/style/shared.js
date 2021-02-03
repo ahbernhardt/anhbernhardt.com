@@ -28,7 +28,7 @@ export const ListItemLine = styled.li`
   line-height: 1.2;
   
   ${media.sm`
-    font-size: .6rem;
+    font-size: .8rem;
   `}
 `
 

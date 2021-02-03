@@ -21,15 +21,16 @@ export const Header = styled.header`
   ${media.md`
     margin-top: 6.5rem;
     margin-bottom: 0;
-    width: 100%;
+    width: 114%;
     height: 150px;
-    margin-left: 1rem;
-    border-bottom: solid 2px ${colors.gray400};
+    margin-left: -28px;
+    padding-left: 30px;
+    border-bottom: solid 1px ${colors.gray400};
   `}
   
   ${media.sm`
     margin-top: 6.5rem;
-    margin-left: -2.5rem;
+    margin-left: -3.5rem;
     margin-bottom: 0;
     width: 100%;
     height: 100px;

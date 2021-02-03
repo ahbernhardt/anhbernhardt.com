@@ -13,11 +13,11 @@ const Layout = ({children}) =>
     <GlobalStyle />
     <BackgroundLines/>
     <Menu />
-      <MainBody>
-          {children}
-          {/*    /!*<Footer />*!/*/}
-          {/*    /!*<SocialLinks />*!/*/}
-      </MainBody>
+    <MainBody>
+        {children}
+        {/*    /!*<Footer />*!/*/}
+        {/*    /!*<SocialLinks />*!/*/}
+    </MainBody>
   </App>
 
 export default Layout
