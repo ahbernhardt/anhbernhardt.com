@@ -17,9 +17,9 @@ export const Wrapper = styled.div`
     align-content: center;
     grid-column-gap: 1rem;
     width: 100%;
+    height: 100vh;
     margin-right: 60px;
     padding-left: 120px;
-    margin-bottom: 2.2rem;
   `}
   
   ${media.md`
@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   `}
   
   ${media.sm`
-     width: 90vw;
+    width: 90vw;
     margin-top: -2rem;
     margin-left: -4rem;
     grid-template-columns: repeat(1, 1.8fr);
@@ -45,17 +45,21 @@ export const LandingTitle = styled.div`
     margin-right: .2rem;
     color: ${colors.gray100};
     pointer-events: none;
+    
     // border: solid 1px #223232;
     
     ${media.mac13`
+      height: 100%;
       grid-row: 2;
       grid-column: 3;
-      margin-top: 5rem;
+      margin-top: 1rem;
+      margin-bottom: 7rem;
     `}
     
     ${media.md`
       width: 80vw;
       height: 100%;
+      margin-bottom: 12rem;
     `}
     
     ${media.sm`
@@ -64,26 +68,6 @@ export const LandingTitle = styled.div`
       height: 60%;
       bottom: 0;
       margin-bottom: 2rem;
-    `}
-`
-export const EachBlockText = styled.span`
-    height: var(--size-title);
-    width: fit-content;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    font-family: ${fonts.hunny};
-    font-size: var(--size-title);
-    font-weight: 400;
-    font-style: normal;
-    
-    ${media.md`
-      font-size: 10vw;
-      height: 9vh;
-    `}
-    ${media.sm`
-      height: 7vh;
-      font-size: 6vh;
     `}
 `
 export const EachBlockOutlineText = styled.span`
@@ -103,10 +87,32 @@ export const EachBlockOutlineText = styled.span`
     `}
     
     ${media.sm`
-      font-size: 6vh;
+      font-size: 5.5vh;
       height: 7vh;
     `}
 `
+
+export const EachBlockText = styled.span`
+    height: var(--size-title);
+    width: fit-content;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    font-family: ${fonts.hunny};
+    font-size: var(--size-title);
+    font-weight: 400;
+    font-style: normal;
+    
+    ${media.md`
+      font-size: 10vw;
+      height: 8vh;
+    `}
+    ${media.sm`
+      height: 6vh;
+      font-size: 5.5vh;
+    `}
+`
+
 export const StatusWrapper = styled.div`
     position: relative;
     display: block;
@@ -118,13 +124,16 @@ export const StatusWrapper = styled.div`
     // border: dotted 1px ${colors.yellow500};
     
     ${media.mac13`
+      position: absolute;
       bottom: 0;
       align-items: flex-end;
       margin-top: 3rem;
     `}
     
      ${media.md`
-      margin-top: 3rem;
+      margin-top: 5rem;
+      position: absolute;
+      bottom: 0;
     `}
     
     ${media.sm`

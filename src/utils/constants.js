@@ -2,7 +2,7 @@
 export const IS_PROD = process.env.NODE_ENV === 'production'
 export const META = {
     common: {
-        image: '/images/me.jpg',
+        image: '/images/og.png',
     },
     index: {
         title: 'Anh Nguyen | Software Engineer & Designer',

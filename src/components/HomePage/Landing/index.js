@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react"
 import Status from "../Status"
 import { srConfig } from "../../../config"
 import sr from "../../../utils/sr"
+import SubLandingTitle from "../SubTitle"
 
 export default () => {
   const revealLanding = useRef(null);
@@ -19,9 +20,12 @@ export default () => {
         <EachBlockText/>
         <EachBlockOutlineText>Front-End</EachBlockOutlineText>
         <EachBlockText>Developer & Designer</EachBlockText>
+        <SubLandingTitle />
+
         <StatusWrapper ref={revealStatus}>
           <Status />
         </StatusWrapper>
+
       </LandingTitle>
     </Wrapper>
   )
