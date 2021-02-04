@@ -1,19 +1,6 @@
 import styled, { css } from 'styled-components'
 import { media, colors } from './constants'
 
-// export const ContentWrapper = styled.main`
-//   display: grid;
-//   max-width: 100vw;
-//   grid-auto-flow: column;
-//
-//   ${media.mac13`
-//     display: grid;
-//     max-width: 100vw;
-//     grid-auto-flow: column;
-//   `}
-//
-// `
-
 export const ListItem = styled.li`
   font-size: 1rem;
   color: ${colors.gray400};

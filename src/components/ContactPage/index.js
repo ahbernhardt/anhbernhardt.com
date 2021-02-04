@@ -1,28 +1,43 @@
 import React, { useEffect, useRef } from "react"
-import { ContentWrapper, ContactInfo} from "./styles"
+import { ContentWrapper, Wrapper, Email, SocialSection} from "./styles"
 import { srConfig } from "@config"
 import sr from "@utils/sr"
+import EmailLink from "../Elements/EmailLink"
+import SubContact from "./SubTitle"
 
 
-export default ({ data }) => {
-  const revealContainer = useRef(null)
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
+
+export default ({  }) => {
+  const revealEmail = useRef(null)
+  const revealTagline = useRef(null)
+  const revealSocial = useRef(null)
+
+  useEffect(() => {
+    sr.reveal(revealEmail.current, srConfig(100))
+    sr.reveal(revealTagline.current, srConfig(150))
+    sr.reveal(revealSocial.current, srConfig(200));
+  }, [])
 
   return (
-    <ContentWrapper>
-      <ContactInfo ref={revealContainer}>
-        <p>
-          Information
-          Information
-          Information
-          Information
-          Information
-          Information
-          Information
-          Information
-          Information
-        </p>
-      </ContactInfo>
-    </ContentWrapper>
+  <ContentWrapper>
+    <Wrapper>
+      <Email ref={revealEmail}>
+        SIMPLY SEND ME AN <span><EmailLink text=" Email"/></span>.
+      </Email>
+
+      <SubContact ref={revealTagline}/>
+
+      <SocialSection ref={revealSocial}>
+        {/* Github */}
+          <a href="https://github.com/anguyen0208" rel="noopener noreferrer" target="_blank">Github↗</a>
+        {/* Codepen */}
+          <a href="https://codepen.io/ah_nguyen0208" rel="noopener noreferrer" target="_blank">Codepen↗</a>
+        {/* LinkedIn*/}
+          <a href="https://linkedin.com/in/anhnguyen0208/" rel="noopener noreferrer" target="_blank">LinkedIn↗</a>
+        {/* Resume */}
+          <a href="https://github.com/anguyen0208" rel="noopener noreferrer" target="_blank">Resume↗</a>
+      </SocialSection>
+    </Wrapper>
+  </ContentWrapper>
   )
 }

@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components"
-import { colors, fonts, media, transition } from "../../../style/constants"
+import { colors, fonts, media } from "../../../style/constants"
 
 export const Wrapper = styled.div`
   font-size: 1rem;
