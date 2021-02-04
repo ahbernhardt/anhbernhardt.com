@@ -1,19 +1,16 @@
-<p align="center">
-  <a href="https://github.com/github_username/repo_name">
-  </a>
-
-<h3 align="center">anhnguyen.page</h3>
-  <p align="center">
-    personal website
-    <br />
-    <br />
+<div align="center">
+  <h1 align="center">anhnguyen.page</h1>
+  <h4 align="center">
+    Personal Website
+  <p>
     <a href="https://anhnguyen.page">View Demo</a>
-    ·
+        _
     <a href="https://github.com/anguyen0208/anhnguyen.page/issues">Report Bug</a>
-    ·
+        _
     <a href="https://github.com/anguyen0208/anhnguyen.page/issues">Request Feature</a>
   </p>
-</p>
+  </h4>
+</div>
 
 ---
 ![image](static/images/og.png)
@@ -24,10 +21,11 @@
 ### Built With
 
 Major frameworks that built this project using.
-* [JQuery](https://jquery.com)
 * [NodeJs](https://nodejs.org)
 * [Gatsby](https://gatsbyjs.com)
 * [MongoBD](https://mongodb.com)
+* [Netlify](https://netlify.com)
+* [JQuery](https://jquery.com)
 
 
 ### Contact
