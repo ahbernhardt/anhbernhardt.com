@@ -1,6 +1,6 @@
 import Link from 'gatsby-link'
 import styled, { css } from 'styled-components'
-import { colors, fonts, media } from '../../../style/constants'
+import { colors, media } from '../../../style/constants'
 
 export const Wrapper = styled.nav`
   position: fixed;
@@ -24,7 +24,10 @@ export const Wrapper = styled.nav`
     position: fixed;
     top: 0;
     width: 100vh;
+    height: 60px;
+    border-bottom: solid 1px ${colors.gray400};
   `}
+  
   ${media.md`
     position: fixed;
     top: 0;

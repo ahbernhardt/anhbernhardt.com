@@ -19,6 +19,9 @@ export const MainBody = styled.div`
   //   display: grid
   // `}
   
+  ${media.lg`
+    display: block;
+  `}
   ${media.md`
     display: block;
   `}

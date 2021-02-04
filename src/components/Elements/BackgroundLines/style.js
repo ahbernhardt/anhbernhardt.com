@@ -38,6 +38,21 @@ export const BlockLines = styled.div`
       transform: matrix3d(0,1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     `}   
     
+    ${media.lg`
+      position: absolute;
+      display: grid;
+      grid-template-columns:  30px auto;
+      grid-template-rows: 100%;
+      height: inherit;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      visibility: visible;
+      z-index: 0;
+      width: 100%;
+      height: auto;
+      padding: 0 3.5rem;
+    `}
     
     ${media.md`
        position: absolute;

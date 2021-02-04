@@ -16,7 +16,15 @@ export const Header = styled.header`
     height: 100vh;
     width: 10vw;
   `}
-  
+  ${media.lg`
+    margin-top: 6.5rem;
+    margin-bottom: 0;
+    width: 110%;
+    height: 150px;
+    margin-left: -28px;
+    padding-left: 30px;
+    border-bottom: solid 1px ${colors.gray400};
+  `}
   ${media.md`
     margin-top: 6.5rem;
     margin-bottom: 0;
@@ -53,7 +61,13 @@ export const HeaderTitle = styled.h1`
     width: 6.5vw;
     position: fixed;
   `}
-  
+  ${media.lg`
+    transform: rotate(0deg);
+    font-size: 9vw;
+    font-style: normal;
+    font-display: auto;
+    font-weight: 200 ;
+  `}
   ${media.md`
     transform: rotate(0deg);
     font-size: 9vw;
@@ -76,7 +90,9 @@ export const HeaderTitle = styled.h1`
   &:before {
     content: attr(data-title) "—" ;
     transform: translateX(-100%);
-    
+    ${media.lg`
+      content: "";
+    `}
      ${media.md`
       content: "";
     `}
@@ -88,7 +104,9 @@ export const HeaderTitle = styled.h1`
   
   &:after {
     content: attr(data-title) "—" ;
-  
+    ${media.lg`
+      content: "";
+    `}
     ${media.md`
       content: "";
     `}

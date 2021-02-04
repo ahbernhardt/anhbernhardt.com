@@ -21,7 +21,14 @@ export const ContentWrapper = styled.div`
     padding-left: 120px;
     margin-bottom: 2.2rem;
   `}
-  
+   ${media.lg`
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    grid-template-columns: 1.2fr 1fr;
+    grid-column-gap: 1.3rem;
+    // margin-bottom: 2rem;
+  `}
   ${media.md`
     width: 100%;
     padding-top: 2rem;
@@ -70,7 +77,22 @@ export const Subtitle = styled.h2`
       font-style: italic;
     }
   `}
-  
+   ${media.lg`
+    grid-column: 1 / 2;
+    grid-row: 1;
+    align-self: unset;
+    font-size: 4vw;
+    line-height: 1.2;
+    margin-top: 14rem;
+    margin-left: -1.5rem;
+    bottom: 0;
+    
+    span{
+      font-size: 7vw;
+      font-family: ${fonts.display};
+      font-style: italic;
+    }
+  `}
   ${media.md`
     grid-column: 1 / 2;
     grid-row: 1;
@@ -119,7 +141,12 @@ export const StyledImage = styled(Image)`
     padding-top: 100%;
     margin-inline-end: 1%;
   `}
-  
+  ${media.lg`
+    grid-row: 1;
+    grid-column: 2;
+    padding: 100% 0 0 0;
+    margin-inline-end: -15px;
+  `}
   ${media.md`
     grid-row: 1;
     grid-column: 2;
@@ -183,7 +210,19 @@ export const ContentInfo = styled.div`
       margin-bottom: 1rem;
     }
   `}
-  
+   ${media.lg`
+      grid-row: 2;
+      grid-column: 1;
+      margin-top: 2rem;
+      margin-left: -2rem;
+      
+      p{
+      color: ${colors.gray300};
+      font-size: .8rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+  `}
   ${media.md`
       grid-row: 2;
       grid-column: 1;
@@ -228,7 +267,11 @@ export const ContentInfo2 = styled.div`
       grid-column: 2;
       padding: 5% 0 0 5%;
   `}
-  
+  ${media.lg`
+    grid-row: 3;
+    grid-column: 2;
+    margin-top: 1rem;
+  `}
   ${media.md`
     grid-row: 3;
     grid-column: 2;
@@ -252,6 +295,16 @@ export const SkillsSection = styled.div`
   
   grid-row: 2;
   grid-column: 1;
+  
+  ${media.lg`
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 1rem;
+    grid-template-columns: repeat(2, 1.3fr);
+    grid-column-gap: .8em;
+    grid-row-gap: 1rem;
+    margin-left: -1rem;
+  `}
   
   ${media.md`
     grid-row: 2;

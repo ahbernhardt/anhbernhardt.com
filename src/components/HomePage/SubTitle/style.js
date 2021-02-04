@@ -27,6 +27,10 @@ export const SubLine = styled.hr`
   box-sizing: content-box;
   margin-right: 10px;
   border: solid 1px ${colors.gray200};
+  
+  ${media.sm`
+      width: 18%;
+    `}
 `
 
 export const SubMessage = styled.div`
@@ -41,6 +45,6 @@ export const SubMessage = styled.div`
     ${media.sm`
       width: 100%;
       font-size: .8rem;
-      margin-left: -10px;
+      margin-left: -30px;
     `}
 `

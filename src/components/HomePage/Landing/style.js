@@ -21,7 +21,9 @@ export const Wrapper = styled.div`
     margin-right: 60px;
     padding-left: 120px;
   `}
-  
+  ${media.lg`
+    width: 100%;
+  `}
   ${media.md`
     width: 100%;
   `}
@@ -45,15 +47,19 @@ export const LandingTitle = styled.div`
     margin-right: .2rem;
     color: ${colors.gray100};
     pointer-events: none;
-    
     // border: solid 1px #223232;
     
     ${media.mac13`
       height: 100%;
       grid-row: 2;
       grid-column: 3;
-      margin-top: 1rem;
-      margin-bottom: 7rem;
+      margin-bottom: 10rem;
+    `}
+    
+    ${media.lg`
+      width: 85vw;
+      height: 100%;
+      margin-bottom: 15rem;
     `}
     
     ${media.md`
@@ -81,6 +87,16 @@ export const EachBlockOutlineText = styled.span`
     font-weight: 400;
     font-style: normal;
     
+    ${media.mac13`
+      font-size: 9vw;
+      height: 20vh;
+    `} 
+    
+    ${media.lg`
+      font-size: 11vw;
+      height: 10vh;
+    `} 
+    
     ${media.md`
       font-size: 10vw;
       height: 9vh;
@@ -102,6 +118,16 @@ export const EachBlockText = styled.span`
     font-size: var(--size-title);
     font-weight: 400;
     font-style: normal;
+    
+    ${media.mac13`
+      font-size: 9vw;
+      height: 20vh;
+    `} 
+    
+    ${media.lg`
+      font-size: 10vw;
+      height: 8vh;
+    `}
     
     ${media.md`
       font-size: 10vw;
@@ -130,6 +156,11 @@ export const StatusWrapper = styled.div`
       margin-top: 3rem;
     `}
     
+    ${media.lg`
+      margin-top: 6rem;
+      position: absolute;
+      bottom: 0;
+    `}
      ${media.md`
       margin-top: 5rem;
       position: absolute;
