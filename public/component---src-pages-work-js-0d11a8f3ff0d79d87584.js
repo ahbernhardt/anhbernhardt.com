@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{Ofmp:function(a,e,n){"use strict";n.r(e);var t=n("q1tI"),o=n.n(t),c=n("DXr1"),r=n("ydnR"),i=n("0Csh"),m=n("BX6Z");e.default=function(a){var e=a.location;return o.a.createElement(c.a,{location:e},o.a.createElement(i.a,Object.assign({},r.a.work,{image:r.a.common.image})),o.a.createElement(m.a,{title:"Work"}))}}}]);
-//# sourceMappingURL=component---src-pages-work-js-0d11a8f3ff0d79d87584.js.map
