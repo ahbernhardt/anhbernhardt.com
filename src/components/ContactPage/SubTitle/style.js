@@ -16,6 +16,13 @@ export const Wrapper = styled.div`
     bottom: 0;
   `}
   
+  ${media.lg`
+    width: 100%;
+  `}
+  
+  ${media.md`
+    width: 90%;
+  `}
   ${media.sm`
     width: 90%;
   `}
@@ -27,10 +34,17 @@ export const SubLine = styled.hr`
   box-sizing: content-box;
   margin-right: 10px;
   border: solid 1px ${colors.gray200};
-  
-  ${media.sm`
+   ${media.lg`
       width: 18%;
-    `}
+  `}
+  ${media.md`
+      width: 15%;
+      margin-left: 10px;
+  `}
+  ${media.sm`
+      width: 10%;
+      margin-left: -20px;
+  `}
 `
 
 export const SubMessage = styled.div`
@@ -42,9 +56,14 @@ export const SubMessage = styled.div`
   display: block;
   // border: solid 1px #223232;
   
+  ${media.md`
+      width: 100%;
+      font-size: .9rem;
+      margin-left: -40px;
+    `}
     ${media.sm`
       width: 100%;
-      font-size: .8rem;
-      margin-left: -30px;
+      font-size: .6rem;
+      margin-left: -25px;
     `}
 `

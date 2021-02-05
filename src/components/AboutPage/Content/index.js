@@ -18,7 +18,7 @@ export default ({ data }) => {
   useEffect(() => {
     sr.reveal(revealTitle.current, srConfig(100));
     sr.reveal(revealContainer.current, srConfig(150));
-    sr.reveal(revealImage.current, srConfig(200));
+    sr.reveal(revealImage.current, srConfig(150));
     sr.reveal(revealSkill.current, srConfig());
   }, []);
 
@@ -53,7 +53,7 @@ export default ({ data }) => {
       </ContentInfo>
 
       {/* COLUMN 2 */}
-      <ContentInfo2>
+      <ContentInfo2 ref={revealContainer}>
         <img src="https://media.giphy.com/media/2XrLfX86d7Nok/giphy.gif" alt=""/>
       </ContentInfo2>
 
@@ -68,7 +68,8 @@ export default ({ data }) => {
             '/images/profile/me.jpg'
           ]
         }]}
-        ref={revealImage}/>
+        ref={revealImage}
+      />
 
       <SkillsSection ref={revealSkill}>
         {designs.edges.length > 0 &&

@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import { colors, fonts, media } from "../../style/constants"
 
 export const ContentWrapper = styled.main`
@@ -22,7 +22,6 @@ export const ContentWrapper = styled.main`
   
   ${media.sm`
     width: 90vw;
-    margin-top: -2rem;
     margin-left: -4rem;
     grid-template-columns: repeat(1, 1.8fr);
     grid-row: 1;
@@ -45,20 +44,18 @@ export const Wrapper = styled.div`
     `}
     
     ${media.lg`
-      width: 85vw;
-      height: 100%;
+      width: 100%;
+      height: 95%;
     `}
     
     ${media.md`
-      width: 80vw;
-      height: 100%;
+      width: 100%;
+      height: 80%;
     `}
     
     ${media.sm`
-      position: absolute;
-      width: 90%;
-      height: 60%;
-      bottom: 0;
+      width: 100%;
+      height: 90%;
     `}
 `
 export const Email = styled.h2`
@@ -84,23 +81,27 @@ export const Email = styled.h2`
     `}
     
     ${media.lg`
-      width: 85vw;
-      height: 100%;
-      margin-bottom: 15rem;
+      margin-top: 15rem;
     `}
     
     ${media.md`
-      width: 80vw;
-      height: 100%;
-      margin-bottom: 12rem;
+      width: 100%;
+      height: auto;
+      font-size: 3rem;
+      margin-top: 20rem;
+      padding-left: 7rem;
     `}
     
     ${media.sm`
-      position: absolute;
-      width: 90%;
-      height: 60%;
-      bottom: 0;
-      margin-bottom: 2rem;
+      width: 100%;
+      height: auto;
+      font-size: 3vh;
+      margin-top: 18rem;
+      
+      span {
+        margin-left: 5px;
+        color: ${colors.gray400};
+      }
     `} 
 `
 
@@ -139,6 +140,12 @@ export const SocialSection = styled.div`
     
     ${media.sm`
       position: absolute;
+      display: flex;
+      font-size: .9rem;
       bottom: 0;
+      
+      a { 
+        margin-top: 5px;
+      }
     `}
 `

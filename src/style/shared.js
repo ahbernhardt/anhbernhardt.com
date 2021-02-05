@@ -37,6 +37,4 @@ export const Loader = styled.div`
     transform: scale(1);
     opacity: 1;
   `}
-  transition: .6s cubic-bezier(.45, 0, .07, 1) transform, .6s cubic-bezier(.45, 0, .07, 1) opacity;
-  will-change: transform;
 `

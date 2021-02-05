@@ -13,8 +13,8 @@ export default ({  }) => {
   const revealSocial = useRef(null)
 
   useEffect(() => {
-    sr.reveal(revealEmail.current, srConfig(100))
-    sr.reveal(revealTagline.current, srConfig(150))
+    sr.reveal(revealEmail.current, srConfig(50))
+    sr.reveal(revealTagline.current, srConfig(200))
     sr.reveal(revealSocial.current, srConfig(200));
   }, [])
 
