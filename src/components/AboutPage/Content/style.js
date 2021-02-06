@@ -183,18 +183,16 @@ export const ContentInfo = styled.div`
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
       letter-spacing: .05em;
-      color: ${colors.gray300};
+      color: ${colors.gray200};
       font-size: .8rem;
       margin-bottom: 1rem;
     }
     
     a {
-      color: ${colors.gray200};
-      border-bottom: dotted 1px ${colors.yellow500}; 
+      color: ${colors.gray300};
       
       :hover{
-      color: ${colors.yellow500};
-       border-bottom: dotted 1px ${colors.gray200}; 
+        color: ${colors.yellow500};
       }
     }
 
@@ -204,7 +202,6 @@ export const ContentInfo = styled.div`
       padding: 6% 6% 0 3%;
       
       p{
-      color: ${colors.gray300};
       font-size: .8rem;
       line-height: 1.2;
       margin-bottom: 1rem;
@@ -217,7 +214,6 @@ export const ContentInfo = styled.div`
       margin-left: -2rem;
       
       p{
-      color: ${colors.gray300};
       font-size: .8rem;
       line-height: 1.2;
       margin-bottom: 1rem;
@@ -229,8 +225,7 @@ export const ContentInfo = styled.div`
       margin-top: 2rem;
       margin-left: -2rem;
       
-      p{
-      color: ${colors.gray300};
+      p {
       font-size: .8rem;
       line-height: 1.2;
       margin-bottom: 1rem;
@@ -243,8 +238,7 @@ export const ContentInfo = styled.div`
       margin-top: 145px;
       margin-left: -1.5rem;
       
-      p{
-      color: ${colors.gray300};
+      p {
       font-size: .8rem;
       line-height: 1.2;
       margin-bottom: 1rem;
