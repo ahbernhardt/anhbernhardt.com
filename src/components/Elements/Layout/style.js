@@ -7,6 +7,10 @@ export const App = styled.main`
   margin: 0 60px 0 0;
   opacity: 1;
   transition: opacity .5s cubic-bezier(.215,.61,.355,1),visibility .5s cubic-bezier(.215,.61,.355,1);
+
+   ${media.mac13`
+    height: auto;
+   `}
 `
 export const MainBody = styled.div`
   height: 100%;

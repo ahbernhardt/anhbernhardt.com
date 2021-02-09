@@ -50,15 +50,17 @@ export const EachProject = styled.a`
     
     .titleSub{
       opacity: 1;
-      transform: translateY(50px);
-    }
-    
-    .titleSub::before{
-      transform: rotate(22.5deg) scale3d(1,1,1);
+      transition-duration: 1s;
+      transform: translateY(250px);
+      
+      &::before{
+        transform: rotate(22.5deg) scale3d(1,1,1);
+      }
     }
     
     .imageReveal{
-      opacity: 100%;
+      display: block;
+      opacity: 1;
       z-index: 2;
     }
   }
@@ -92,9 +94,9 @@ export const TitleSub = styled.span`
   position: relative;
   padding-left: 1rem;
   opacity: 0;
-  transform: translateY(0);
-  transition: transform 0.5s, opacity 0.3s;
-  line-height: 2rem;
+  transform: translateY(50px);
+  transition: transform 1s, opacity 0.3s;
+  line-height: 2.5rem;
   // border: 1px dotted ${colors.yellow700};
   
   &::before{
@@ -115,29 +117,32 @@ export const HoverReveal = styled.div`
   display: block;
   overflow: hidden:
   z-index: -1;
-  width: 45%;
-  height: 45%;
+  width: 360px;
+  height: 200px;
   top: 0;
   left: 0;
+  margin-left: 100px;
+  margin-top: -50px;
   pointer-events: none;
-  opacity: 0;
-  border: 4px dotted ${colors.gray300};
+  display: none;
+  opacity: 1;
 `
 export const HoverInner = styled.div`
   border-radius: 6px;
+  position: relative;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 100%;
-  border: 2px dotted ${colors.yellow500};
+  // border: 1px solid ${colors.gray400};
 `
 
 export const ProjectImage = styled(Image)`
   position: relative;
   display: block;
-  z-index: 1;
+  z-index: 2;
   background-size: cover;
   // background-position: 50% 50%;
   
@@ -147,6 +152,6 @@ export const ProjectImage = styled(Image)`
     top: 0;
     left: 0;
     opacity: 1;
-    object-fit: contain !important;
+    object-fit: cover !important;
   }
 `

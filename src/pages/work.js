@@ -8,7 +8,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 const ProjectQuery = graphql`
   query ProjectsQuery {
-    projects: allProjectsJson {
+    projects: allMongodbWorksProjects {
       edges {
         project: node {
           year

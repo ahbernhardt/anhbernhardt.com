@@ -32,7 +32,7 @@ export const BlockLines = styled.div`
       transition: opacity .5s cubic-bezier(.215,.61,.355,1),visibility .5s cubic-bezier(.215,.61,.355,1);
       z-index: 0;
       width: 100%;
-      height: 110%;
+      height: 160%;
       padding: 0 3.5rem;
       pointer-events: none;
       transform: matrix3d(0,1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -81,7 +81,7 @@ export const BlockLines = styled.div`
 
 export const Col = styled.div`
     position: relative;
-     height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
