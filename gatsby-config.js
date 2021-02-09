@@ -9,9 +9,6 @@ require('dotenv').config({
 
 module.exports = {
   pathPrefix: '/',
-  flags: {
-    THE_FLAG: false
-  },
   siteMetadata: {
     siteUrl: 'https://www.anhnguyen.page/',
   },

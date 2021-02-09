@@ -14,7 +14,7 @@ export const META = {
         description: 'Little bit about my background.'
     },
     work: {
-        title: 'Projects | Anh Nguyen',
+        title: 'Works | Anh Nguyen',
         description: 'A selection of the work which Websites, Web applications, coordinated design and more.'
     },
     contact: {
