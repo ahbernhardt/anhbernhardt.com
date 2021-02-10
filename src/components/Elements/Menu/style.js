@@ -7,7 +7,7 @@ export const Wrapper = styled.nav`
   top: 0;
   left: 0;
   width: 100vh;
-  height: 55px;
+  height: 60px;
   display: block;
   pointer-events: none;
   z-index: 1;
@@ -15,6 +15,12 @@ export const Wrapper = styled.nav`
   transform-origin: left top; 
   transform: rotate(-90deg) translate(-100%, 0);
 
+  ${media.mon`
+    position: fixed;
+    top: 0;
+    width: 100vh;
+  `}
+  
   ${media.mac13`
     position: fixed;
     top: 0;
@@ -58,7 +64,7 @@ export const Wrapper = styled.nav`
       &::before {
         position: absolute;
         left: 50%;
-        top: 1.7rem;
+        top: 2rem;
         background: ${colors.yellow500};
         border-radius: 100%;
         content: '';
@@ -67,6 +73,10 @@ export const Wrapper = styled.nav`
         width: .3rem;
         transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
         will-change: transform, opacity;
+        
+        ${media.mac13`
+          top: 1.7rem;
+        `}
         
         ${media.sm`
           top: 1.5rem;
@@ -102,15 +112,23 @@ export const Nav = styled.ul`
   padding: 0 1.1rem;
   position: absolute;
   list-style: none;
-  width: 90%;
-  height: 70%;
-  transform-origin: top; 
+  width: 100%;
+  height: 90%;
+  transform-origin: top;
   transform: rotate(180deg);
+
+  ${media.mon`
+    right: 20px;
+    margin-top: 60px;
+  `}
 
   ${media.mac13`
     right: 20px;
     margin-top: 50px;
+    width: 90%;
+    height: 70%;
   `}
+
   ${media.lg`
     width: 75%;
     right: 20px;
@@ -121,7 +139,7 @@ export const Nav = styled.ul`
     right: 20px;
     margin-top: 50px;
   `}
-  
+
   ${media.sm`
     width: 48%;
     margin-top: 7px;
@@ -136,21 +154,25 @@ export const NavItem = styled.li`
   list-style: none;
   line-height: 1;
   margin-left: 2rem;
-  
+
+  ${media.mon`
+    margin-left: 1rem;
+  `}
+
   ${media.mac13`
     margin-left: 1rem;
   `}
-  
+
   ${media.md`
     margin-left: 1rem;
   `}
-  
+
   ${media.sm`
     margin-left: 0;
   `}
 
   a {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-family: 'Poppins', san-serif;
     font-weight: 400;
     letter-spacing: 1px;
@@ -169,7 +191,14 @@ export const NavItem = styled.li`
     : css`
         color: ${colors.gray300};
       `}
-      
+
+    ${media.mon`
+      font-size: 1.4rem;
+    `}
+    ${media.mac13`
+      font-size: 1rem;
+    `}
+
     ${media.sm`
       font-size: .75rem;
     `}
@@ -181,8 +210,7 @@ export const NavLink = styled(Link).attrs({
 })`
   &.active {
     color: ${colors.white};
-    text-decoration: line-through;
-    
+
     &::before {
       transform: translate(0, 0);
       opacity: 1;

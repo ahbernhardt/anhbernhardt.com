@@ -4,9 +4,9 @@ import { Loader } from "../../../style/shared"
 
 const ProjectItem = ({ title, company,imageLink,imageTitle, url }) =>
     <ProjectWrapper className="menu">
-      <EachProject href={url} target='_blank'>
-        <Text>
-          <Inner>
+      <EachProject className="counter" href={url} target='_blank'>
+        <Text className="text">
+          <Inner >
             <span>{title}</span>
           </Inner>
           <TitleSub className="titleSub">

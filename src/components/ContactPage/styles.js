@@ -7,6 +7,12 @@ export const ContentWrapper = styled.main`
   height: 100vh;
   // border: dotted 1px ${colors.yellow500};
   
+  ${media.mon`
+    width: 100%;
+    height: 100vh;
+    margin-right: 60px;
+    padding-left: 120px;
+  `}
   ${media.mac13`
     width: 100%;
     height: 100vh;
@@ -37,8 +43,10 @@ export const Wrapper = styled.div`
     text-align: right;
     margin-right: .2rem;
     color: ${colors.gray100};
-    // border: solid 1px #223232;
-    
+    border: solid 1px #223232;
+    ${media.mon`
+      height: 100%;
+    `}
     ${media.mac13`
       height: 100%;
     `}
@@ -63,25 +71,58 @@ export const Email = styled.h2`
     display: flex;
     text-align: right;
     margin-right: .2rem;
-    color: ${colors.gray100};
+    color: ${colors.white};
     font-family: ${fonts.hunny};
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 400;
     font-style: normal;
     // border: solid 1px #223232;
     
-    span {
+    a {
       margin-left: 10px;
       margin-right: 3px;
-      color: ${colors.gray400};
+      display: inline-block;
+      text-decoration: none;
+      position: relative;
+      z-index: 0;
+      color: ${colors.yellow500};
+      
+      &::after {
+        position: absolute;
+        z-index: -1;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: '';
+        width: 100%;
+        height: .5px;
+        background-color: ${colors.yellow500};
+        opacity: 0.2;
+        transition: all 250ms;
+      }
+      
+      &:hover {
+        color: ${colors.black};
+      
+        &::after {
+          height: 108%;
+          width: 105%;
+          opacity: 1;
+        }
+      }
     }
-    
+    ${media.mon`
+      font-size: 6rem;
+      margin-top: 25rem;
+    `}
     ${media.mac13`
+      font-size: 3.5rem;
       margin-top: 15rem;
     `}
     
     ${media.lg`
       margin-top: 15rem;
+      font-size: 3.2rem;
     `}
     
     ${media.md`
@@ -89,7 +130,7 @@ export const Email = styled.h2`
       height: auto;
       font-size: 3rem;
       margin-top: 20rem;
-      padding-left: 7rem;
+      padding-left: 5rem;
     `}
     
     ${media.sm`
@@ -100,7 +141,6 @@ export const Email = styled.h2`
       
       span {
         margin-left: 5px;
-        color: ${colors.gray400};
       }
     `} 
 `
@@ -112,15 +152,27 @@ export const SocialSection = styled.div`
     align-items: flex-end;
     width: auto;
     right: 0;
-    font-size: 1rem;
-    color:  ${colors.gray300};
+    font-size: 1.3rem;
+    font-family: 'Poppins', san-serif;
+    color:  ${colors.gray200};
     // border: dotted 1px ${colors.yellow500};
     
     a { 
       margin-left: 20px;
+      
+     &:hover {
+      color: ${colors.yellow500};
+      }
     }
+    ${media.mon`
+      position: absolute;
+      bottom: 0;
+      align-items: flex-end;
+      margin-bottom: 8rem;
+    `}
     
     ${media.mac13`
+    font-size: 1rem;
       position: absolute;
       bottom: 0;
       align-items: flex-end;

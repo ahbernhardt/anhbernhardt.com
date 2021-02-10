@@ -3,17 +3,27 @@ import { media, colors } from './constants'
 
 export const ListItem = styled.li`
   font-size: 1rem;
-  color: ${colors.gray400};
+  color: ${colors.gray300};
   padding: .3rem 0;
   line-height: 1.6em;
 `
 
 export const ListItemLine = styled.li`
-  font-size: .8rem;
-  color: ${colors.gray400};
+  font-size: 1.2rem;
+  color: ${colors.gray300};
   padding: .1rem 0;
-  line-height: 1.2;
+  line-height: 1.3;
   
+  ${media.mac13`
+    font-size: .8rem;
+    line-height: 1.2;
+  `}
+  ${media.lg`
+    font-size: .8rem;
+  `}
+  ${media.md`
+    font-size: .8rem;
+  `}
   ${media.sm`
     font-size: .8rem;
   `}

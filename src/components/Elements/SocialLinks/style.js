@@ -42,7 +42,7 @@ export const Wrapper = styled.nav`
       }
 
       &:hover {
-        color: #fff;
+        color: ${colors.yellow500};
         
         &::before {
           transform: translate(0, -50%);

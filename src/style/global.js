@@ -17,10 +17,10 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   :root {
-    --font-display: 'GT-Display',serif;
-    --font-mono: 'Inter', 'Roboto Mono', san-serif, monospace;
-    --font-outline: 'HunnyStrawSansOutline', sans-serif;
-    --font-hunny: 'HunnyStrawSans', sans-serif;
+    // --font-display: 'GT-Display',serif;
+    // --font-mono: 'Inter', 'Roboto Mono', san-serif, monospace;
+    // --font-outline: 'HunnyStrawSansOutline', sans-serif;
+    // --font-hunny: 'HunnyStrawSans', sans-serif;
     --font-size: 18px;
     
     --line-height: calc(var(--font-size)*1.5);
@@ -49,10 +49,9 @@ export const GlobalStyle = createGlobalStyle`
     height: 100vh;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     display: block;
     background-color: ${colors.black};
-    font-family: 'Poppins', sans-serif;
+    // font-family: 'Poppins', sans-serif;
     backface-visibility: hidden;
     line-height: 1;
   }
@@ -62,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     transition: color ease-in .2s;
     
-    &:hover {
+    :hover{
       color: ${colors.yellow500};
     }
   }

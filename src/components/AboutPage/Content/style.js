@@ -8,19 +8,30 @@ export const ContentWrapper = styled.div`
   grid-template-columns: repeat(3, 1.5fr);
   align-content: center;
   grid-column-gap: 1rem;
-  // border: dotted 2px ${colors.yellow500};
   width: 85vw;
+   // border: dotted 2px ${colors.yellow500};
   
+  ${media.mon`
+    grid-template-areas: unset;
+    grid-template-columns: repeat(3, 2fr);
+    align-content: center;
+    grid-column-gap: 1.5rem;
+    width: 100%;
+    margin-right: 60px;
+    padding-left: 230px;
+    margin-bottom: 2.2rem;
+  `}
   ${media.mac13`
     grid-template-areas: unset;
     grid-template-columns: repeat(3, 1.8fr);
     align-content: center;
-    grid-column-gap: .9rem;
+    grid-column-gap: 1rem;
     width: 100%;
     margin-right: 60px;
     padding-left: 120px;
     margin-bottom: 2.2rem;
   `}
+  
    ${media.lg`
     width: 100%;
     padding-top: 2rem;
@@ -61,6 +72,22 @@ export const Subtitle = styled.h2`
     color: ${colors.gray200}
   }
   
+  ${media.mon`
+    grid-column: 1 / 3;
+    grid-row; 1;
+    align-self: unset;
+    font-size: 4vw;
+    line-height: 1;
+    margin-top: 15rem;
+    margin-left: 14rem;
+    z-index: 1;
+    
+    span{
+      font-size: 7vw;
+      font-family: ${fonts.display};
+      font-style: italic;
+    }
+  `}
   ${media.mac13`
     grid-column: 1 / 3;
     grid-row; 1;
@@ -72,7 +99,7 @@ export const Subtitle = styled.h2`
     z-index: 1;
     
     span{
-      font-size: 6vw;
+      font-size: 5.8vw;
       font-family: ${fonts.display};
       font-style: italic;
     }
@@ -93,6 +120,7 @@ export const Subtitle = styled.h2`
       font-style: italic;
     }
   `}
+  
   ${media.md`
     grid-column: 1 / 2;
     grid-row: 1;
@@ -135,6 +163,13 @@ export const StyledImage = styled(Image)`
   display: block;
   z-index: 0;
   
+  ${media.mon`
+    grid-row: 1;
+    grid-column: 3;
+    padding-top: 100%;
+    // margin-inline-end: 1%;
+  `}
+  
   ${media.mac13`
     grid-row: 1;
     grid-column: 3;
@@ -160,6 +195,7 @@ export const StyledImage = styled(Image)`
     margin-left: -2.2rem;
     margin-top: -1.5rem;
   `}
+  
   img {
     position: absolute;
     width: 100%;
@@ -173,6 +209,10 @@ export const StyledImage = styled(Image)`
     display: block;
     object-fit: cover;
     padding: 0 6% 0 3%;
+    
+    ${media.mon`
+    padding: 0 3% 0 6%;
+  `}
   }
 `
 export const ContentInfo = styled.div`
@@ -182,31 +222,64 @@ export const ContentInfo = styled.div`
     p{
       font-family: 'Poppins', sans-serif;
       font-weight: 300;
-      letter-spacing: .05em;
-      color: ${colors.gray200};
-      font-size: .8rem;
-      margin-bottom: 1rem;
+      letter-spacing: .08em;
+      color: ${colors.white};
+      font-size: 1.2rem;
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
     }
     
     a {
+      display: inline-block;
       color: ${colors.gray300};
+      text-decoration: none;
+      position: relative;
+      z-index: 0;
+
+      &::after {
+        position: absolute;
+        z-index: -1;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: '';
+        width: 100%;
+        height: .5px;
+        background-color: ${colors.yellow500};
+        opacity: 0.2;
+        transition: all 250ms;
+      }
       
-      :hover{
-        color: ${colors.yellow500};
+      &:hover {
+        color: ${colors.black};
+      
+        &::after {
+          height: 108%;
+          width: 105%;
+          opacity: 1;
+        }
       }
     }
+
+    ${media.mon`
+        grid-row: 2;
+        grid-column: 3;
+        padding: 6% 6% 0 8%;
+    `}
 
     ${media.mac13`
       grid-row: 2;
       grid-column: 3;
-      padding: 6% 6% 0 3%;
+      padding: 6% 3% 0 6%;
       
       p{
       font-size: .8rem;
-      line-height: 1.2;
+      letter-spacing: .05em;
+      line-height: 1.2rem;
       margin-bottom: 1rem;
     }
   `}
+  
    ${media.lg`
       grid-row: 2;
       grid-column: 1;
@@ -255,6 +328,16 @@ export const ContentInfo2 = styled.div`
       width: 95%;
       opacity: .5;
     }
+    
+  ${media.mon`
+    grid-row: 2;
+    grid-column: 2;
+    padding: 8% 0 0 10%;
+    img{
+      width: 100%;
+      opacity: .5;
+    }
+  `}
   
   ${media.mac13`
       grid-row: 2;
@@ -286,10 +369,23 @@ export const SkillsSection = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: .9rem;
   padding: 7% 0 0 15%;
+  font-family: 'Poppins', san-serif;
   
   grid-row: 2;
   grid-column: 1;
   
+   ${media.mon`
+    grid-column-gap: 1rem;
+    padding: 9% 0 0 20%;
+    grid-row: 2;
+    grid-column: 1;
+  `}
+  ${media.mac13`
+    grid-column-gap: .9rem;
+    padding: 7% 0 0 15%;
+    grid-row: 2;
+    grid-column: 1;
+  `}
   ${media.lg`
     grid-row: 2;
     grid-column: 2;

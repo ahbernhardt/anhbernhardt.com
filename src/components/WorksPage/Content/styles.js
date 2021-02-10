@@ -8,14 +8,24 @@ export const ContentWrapper = styled.main`
   counter-reset: counter;
   // border: dotted 1px ${colors.yellow500};
   
+  ${media.mon`
+    width: 100%;
+    height: 100%;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    margin-right: 60px;
+    padding-left: 280px;
+  `}
+  
   ${media.mac13`
     width: 100%;
     height: 100%;
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-bottom: 4rem;
     margin-right: 60px;
     padding-left: 120px;
   `}
+  
   ${media.lg`
     width: 100%;
   `}

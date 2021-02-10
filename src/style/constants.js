@@ -30,6 +30,7 @@ export const mq = {
     md:     '768px',
     lg:     '1080px',
  mac13:     '1280px',
+   mon:     '1920px',
 }
 
 export const media = {
@@ -53,7 +54,13 @@ export const media = {
   `,
 
   mac13: (...a) => css`
-    @media (min-width: ${mq.mac13}) {
+    @media (min-width: ${mq.mac13}) and (max-width: ${mq.mon}){
+      ${css(...a)}
+    }
+  `,
+
+  mon: (...a) => css`
+    @media (min-width: ${mq.mon}) {
       ${css(...a)}
     }
   `,

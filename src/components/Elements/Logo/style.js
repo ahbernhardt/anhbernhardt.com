@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   left: 0;
   margin-top: 5px;
   
+ ${media.mon`
+   transform-origin: left top; 
+   transform: rotate(-90deg) translate(-50%, 0);
+`}
  ${media.mac13`
    transform-origin: left top; 
    transform: rotate(-90deg) translate(-50%, 0);
@@ -36,9 +40,14 @@ ${media.sm`
   }
 
   a {
-    width: 1.8rem;
-    left: -50%;
-
+    width: 2rem;
+    left: -40%;
+    
+    ${media.mac13`
+      width: 1.7rem;
+      left: -55%;
+    `}
+    
     ${media.sm`
       width: 1.5rem;
     `}

@@ -27,14 +27,16 @@ export const SubLine = styled.hr`
   box-sizing: content-box;
   margin-right: 10px;
   border: solid 1px ${colors.gray200};
-  
+  ${media.mon`
+      width: 30%;
+  `}
   ${media.sm`
       width: 18%;
-    `}
+  `}
 `
 
 export const SubMessage = styled.div`
-  font-family: ${fonts.mono};
+  font-family:'Poppins', san-serif;
   font-style: normal;
   font-weight: 200;
   letter-spacing: 0.5px;
@@ -42,9 +44,17 @@ export const SubMessage = styled.div`
   display: block;
   // border: solid 1px #223232;
   
-    ${media.sm`
-      width: 100%;
-      font-size: .8rem;
-      margin-left: -30px;
-    `}
+  ${media.mon`
+    font-size: 2rem;
+  `}
+  
+  ${media.mac13`
+      font-size: 1.2rem;
+  `}
+  
+  ${media.sm`
+    width: 100%;
+    font-size: .8rem;
+    margin-left: -30px;
+  `}
 `

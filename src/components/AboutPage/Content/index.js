@@ -32,8 +32,7 @@ export default ({ data }) => {
       {/* COLUMN 1 */}
       <ContentInfo ref={revealContainer}>
         <p>
-          I’m currently completing my Master Degree in Software Engineering at
-          <a href="https://www.stthomas.edu/gradsoftware/programs/masters/msse/" target="_blank" rel="noopener noreferrer"> University of St. Thomas</a> based in Minneapolis, Minnesota.
+          I’m currently completing my Master Degree in Software Engineering at <a className='hover-effect' href="https://www.stthomas.edu/gradsoftware/programs/masters/msse/" target="_blank" rel="noopener noreferrer"> University of St. Thomas</a> based in Minneapolis, Minnesota.
           I’m really into CSS, developer experience, and deleting code.
         </p>
         <p>
@@ -41,14 +40,13 @@ export default ({ data }) => {
           knowledge with my keen eye for design to create a beautiful product.
           I focus primarily on building, prototyping and implementing user interfaces that are usable and scalable for
           any web-based platform.{" "}
-          <a href="https://codepen.io/ah_nguyen0208" target="_blank" rel="noopener noreferrer">I enjoy
-            experimenting</a> and
-          <a href="https://github.com/anguyen0208" target="_blank" rel="noopener noreferrer"> building out</a> with new
+          <a className='hover-effect' href="https://codepen.io/ah_nguyen0208" target="_blank" rel="noopener noreferrer">I enjoy
+            experimenting</a> and <a className='hover-effect' href="https://github.com/anguyen0208" target="_blank" rel="noopener noreferrer"> building out</a> with new
           tools.
         </p>
 
         <p>When I'm not in front of a computer screen, I'm probably camping, researching new local restaurants, building LEGO, or crossing off another item on my bucket list and share photos
-          on <a href="https://www.instagram.com/ah_nguyen0208" target="_blank" rel="noopener noreferrer">Instagram</a>.
+          on <a className='hover-effect' href="https://www.instagram.com/ah_nguyen0208" target="_blank" rel="noopener noreferrer">Instagram</a>.
         </p>
       </ContentInfo>
 
