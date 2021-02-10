@@ -43,7 +43,8 @@ export const Wrapper = styled.div`
     text-align: right;
     margin-right: .2rem;
     color: ${colors.gray100};
-    border: solid 1px #223232;
+    // border: solid 1px #223232;
+    
     ${media.mon`
       height: 100%;
     `}

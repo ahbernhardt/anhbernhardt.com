@@ -36,7 +36,6 @@ export const Loader = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #1b242f;
   z-index: 2;
   ${props => props.isLoaded
     ? css`

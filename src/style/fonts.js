@@ -1,24 +1,24 @@
 import { css } from 'styled-components';
 
-import GTLightWoff from '@fonts/gt-super/GT-Super-Display-Light.woff';
-import GTLightWoff2 from '@fonts/gt-super/GT-Super-Display-Light.woff2';
-import GTRegularWoff2 from '@fonts/gt-super/GT-Super-Display-Regular.woff2';
-import GTMediumWoff2 from '@fonts/gt-super/GT-Super-Display-Medium.woff2';
-import GTBoldWoff from '@fonts/gt-super/GT-Super-Display-Bold.woff';
-import GTBoldWoff2 from '@fonts/gt-super/GT-Super-Display-Bold.woff2';
-import GTSuperWoff2 from '@fonts/gt-super/GT-Super-Display-Super.woff2';
+import GTLightWoff from '../../static/fonts/gt-super/GT-Super-Display-Light.woff';
+import GTLightWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Light.woff2';
+import GTRegularWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Regular.woff2';
+import GTMediumWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Medium.woff2';
+import GTBoldWoff from '../../static/fonts/gt-super/GT-Super-Display-Bold.woff';
+import GTBoldWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Bold.woff2';
+import GTSuperWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Super.woff2';
 
-import GTLightItalicWoff from '@fonts/gt-super/GT-Super-Display-Light-Italic.woff';
-import GTLightItalicWoff2 from '@fonts/gt-super/GT-Super-Display-Light-Italic.woff2';
-import GTRegularItalicWoff2 from '@fonts/gt-super/GT-Super-Display-Regular-Italic.woff2';
-import GTMediumItalicWoff2 from '@fonts/gt-super/GT-Super-Display-Medium-Italic.woff2';
-import GTBoldItalicWoff from '@fonts/gt-super/GT-Super-Display-Bold-Italic.woff';
-import GTBoldItalicWoff2 from '@fonts/gt-super/GT-Super-Display-Bold-Italic.woff2';
-import GTSuperItalicWoff2 from '@fonts/gt-super/GT-Super-Display-Super-Italic.woff2';
+import GTLightItalicWoff from '../../static/fonts/gt-super/GT-Super-Display-Light-Italic.woff';
+import GTLightItalicWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Light-Italic.woff2';
+import GTRegularItalicWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Regular-Italic.woff2';
+import GTMediumItalicWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Medium-Italic.woff2';
+import GTBoldItalicWoff from '../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.woff';
+import GTBoldItalicWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Bold-Italic.woff2';
+import GTSuperItalicWoff2 from '../../static/fonts/gt-super/GT-Super-Display-Super-Italic.woff2';
 
-import Inter from '@fonts/inter/Inter.woff2';
-import InterUpright from '@fonts/inter/Inter-upright.woff2';
-import InterItalic from '@fonts/inter/Inter-italic.woff2';
+import Inter from '../../static/fonts/inter/Inter.woff2';
+import InterUpright from '../../static/fonts/inter/Inter-upright.woff2';
+import InterItalic from '../../static/fonts/inter/Inter-italic.woff2';
 
 import HunnyStraw from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans.otf';
 import HunnyStrawTTf from '../../static/fonts/Hunny-Staws/Hunny-Straw-Sans.ttf';
