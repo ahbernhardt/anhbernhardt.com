@@ -206,6 +206,6 @@ export const SocialSection = styled.div`
       margin-bottom: 1rem;
       position: absolute;
       bottom: 0;
-      font-size: .8rem;
+      font-size: .75rem;
     `}
 `

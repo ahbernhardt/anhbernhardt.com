@@ -100,8 +100,8 @@ export const EachBlockOutlineText = styled.span`
     font-style: normal;
     
     ${media.ultra`
-      font-size: 9vw;
-      height: 19vh;
+      font-size: 8.5vw;
+      height: 18.5vh;
     `}
     
     ${media.mon`
@@ -115,7 +115,7 @@ export const EachBlockOutlineText = styled.span`
     `} 
     
     ${media.lg`
-      font-size: 9.5vw;
+      font-size: 9vw;
       height: 9vh;
     `} 
     
@@ -142,8 +142,8 @@ export const EachBlockText = styled.span`
     font-style: normal;
     
     ${media.ultra`
-      font-size: 9vw;
-      height: 19vh;
+      font-size: 8.5vw;
+      height: 18.5vh;
     `}
     
     ${media.mon`
@@ -157,8 +157,8 @@ export const EachBlockText = styled.span`
     `} 
     
     ${media.lg`
-      font-size: 9.5vw;
-      height: 9vh;
+      font-size: 9vw;
+      height: 8.5vh;
     `}
     
     ${media.md`

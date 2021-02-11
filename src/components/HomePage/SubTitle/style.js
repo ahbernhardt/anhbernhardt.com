@@ -22,9 +22,11 @@ export const Wrapper = styled.div`
   `}
   ${media.lg`
     bottom: 0;
+    padding: 0 0.2rem 10px 0;
   `}
   ${media.md`
     bottom: 0;
+    padding: 0 0.2rem 10px 0;
   `}
   ${media.sm`
     bottom: 0;
@@ -63,10 +65,10 @@ export const SubMessage = styled.div`
   letter-spacing: 0.5px;
   margin-left: 15px;
   display: block;
-  border: solid 1px #223232;
+  // border: solid 1px #223232;
   
   ${media.ultra`
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   `}
   
   ${media.mon`
@@ -77,7 +79,7 @@ export const SubMessage = styled.div`
       font-size: 1.1rem;
   `}
   ${media.lg`
-      font-size: 1.1rem;
+      font-size: 1.2rem;
   `}
   ${media.md`
       font-size: 1rem;

@@ -54,9 +54,16 @@ export const EachProject = styled.a`
       ${media.lg`
         font-size: .8rem;
       `}
+      ${media.md`
+        font-size: .7rem;
+      `}
+      ${media.md`
+        font-size: .6rem;
+        padding-left: .5rem;
+        border-left: 2px solid currentColor;
+      `}
    }
   
-    
     &:hover{
       &::before{
         opacity: 1;
@@ -64,6 +71,7 @@ export const EachProject = styled.a`
       }
       
       .titleSub{
+        z-index: 2;
         opacity: 1;
         transition-duration: 1s;
         transform: translateY(250px);
@@ -76,7 +84,7 @@ export const EachProject = styled.a`
       .imageReveal{
         display: block;
         opacity: 1;
-        z-index: 2;
+        z-index: 1;
       }
     }
 `
@@ -105,6 +113,17 @@ export const Inner = styled.span`
   
   ${media.lg`
     font-size: 5vw;
+    z-index: 2;
+  `}
+  
+  ${media.md`
+    font-size: 4.8vw;
+    z-index: 2;
+  `}
+  
+  ${media.sm`
+    font-size: 5vw;
+    z-index: 2;
   `}
 `
 
@@ -155,6 +174,16 @@ export const TitleSub = styled.span`
     margin-bottom: 50px;
     font-size: .8rem;
   `}
+  ${media.md`
+    line-height: 1.8rem;
+    margin-bottom: 50px;
+    font-size: .8rem;
+  `}
+   ${media.sm`
+    line-height: 1.4rem;
+    margin-bottom: 50px;
+    font-size: .6rem;
+  `}
 `
 
 export const HoverReveal = styled.div`
@@ -180,10 +209,10 @@ export const HoverReveal = styled.div`
   `}
   
   ${media.mac`
-    width: 360px;
-    height: 200px;
+    width: 480px;
+    height: 3200px;
     margin-left: 100px;
-    margin-top: -50px;
+    margin-top: -75px;
   `}
   
   ${media.lg`
@@ -191,6 +220,20 @@ export const HoverReveal = styled.div`
     height: 200px;
     margin-left: 75px;
     margin-top: -50px;
+  `}
+  
+  ${media.md`
+    width: 260px;
+    height: 140px;
+    margin-left: 60px;
+    margin-top: -35px;
+  `}
+  
+   ${media.sm`
+    width: 160px;
+    height: 80px;
+    margin-left: 30px;
+    margin-top: -15px;
   `}
 `
 export const HoverInner = styled.div`

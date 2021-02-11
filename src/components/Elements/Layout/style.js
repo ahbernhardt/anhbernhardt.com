@@ -60,7 +60,7 @@ export const MainBody = styled.div`
   `}
   
   ${media.sm`
-    width: 100% - 30px;
+    // width: 100% - 30px;
     margin-left: 30px;
     display: block;
   `}

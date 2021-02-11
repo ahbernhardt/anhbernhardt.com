@@ -63,7 +63,7 @@ export const ContentWrapper = styled.div`
   
   ${media.sm`
     width: 100%;
-    grid-template-columns: repeat(1, 1.8fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-row: 1;
     grid-column: 1;
     margin-bottom: 1.5rem;
@@ -90,7 +90,7 @@ export const Subtitle = styled.h2`
     line-height: 1;
     margin-top: 22rem;
     margin-left: 14rem;
-    z-index: 1;
+    z-index: 0;
     
     span{
       font-size: 7vw;
@@ -106,7 +106,7 @@ export const Subtitle = styled.h2`
     line-height: 1;
     margin-top: 17rem;
     margin-left: 14rem;
-    z-index: 1;
+    z-index: 0;
     
     span{
       font-size: 6.5vw;
@@ -224,10 +224,9 @@ export const StyledImage = styled(Image)`
   ${media.sm`
     grid-row: 1;
     grid-column: 1;
-    padding-top: 100%;
     margin-inline-end: 0px;
     margin-left: -2.2rem;
-    margin-top: -1.5rem;
+    margin-top: -.7rem;
   `}
   
   img {
@@ -258,6 +257,7 @@ export const StyledImage = styled(Image)`
     
     ${media.sm`
       padding: 0;
+      // margin-top: 15px;
     `}
   }
 `
@@ -493,14 +493,15 @@ export const SkillsSection = styled.div`
   `}
   
   ${media.sm`
-    width: 100%;
+    width: 110%;
     grid-row: 3;
     grid-column: 1;
     margin-top: .5rem;
-    margin-left: -1rem;
+    margin-left: -3rem;
+    
     grid-template-columns: repeat(2, 1.5fr);
     grid-column-gap: .8em;
-    grid-row-gap: 1rem;
+    grid-row-gap: .8rem;
   `}
  
 `

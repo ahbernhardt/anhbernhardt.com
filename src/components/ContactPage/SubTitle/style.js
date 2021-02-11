@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
   ${media.mac`
     bottom: 0;
     width: auto;
-    padding: 25px 0.2rem 10px 2rem;
+    padding: 18px 0.2rem 10px 2rem;
   `}
   
   ${media.lg`
@@ -35,13 +35,15 @@ export const Wrapper = styled.div`
   
   ${media.md`
     width: auto;
+    padding-top: 15px;
   `}
   ${media.sm`
-    width: 100%;
-    padding-top: 12px;
+    width: auto;
+    padding-top: 10px;
     padding-left: 0;
     padding-right: 0;
     margin-right: -2px;
+    margin-left: -2px;
   `}
 `
 
@@ -72,7 +74,7 @@ export const SubLine = styled.hr`
   `}
   ${media.sm`
     width: 20px;
-    margin-left: 0px;
+    // margin-left: 0px;
   `}
 `
 
@@ -115,7 +117,7 @@ export const SubMessage = styled.div`
   `}
   ${media.sm`
     width: auto;
-    font-size: .6rem;
-    margin-left: 8px;
+    font-size: .55rem;
+    margin-left: 1px;
   `}
 `

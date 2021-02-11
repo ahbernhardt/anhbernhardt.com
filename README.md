@@ -3,11 +3,11 @@
   <h4 align="center">
     Personal Website
   <p>
-    <a href="https://anhnguyen.page">View Demo</a>
+    <a href="https://anhnguyen.page" target="_blank">View Demo</a>
         _
-    <a href="https://github.com/anguyen0208/anhnguyen.page/issues">Report Bug</a>
+    <a href="https://github.com/anguyen0208/anhnguyen.page/issues" target="_blank">Report Bug</a>
         _
-    <a href="https://github.com/anguyen0208/anhnguyen.page/issues">Request Feature</a>
+    <a href="https://github.com/anguyen0208/anhnguyen.page/issues" target="_blank">Request Feature</a>
   </p>
   </h4>
 </div>

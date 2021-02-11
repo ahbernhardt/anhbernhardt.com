@@ -6,7 +6,7 @@ export const ContentWrapper = styled.main`
   width: 85vw;
   height: 100vh;
   counter-reset: counter;
-  border: dotted 1px ${colors.yellow500};
+  // border: dotted 1px ${colors.yellow500};
   
   ${media.ultra`
     width: 100%;
@@ -48,13 +48,19 @@ export const ContentWrapper = styled.main`
   `}
   ${media.md`
     width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+    margin-right: 65px;
+    padding-left: 0;
+    padding-right: 0.4rem;
   `}
   
   ${media.sm`
-    width: 90vw;
-    margin-left: -4rem;
-    grid-template-columns: repeat(1, 1.8fr);
-    grid-row: 1;
-    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+    margin-right: 65px;
+    padding-left: 0;
+    padding-right: 0.2rem;
   `}
 `
