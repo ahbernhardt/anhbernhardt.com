@@ -75,10 +75,6 @@ export const EachProject = styled.a`
         opacity: 1;
         transition-duration: 1s;
         transform: translateY(250px);
-        
-        &::before{
-          transform: rotate(22.5deg) scale3d(1,1,1);
-        }
       }
       
       .imageReveal{
@@ -104,7 +100,7 @@ export const Inner = styled.span`
   font-weight: 400;
   font-size: 4.5vw;
   white-space: nowrap;
-  color: ${colors.gray200};
+  color: ${colors.gray100};
   
   
   ${media.mac`
@@ -112,6 +108,7 @@ export const Inner = styled.span`
   `}
   
   ${media.lg`
+    font-family: ${fonts.hunny};
     font-size: 5vw;
     z-index: 2;
   `}
@@ -142,17 +139,6 @@ export const TitleSub = styled.span`
   line-height: 4rem;
   font-size: 1.4rem;
   
-  &::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 5%;
-    width: 1px;
-    height: 75%;
-    transform-origin: 0 100%;
-    transform: rotate(22.5deg) scale3d(0,1,1);
-    transition: transform 0.3s;
-  }
   ${media.ultra`
     line-height: 1.8rem;
     margin-bottom: 50px;

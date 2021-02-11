@@ -37,7 +37,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
         '@images': path.resolve(__dirname, 'static/images'),
         '@pages': path.resolve(__dirname, 'src/pages'),
         '@styles': path.resolve(__dirname, 'src/styles'),
-        '@utils': path.resolve(__dirname, 'src/utils'),
+        '@utils': path.resolve(__dirname, 'src/utils')
       },
     },
   });
