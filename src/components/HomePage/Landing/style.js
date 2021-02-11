@@ -83,7 +83,8 @@ export const LandingTitle = styled.div`
     
     ${media.sm`
       width: 100%;
-      bottom: 0;
+      height: auto;
+      margin-top: 15rem;
       margin-bottom: 5rem;
     `}
 `
@@ -211,6 +212,7 @@ export const StatusWrapper = styled.div`
     `}
     
     ${media.sm`
+      margin-top: 5rem;
       position: absolute;
       bottom: 0;
     `}

@@ -39,8 +39,12 @@ export const ContentWrapper = styled.main`
   
   ${media.lg`
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    margin-right: 65px;
+    padding-left: 85px;
+    padding-right: 0.4rem;
   `}
   ${media.md`
     width: 100%;

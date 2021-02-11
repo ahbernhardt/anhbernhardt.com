@@ -104,7 +104,7 @@ export const Inner = styled.span`
   `}
   
   ${media.lg`
-    font-size: 4.5vw;
+    font-size: 5vw;
   `}
 `
 
@@ -187,9 +187,9 @@ export const HoverReveal = styled.div`
   `}
   
   ${media.lg`
-    width: 360px;
+    width: 320px;
     height: 200px;
-    margin-left: 100px;
+    margin-left: 75px;
     margin-top: -50px;
   `}
 `

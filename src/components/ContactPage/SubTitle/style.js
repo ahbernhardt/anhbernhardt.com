@@ -3,7 +3,7 @@ import { colors, fonts, media } from "../../../style/constants"
 
 export const Wrapper = styled.div`
   font-size: 1rem;
-  color: ${colors.gray300};
+  color: ${colors.gray200};
   display: flex;
   align-items: center;
   bottom: 0;
@@ -37,8 +37,11 @@ export const Wrapper = styled.div`
     width: auto;
   `}
   ${media.sm`
-    width: auto;
-    padding: 12px 0.2rem 10px 0;
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: -2px;
   `}
 `
 
@@ -68,8 +71,8 @@ export const SubLine = styled.hr`
     // margin-left: -20px;
   `}
   ${media.sm`
-      width: 30px;
-      margin-left: -5px;
+    width: 20px;
+    margin-left: 0px;
   `}
 `
 
@@ -80,7 +83,6 @@ export const SubMessage = styled.div`
   letter-spacing: 0.5px;
   margin-left: 15px;
   display: block;
-  // border: solid 1px #223232;
   
   ${media.ultra`
     width: 100%;
@@ -112,8 +114,8 @@ export const SubMessage = styled.div`
     margin-left: 0px;
   `}
   ${media.sm`
-    width: 100%;
+    width: auto;
     font-size: .6rem;
-    margin-left: 0px;
+    margin-left: 8px;
   `}
 `

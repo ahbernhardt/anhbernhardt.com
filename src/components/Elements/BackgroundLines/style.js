@@ -35,7 +35,7 @@ export const BlockLines = styled.div`
     `}   
     
     ${media.lg`
-      height: auto;
+      height: 100%;
     `}
     
     ${media.md`

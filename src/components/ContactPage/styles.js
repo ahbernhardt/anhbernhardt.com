@@ -145,7 +145,7 @@ export const Email = styled.h2`
     ${media.sm`
       height: auto;
       font-size: 4vh;
-      margin-top: 18rem;
+      margin-top: 15rem;
     `} 
 `
 
@@ -203,7 +203,7 @@ export const SocialSection = styled.div`
     `}
     
     ${media.sm`
-      margin-bottom: 0;
+      margin-bottom: 1rem;
       position: absolute;
       bottom: 0;
       font-size: .8rem;

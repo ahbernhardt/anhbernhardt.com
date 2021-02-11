@@ -27,7 +27,9 @@ export const Wrapper = styled.div`
     bottom: 0;
   `}
   ${media.sm`
-    width: 90%;
+    bottom: 0;
+    padding: 10px 0 10px 0;
+    // width: 90%;
   `}
 `
 
@@ -50,7 +52,7 @@ export const SubLine = styled.hr`
       width: 25%;
   `}
   ${media.sm`
-      width: 18%;
+      width: 16%;
   `}
 `
 
@@ -61,7 +63,7 @@ export const SubMessage = styled.div`
   letter-spacing: 0.5px;
   margin-left: 15px;
   display: block;
-  // border: solid 1px #223232;
+  border: solid 1px #223232;
   
   ${media.ultra`
     font-size: 1.5rem;
@@ -83,6 +85,6 @@ export const SubMessage = styled.div`
   ${media.sm`
     width: 100%;
     font-size: .8rem;
-    margin-left: -30px;
+    margin-left: 5px;
   `}
 `

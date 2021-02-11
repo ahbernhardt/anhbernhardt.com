@@ -98,7 +98,7 @@ export const Wrapper = styled.nav`
           top: 1.5rem;
         `}
         ${media.sm`
-          top: 1.5rem;
+          top: 1.2rem;
           left: 45%;
           height: .2rem;
           width: .2rem;
@@ -202,7 +202,7 @@ export const NavItem = styled.li`
 
   ${media.sm`
     margin-left: 0;
-    margin-top: -8px;
+    margin-top: -1px;
   `}
 
   a {
