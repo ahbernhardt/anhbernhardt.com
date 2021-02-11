@@ -17,11 +17,9 @@ export default () => {
   return (
     <Wrapper>
       <LandingTitle ref={revealLanding}>
-        <EachBlockText/>
         <EachBlockOutlineText>Front-End</EachBlockOutlineText>
         <EachBlockText>Developer & Designer</EachBlockText>
         <SubLandingTitle />
-
         <StatusWrapper ref={revealStatus}>
           <Status />
         </StatusWrapper>

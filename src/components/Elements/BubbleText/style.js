@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
    opacity: 100%;
    padding: 10% 0 0 10%;
    
-  ${media.mac13`
+  ${media.mac`
     position: static;
     padding: 10% 0 0 10%;
   `}

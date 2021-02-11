@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
    z-index:0;
    cursor:none;
   
-  ${media.mac13`
+  ${media.mac`
     position: static;
     padding-top: 20%;
     margin: 0 0 0 33%;
@@ -45,7 +45,7 @@ export const Wrapper = styled.div`
     position: absolute;
     margin-bottom: 0px !important;
     
-    ${media.mac13`
+    ${media.mac`
       width: 400px;
       height: 300px;
       transform: translate(0%, -25%);

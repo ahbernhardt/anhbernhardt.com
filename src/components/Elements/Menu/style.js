@@ -15,29 +15,36 @@ export const Wrapper = styled.nav`
   transform-origin: left top; 
   transform: rotate(-90deg) translate(-100%, 0);
 
+  ${media.ultra`
+    position: fixed;
+    top: 0;
+    width: 100vh;
+  `}
+  
   ${media.mon`
     position: fixed;
     top: 0;
     width: 100vh;
   `}
   
-  ${media.mac13`
+  ${media.mac`
     position: fixed;
     top: 0;
     width: 100vh;
   `}
+  
   ${media.lg`
     position: fixed;
     top: 0;
     width: 100vh;
-    height: 60px;
+    height: 65px;
     border-bottom: solid 1px ${colors.gray400};
   `}
   
   ${media.md`
     position: fixed;
     top: 0;
-    width: 100vh;
+    width: 120vh;
     height: 60px;
     border-bottom: solid 1px ${colors.gray400};
   `}
@@ -74,10 +81,22 @@ export const Wrapper = styled.nav`
         transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
         will-change: transform, opacity;
         
-        ${media.mac13`
+        
+        ${media.mon`
           top: 1.7rem;
         `}
         
+        ${media.mac`
+          top: 1.7rem;
+        `}
+        
+        ${media.lg`
+          top: 1.7rem;
+        `}
+        
+        ${media.md`
+          top: 1.5rem;
+        `}
         ${media.sm`
           top: 1.5rem;
           left: 45%;
@@ -117,12 +136,21 @@ export const Nav = styled.ul`
   transform-origin: top;
   transform: rotate(180deg);
 
+  ${media.ultra`
+    right: 20px;
+    margin-top: 56px;
+    width: 90%;
+    height: 70%;
+  `}
+  
   ${media.mon`
     right: 20px;
-    margin-top: 60px;
+    margin-top: 55px;
+    width: 90%;
+    height: 70%;
   `}
 
-  ${media.mac13`
+  ${media.mac`
     right: 20px;
     margin-top: 50px;
     width: 90%;
@@ -130,14 +158,15 @@ export const Nav = styled.ul`
   `}
 
   ${media.lg`
-    width: 75%;
+    width: 85%;
     right: 20px;
-    margin-top: 50px;
+    margin-top: 58px;
   `}
+  
   ${media.md`
     width: 75%;
     right: 20px;
-    margin-top: 50px;
+    margin-top: 55px;
   `}
 
   ${media.sm`
@@ -155,20 +184,25 @@ export const NavItem = styled.li`
   line-height: 1;
   margin-left: 2rem;
 
+  ${media.ultra`
+    margin-left: 1rem;
+  `}
+  
   ${media.mon`
     margin-left: 1rem;
   `}
 
-  ${media.mac13`
+  ${media.mac`
     margin-left: 1rem;
   `}
 
   ${media.md`
-    margin-left: 1rem;
+    margin-left: .8rem;
   `}
 
   ${media.sm`
     margin-left: 0;
+    margin-top: -8px;
   `}
 
   a {
@@ -192,13 +226,20 @@ export const NavItem = styled.li`
         color: ${colors.gray300};
       `}
 
-    ${media.mon`
+    ${media.ultra`
       font-size: 1.4rem;
     `}
-    ${media.mac13`
+    
+    ${media.mon`
+      font-size: 1.2rem;
+    `}
+    
+    ${media.mac`
       font-size: 1rem;
     `}
-
+    ${media.md`
+      font-size: 1rem;
+    `}
     ${media.sm`
       font-size: .75rem;
     `}

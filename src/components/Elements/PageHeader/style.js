@@ -9,7 +9,7 @@ export const Header = styled.header`
   height: 100%;
   // border: dotted 1px ${colors.yellow700};
   
-  ${media.mac13`
+  ${media.mac`
     top: 0;
     left: 0;
     overflow: hidden:
@@ -57,7 +57,7 @@ export const HeaderTitle = styled.h1`
   transform: rotate(90deg);
   opacity: 0.3;
    
-  ${media.mac13`
+  ${media.mac`
     width: 6.5vw;
     position: fixed;
   `}

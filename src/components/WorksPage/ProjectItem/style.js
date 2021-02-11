@@ -13,7 +13,7 @@ export const ProjectWrapper = styled.nav`
   -ms-user-select: none;
   user-select: none;
   z-index: 2;
-  // border: 1px dotted ${colors.yellow500};
+  padding-top: 2%;
 `
 export const EachProject = styled.a`
   flex: none;
@@ -22,55 +22,63 @@ export const EachProject = styled.a`
   position: relative;
   width: 100%;
   height: 100%;
-  pointer-event: visible;
+  pointer-events: visible;
    
    &::before{
-    counter-increment: counter;
-    content: counters(counter, ".", decimal-leading-zero);
-    position: absolute;
-    left: 0;
-    border-left: 3px solid currentColor;
-    top: 20%;
-    height: 60%;
-    padding-left: 1rem;
-    display: flex;
-    align-items: center;
-    line-height: 1;
-    font-weight: bold;
-    font-family: 'Poppins', san-serif;
-    font-size: 1.5rem;
-    opacity: 0;
-    transform: translateX(0);
-    transition: transform 0.3s, opacity 0.3s;
-    
-    ${media.mac13`
-      font-size: .8rem;
-    `}
-  }
-  
-  
-  &:hover{
-    &::before{
-      opacity: 1;
+      counter-increment: counter;
+      content: counters(counter, ".", decimal-leading-zero);
+      position: absolute;
+      left: 0;
+      border-left: 3px solid currentColor;
+      top: 20%;
+      height: 60%;
+      padding-left: 1rem;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      font-weight: bold;
+      font-family: 'Poppins', san-serif;
+      font-size: 1.4rem;
+      opacity: 0;
       transform: translateX(0);
-    }
+      transition: transform 0.3s, opacity 0.3s;
+      ${media.ultra`
+        font-size: 1.4rem;
+      `}
+      ${media.mon`
+        font-size: 1.2rem;
+      `}
+      ${media.mac`
+        font-size: .8rem;
+      `}
+      ${media.lg`
+        font-size: .8rem;
+      `}
+   }
+  
     
-    .titleSub{
-      opacity: 1;
-      transition-duration: 1s;
-      transform: translateY(250px);
-      
+    &:hover{
       &::before{
-        transform: rotate(22.5deg) scale3d(1,1,1);
+        opacity: 1;
+        transform: translateX(0);
+      }
+      
+      .titleSub{
+        opacity: 1;
+        transition-duration: 1s;
+        transform: translateY(250px);
+        
+        &::before{
+          transform: rotate(22.5deg) scale3d(1,1,1);
+        }
+      }
+      
+      .imageReveal{
+        display: block;
+        opacity: 1;
+        z-index: 2;
       }
     }
-    
-    .imageReveal{
-      display: block;
-      opacity: 1;
-      z-index: 2;
-    }
-  }
 `
 
 export const Text = styled.span`
@@ -86,12 +94,16 @@ export const Inner = styled.span`
   display: block;
   font-family: ${fonts.outline};
   font-weight: 400;
-  font-size: 5vw;
+  font-size: 4.5vw;
   white-space: nowrap;
   color: ${colors.gray200};
-  // border: 1px dotted ${colors.yellow500};
   
-  ${media.mac13`
+  
+  ${media.mac`
+    font-size: 4.5vw;
+  `}
+  
+  ${media.lg`
     font-size: 4.5vw;
   `}
 `
@@ -109,8 +121,7 @@ export const TitleSub = styled.span`
   transform: translateY(50px);
   transition: transform 1s, opacity 0.3s;
   line-height: 4rem;
-  font-size: 1.3rem;
-  // border: 1px dotted ${colors.yellow700};
+  font-size: 1.4rem;
   
   &::before{
     content: '';
@@ -123,9 +134,24 @@ export const TitleSub = styled.span`
     transform: rotate(22.5deg) scale3d(0,1,1);
     transition: transform 0.3s;
   }
+  ${media.ultra`
+    line-height: 1.8rem;
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+  `}
+  ${media.mon`
+    line-height: 1.6rem;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+  `}
+  ${media.mac`
+    line-height: 1.8rem;
+    margin-bottom: 50px;
+    font-size: .8rem;
+  `}
   
-  ${media.mac13`
-    line-height: 2rem;
+  ${media.lg`
+    line-height: 1.8rem;
     margin-bottom: 50px;
     font-size: .8rem;
   `}
@@ -136,21 +162,35 @@ export const HoverReveal = styled.div`
   display: block;
   overflow: hidden:
   z-index: -1;
-  width: 640px;
-  height: 420px;
+  width: 840px;
+  height: 580px;
   top: 0;
   left: 0;
-  margin-left: 150px;
-  margin-top: -75px;
+  margin-left: 220px;
+  margin-top: -120px;
   pointer-events: none;
   display: none;
   opacity: 1;
   
-  ${media.mac13`
+  ${media.mon`
+    width: 600px;
+    height: 400px;
+    margin-left: 150px;
+    margin-top: -90px;
+  `}
+  
+  ${media.mac`
     width: 360px;
     height: 200px;
     margin-left: 100px;
-  margin-top: -50px;
+    margin-top: -50px;
+  `}
+  
+  ${media.lg`
+    width: 360px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: -50px;
   `}
 `
 export const HoverInner = styled.div`
@@ -162,7 +202,6 @@ export const HoverInner = styled.div`
   background-position: center;
   width: 100%;
   height: 100%;
-  // border: 1px solid ${colors.gray400};
 `
 
 export const ProjectImage = styled(Image)`
@@ -170,7 +209,6 @@ export const ProjectImage = styled(Image)`
   display: block;
   z-index: 2;
   background-size: cover;
-  // background-position: 50% 50%;
   
   img {
     width: 100%;

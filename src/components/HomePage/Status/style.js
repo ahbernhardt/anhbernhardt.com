@@ -9,13 +9,12 @@ export const Wrapper = styled.div`
   opacity: .8;
   bottom: 0;
   width: 100%;
-  // border: solid 1px #223232;
    
  ${media.mon`
   bottom: 0;
 `}
 
-  ${media.mac13`
+  ${media.mac`
     bottom: 0;
     font-size: 1rem;
   `}
@@ -31,13 +30,12 @@ export const StatusLight = styled.div`
   justify-content: center; 
   -web-box-align: center;
   align-items: center; 
-  //
   
   ${media.mon`
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   `}
-  ${media.mac13`
+  ${media.mac`
     width: 35px;
     height: 35px;
   `}
@@ -59,22 +57,25 @@ export const pulsate = keyframes`
 
 export const StatusRing = styled.div`
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     animation: ${pulsate} 2s ease-out;
     animation-iteration-count: infinite;
     opacity: 0;
     border: solid 5px ${colors.yellow500};
     border-radius: 100px; 
     
-    ${media.mon`
+    ${media.ultra`
       width: 40px;
       height: 40px;
     `}
-    
-    ${media.mac13`
-      width: 25px;
-      height: 25px;
+    ${media.mon`
+      width: 30px;
+      height: 30px;
+    `}
+    ${media.mac`
+      width: 23px;
+      height: 23px;
       border: solid 3px ${colors.yellow500};
     `}
     
@@ -86,20 +87,25 @@ export const StatusRing = styled.div`
 
 export const StatusLed = styled.div`
     position: absolute;
-    width: 30px;
-    height: 30px;
-    border: 3px solid ${colors.yellow500};
+    width: 25px;
+    height: 25px;
+    border: 5px solid ${colors.yellow500};
     background-color: ${colors.yellow500};
     border-radius: 100%;
     
-    ${media.mon`
-      width: 30px;
-      height: 30px;
+    ${media.ultra`
+      width: 25px;
+      height: 25px;
     `}
     
-    ${media.mac13`
-      width: 15px;
-      height: 15px;
+     ${media.mon`
+      width: 20px;
+      height: 20px;
+    `}
+    
+    ${media.mac`
+      width: 13px;
+      height: 13px;
     `}
     
     ${media.sm`
@@ -116,14 +122,25 @@ export const StatusMessage = styled.div`
   margin-left: 15px;
   display: block;
   
-  ${media.mon`
-    font-size: 1.8rem;
-    margin-left: 20px;
+  ${media.ultra`
+    font-size: 1.4rem;
+    margin-left: 15px;
   `}
-  
-  ${media.mac13`
+  ${media.mon`
     font-size: 1.2rem;
-    margin-left: 10px;
+    margin-left: 15px;
+  `}
+  ${media.mac`
+    font-size: 1rem;
+    margin-left: 12px;
+  `}
+  ${media.lg`
+    font-size: 1rem;
+    margin-left: 12px;
+  `}
+  ${media.md`
+    font-size: 1rem;
+    margin-left: 12px;
   `}
   ${media.sm`
     font-size: .8rem;

@@ -5,30 +5,42 @@ import { colors, fonts, media } from "../../../style/constants"
 export const ContentWrapper = styled.div`
   display: grid;
   grid-template-areas: unset;
-  grid-template-columns: repeat(3, 1.5fr);
+  grid-template-columns: repeat(3, 2fr);
   align-content: center;
   grid-column-gap: 1rem;
   width: 85vw;
    // border: dotted 2px ${colors.yellow500};
   
-  ${media.mon`
+  ${media.ultra`
     grid-template-areas: unset;
     grid-template-columns: repeat(3, 2fr);
     align-content: center;
-    grid-column-gap: 1.5rem;
+    grid-column-gap: 1rem;
     width: 100%;
     margin-right: 60px;
-    padding-left: 230px;
-    margin-bottom: 2.2rem;
+    padding-left: 60px;
+    // margin-bottom: 2.2rem;
   `}
-  ${media.mac13`
+  
+  ${media.mon`
     grid-template-areas: unset;
     grid-template-columns: repeat(3, 1.8fr);
     align-content: center;
     grid-column-gap: 1rem;
     width: 100%;
     margin-right: 60px;
-    padding-left: 120px;
+    padding-left: 60px;
+    margin-bottom: 2.2rem;
+  `}
+  
+  ${media.mac`
+    grid-template-areas: unset;
+    grid-template-columns: repeat(3, 1.8fr);
+    align-content: center;
+    grid-column-gap: 1rem;
+    width: 100%;
+    margin-right: 60px;
+    padding-left: 60px;
     margin-bottom: 2.2rem;
   `}
   
@@ -38,8 +50,8 @@ export const ContentWrapper = styled.div`
     padding-left: 2rem;
     grid-template-columns: 1.2fr 1fr;
     grid-column-gap: 1.3rem;
-    // margin-bottom: 2rem;
   `}
+  
   ${media.md`
     width: 100%;
     padding-top: 2rem;
@@ -50,13 +62,12 @@ export const ContentWrapper = styled.div`
   `}
   
   ${media.sm`
-    width: 90vw;
-    margin-top: -2rem;
-    margin-left: -4rem;
+    width: 100%;
     grid-template-columns: repeat(1, 1.8fr);
     grid-row: 1;
     grid-column: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
   `}
 `
 export const Subtitle = styled.h2`
@@ -71,14 +82,13 @@ export const Subtitle = styled.h2`
   span{
     color: ${colors.gray200}
   }
-  
-  ${media.mon`
+  ${media.ultra`
     grid-column: 1 / 3;
     grid-row; 1;
     align-self: unset;
     font-size: 4vw;
     line-height: 1;
-    margin-top: 15rem;
+    margin-top: 22rem;
     margin-left: 14rem;
     z-index: 1;
     
@@ -88,7 +98,24 @@ export const Subtitle = styled.h2`
       font-style: italic;
     }
   `}
-  ${media.mac13`
+  ${media.mon`
+    grid-column: 1 / 3;
+    grid-row; 1;
+    align-self: unset;
+    font-size: 4vw;
+    line-height: 1;
+    margin-top: 17rem;
+    margin-left: 14rem;
+    z-index: 1;
+    
+    span{
+      font-size: 6.5vw;
+      font-family: ${fonts.display};
+      font-style: italic;
+    }
+  `}
+  
+  ${media.mac`
     grid-column: 1 / 3;
     grid-row; 1;
     align-self: unset;
@@ -142,14 +169,14 @@ export const Subtitle = styled.h2`
     grid-column: 1;
     grid-row: 2;
     align-self: unset;
-    font-size: 6.5vw;
+    font-size: 8vw;
     line-height: 1.2;
     margin-top: 2rem;
     margin-left: -1.5rem;
     bottom: 0;
     
     span{
-      font-size: 12vw;
+      font-size: 12.5vw;
       font-family: ${fonts.display};
       font-style: italic;
     }
@@ -162,19 +189,24 @@ export const StyledImage = styled(Image)`
   position: relative;
   display: block;
   z-index: 0;
-  
+  ${media.ultra`
+    grid-row: 1;
+    grid-column: 3;
+    padding-top: 100%;
+    margin-inline-end: 3%;
+  `}
   ${media.mon`
     grid-row: 1;
     grid-column: 3;
     padding-top: 100%;
-    // margin-inline-end: 1%;
+    margin-inline-end: 3%;
   `}
   
-  ${media.mac13`
+  ${media.mac`
     grid-row: 1;
     grid-column: 3;
     padding-top: 100%;
-    margin-inline-end: 1%;
+    margin-inline-end: 3%;
   `}
   ${media.lg`
     grid-row: 1;
@@ -186,12 +218,14 @@ export const StyledImage = styled(Image)`
     grid-row: 1;
     grid-column: 2;
     padding: 100% 0 0 0;
-    margin-inline-end: -15px;
+    margin-inline-end: 0px;
   `}
+  
   ${media.sm`
     grid-row: 1;
     grid-column: 1;
     padding-top: 100%;
+    margin-inline-end: 0px;
     margin-left: -2.2rem;
     margin-top: -1.5rem;
   `}
@@ -208,11 +242,23 @@ export const StyledImage = styled(Image)`
     opacity: 1;
     display: block;
     object-fit: cover;
-    padding: 0 6% 0 3%;
+    padding: 0 3% 0 6%;
+    
+    ${media.ultra`
+      padding: 0 3% 0 8%;
+    `}
     
     ${media.mon`
-    padding: 0 3% 0 6%;
-  `}
+      padding: 0 3% 0 6%;
+    `}
+    
+    ${media.md`
+      padding: 0 8% 0 3%;
+    `}
+    
+    ${media.sm`
+      padding: 0;
+    `}
   }
 `
 export const ContentInfo = styled.div`
@@ -224,7 +270,7 @@ export const ContentInfo = styled.div`
       font-weight: 300;
       letter-spacing: .08em;
       color: ${colors.white};
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 1.2;
       margin-bottom: 1.2rem;
     }
@@ -260,20 +306,40 @@ export const ContentInfo = styled.div`
         }
       }
     }
-
+    
+    ${media.ultra`
+        grid-row: 2;
+        grid-column: 3;
+        padding: 6% 3% 0 8%;
+        
+        p{
+        font-size: 1.2rem;
+        letter-spacing: .08em;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+      }
+    `}
+    
     ${media.mon`
         grid-row: 2;
         grid-column: 3;
-        padding: 6% 6% 0 8%;
+        padding: 6% 6% 0 6%;
+        
+        p{
+        font-size: 1rem;
+        letter-spacing: .08em;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+      }
     `}
 
-    ${media.mac13`
+    ${media.mac`
       grid-row: 2;
       grid-column: 3;
       padding: 6% 3% 0 6%;
       
       p{
-      font-size: .8rem;
+      font-size: .75rem;
       letter-spacing: .05em;
       line-height: 1.2rem;
       margin-bottom: 1rem;
@@ -296,10 +362,10 @@ export const ContentInfo = styled.div`
       grid-row: 2;
       grid-column: 1;
       margin-top: 2rem;
-      margin-left: -2rem;
+      margin-left: -3rem;
       
       p {
-      font-size: .8rem;
+      font-size: .75rem;
       line-height: 1.2;
       margin-bottom: 1rem;
     }
@@ -309,10 +375,10 @@ export const ContentInfo = styled.div`
       grid-row: 2;
       grid-column: 1;
       margin-top: 145px;
-      margin-left: -1.5rem;
+      margin-left: -3rem;
       
       p {
-      font-size: .8rem;
+      font-size: .7rem;
       line-height: 1.2;
       margin-bottom: 1rem;
     }
@@ -329,6 +395,15 @@ export const ContentInfo2 = styled.div`
       opacity: .5;
     }
     
+    ${media.ultra`
+      grid-row: 2;
+      grid-column: 2;
+      padding: 8% 0 0 10%;
+      img{
+        width: 100%;
+        opacity: .5;
+      }
+    `}
   ${media.mon`
     grid-row: 2;
     grid-column: 2;
@@ -339,7 +414,7 @@ export const ContentInfo2 = styled.div`
     }
   `}
   
-  ${media.mac13`
+  ${media.mac`
       grid-row: 2;
       grid-column: 2;
       padding: 5% 0 0 5%;
@@ -358,7 +433,8 @@ export const ContentInfo2 = styled.div`
    ${media.sm`
       grid-row: 4;
       grid-column: 1;
-      margin-left: -1.1rem;
+      margin-top: .5rem;
+      margin-left: -3rem;
   `}
   
 `
@@ -366,21 +442,31 @@ export const SkillsSection = styled.div`
   max-width: 100%;
   max-height: 80%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: .9rem;
+  grid-template-columns: repeat(2, 1.2fr);
+  grid-column-gap: 2rem;
   padding: 7% 0 0 15%;
   font-family: 'Poppins', san-serif;
   
   grid-row: 2;
   grid-column: 1;
   
-   ${media.mon`
-    grid-column-gap: 1rem;
-    padding: 9% 0 0 20%;
+  ${media.ultra`
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 1.2rem;
+    grid-row-gap: 1rem;
+    padding: 4% 0 0 20%;
     grid-row: 2;
     grid-column: 1;
   `}
-  ${media.mac13`
+  
+   ${media.mon`
+    grid-column-gap: 1rem;
+    padding: 9% 0 0 15%;
+    grid-row: 2;
+    grid-column: 1;
+  `}
+  
+  ${media.mac`
     grid-column-gap: .9rem;
     padding: 7% 0 0 15%;
     grid-row: 2;
@@ -390,7 +476,7 @@ export const SkillsSection = styled.div`
     grid-row: 2;
     grid-column: 2;
     margin-top: 1rem;
-    grid-template-columns: repeat(2, 1.3fr);
+    grid-template-columns: repeat(2, 1.5fr);
     grid-column-gap: .8em;
     grid-row-gap: 1rem;
     margin-left: -1rem;
@@ -400,22 +486,21 @@ export const SkillsSection = styled.div`
     grid-row: 2;
     grid-column: 2;
     margin-top: 2rem;
-    grid-template-columns: repeat(2, 1.3fr);
-    grid-column-gap: .8em;
-    grid-row-gap: 1rem;
-    padding: 0;
+    grid-template-columns: repeat(2, 1.5fr);
+    grid-column-gap: 1em;
+    // grid-row-gap: .8rem;
+    padding: 0 0 0 8%;
   `}
   
   ${media.sm`
     width: 100%;
     grid-row: 3;
     grid-column: 1;
-    margin-top: 1.5rem;
-    margin-left: -1.5rem;
+    margin-top: .5rem;
+    margin-left: -1rem;
     grid-template-columns: repeat(2, 1.5fr);
     grid-column-gap: .8em;
     grid-row-gap: 1rem;
-    padding: 0;
   `}
  
 `

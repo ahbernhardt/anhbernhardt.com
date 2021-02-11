@@ -47,7 +47,7 @@ export const Item = styled.div`
         color: ${colors.gray700};
       `}
   
-  ${media.mac13`
+  ${media.mac`
       font-size: .8rem;
       line-height: 1em;
   `}

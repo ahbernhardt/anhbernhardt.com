@@ -26,11 +26,13 @@ export const fonts = {
 
 
 export const mq = {
-    sm:     '480px',
-    md:     '768px',
-    lg:     '1080px',
- mac13:     '1280px',
-   mon:     '1920px',
+     sm:     '414px',
+     md:     '768px',
+     lg:     '1080px',
+    mac:     '1280px',
+    mlg:     '1440px',
+    mon:     '1920px',
+  ultra:     '2560px',
 }
 
 export const media = {
@@ -53,14 +55,20 @@ export const media = {
     }
   `,
 
-  mac13: (...a) => css`
-    @media (min-width: ${mq.mac13}) and (max-width: ${mq.mon}){
+  mac: (...a) => css`
+    @media (min-width: ${mq.mac}) and (max-width: ${mq.mlg}){
       ${css(...a)}
     }
   `,
 
   mon: (...a) => css`
-    @media (min-width: ${mq.mon}) {
+    @media (max-width: ${mq.mon}) {
+      ${css(...a)}
+    }
+  `,
+
+  ultra: (...a) => css`
+    @media (min-width: 1921px) and (max-width: ${mq.ultra}) {
       ${css(...a)}
     }
   `,

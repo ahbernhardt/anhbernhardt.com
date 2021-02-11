@@ -77,7 +77,7 @@ export const NavItem = styled.li`
     padding-bottom: 0;
   }
   
-  ${media.mac13`
+  ${media.mac`
       padding: .4rem 0;
   `}
   
@@ -104,7 +104,7 @@ export const NavItem = styled.li`
       `}
       
       
-   ${media.mac13`
+   ${media.mac`
       font-size: .8rem;
       line-height: .8em;
   `}

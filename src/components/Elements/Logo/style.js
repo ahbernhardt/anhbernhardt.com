@@ -6,12 +6,15 @@ export const Wrapper = styled.div`
   top: 0;
   left: 0;
   margin-top: 5px;
-  
+ ${media.ultra`
+   transform-origin: left top; 
+   transform: rotate(-90deg) translate(-50%, 0);
+`}
  ${media.mon`
    transform-origin: left top; 
    transform: rotate(-90deg) translate(-50%, 0);
 `}
- ${media.mac13`
+ ${media.mac`
    transform-origin: left top; 
    transform: rotate(-90deg) translate(-50%, 0);
 `}
@@ -43,9 +46,23 @@ ${media.sm`
     width: 2rem;
     left: -40%;
     
-    ${media.mac13`
+    ${media.mon`
       width: 1.7rem;
       left: -55%;
+    `}
+    
+    ${media.mac`
+      width: 1.7rem;
+      left: -55%;
+    `}
+    
+    ${media.lg`
+      width: 1.8rem;
+      left: -60%;
+    `}
+    
+    ${media.md`
+      left: -60%;
     `}
     
     ${media.sm`

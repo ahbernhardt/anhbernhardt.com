@@ -9,12 +9,17 @@ export const ListItem = styled.li`
 `
 
 export const ListItemLine = styled.li`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: ${colors.gray300};
   padding: .1rem 0;
-  line-height: 1.3;
+  line-height: 1.4;
   
-  ${media.mac13`
+  ${media.mon`
+    font-size: 1rem;
+    line-height: 1.2;
+  `}
+  
+  ${media.mac`
     font-size: .8rem;
     line-height: 1.2;
   `}

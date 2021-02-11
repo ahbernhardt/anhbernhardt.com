@@ -8,14 +8,24 @@ export const Wrapper = styled.div`
   align-items: center;
   opacity: .4;
   bottom: 0;
-  width: 80%;
+  width: 100%;
   padding: 10px 0.2rem 10px 0;
-  // border: solid 1px #223232;
-   
-  ${media.mac13`
+  
+  ${media.ultra`
     bottom: 0;
   `}
-  
+  ${media.mon`
+    bottom: 0;
+  `}
+  ${media.mac`
+    bottom: 0;
+  `}
+  ${media.lg`
+    bottom: 0;
+  `}
+  ${media.md`
+    bottom: 0;
+  `}
   ${media.sm`
     width: 90%;
   `}
@@ -27,8 +37,17 @@ export const SubLine = styled.hr`
   box-sizing: content-box;
   margin-right: 10px;
   border: solid 1px ${colors.gray200};
+  ${media.ultra`
+      width: 30%;
+  `}
   ${media.mon`
       width: 30%;
+  `}
+  ${media.lg`
+      width: 30%;
+  `}
+  ${media.md`
+      width: 25%;
   `}
   ${media.sm`
       width: 18%;
@@ -44,14 +63,23 @@ export const SubMessage = styled.div`
   display: block;
   // border: solid 1px #223232;
   
+  ${media.ultra`
+    font-size: 1.5rem;
+  `}
+  
   ${media.mon`
-    font-size: 2rem;
+    font-size: 1.3rem;
   `}
   
-  ${media.mac13`
-      font-size: 1.2rem;
+  ${media.mac`
+      font-size: 1.1rem;
   `}
-  
+  ${media.lg`
+      font-size: 1.1rem;
+  `}
+  ${media.md`
+      font-size: 1rem;
+  `}
   ${media.sm`
     width: 100%;
     font-size: .8rem;

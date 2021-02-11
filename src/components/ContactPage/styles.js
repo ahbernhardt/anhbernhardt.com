@@ -7,18 +7,24 @@ export const ContentWrapper = styled.main`
   height: 100vh;
   // border: dotted 1px ${colors.yellow500};
   
+   ${media.ultra`
+    width: 100%;
+    height: 100vh;
+    margin-right: 60px;
+  `}
+  
   ${media.mon`
     width: 100%;
     height: 100vh;
     margin-right: 60px;
-    padding-left: 120px;
   `}
-  ${media.mac13`
+  
+  ${media.mac`
     width: 100%;
     height: 100vh;
     margin-right: 60px;
-    padding-left: 120px;
   `}
+  
   ${media.lg`
     width: 100%;
   `}
@@ -27,11 +33,7 @@ export const ContentWrapper = styled.main`
   `}
   
   ${media.sm`
-    width: 90vw;
-    margin-left: -4rem;
-    grid-template-columns: repeat(1, 1.8fr);
-    grid-row: 1;
-    grid-column: 1;
+    width: 100%;
   `}
 `
 export const Wrapper = styled.div`
@@ -45,10 +47,13 @@ export const Wrapper = styled.div`
     color: ${colors.gray100};
     // border: solid 1px #223232;
     
+    ${media.ultra`
+      height: 100%;
+    `}
     ${media.mon`
       height: 100%;
     `}
-    ${media.mac13`
+    ${media.mac`
       height: 100%;
     `}
     
@@ -59,12 +64,12 @@ export const Wrapper = styled.div`
     
     ${media.md`
       width: 100%;
-      height: 80%;
+      height: 95%;
     `}
     
     ${media.sm`
       width: 100%;
-      height: 90%;
+      height: 92%;
     `}
 `
 export const Email = styled.h2`
@@ -112,37 +117,35 @@ export const Email = styled.h2`
         }
       }
     }
-    ${media.mon`
-      font-size: 6rem;
+     ${media.ultra`
+      font-size: 5.5rem;
       margin-top: 25rem;
     `}
-    ${media.mac13`
+    ${media.mon`
+      font-size: 4.5rem;
+      margin-top: 20rem;
+    `}
+    
+    ${media.mac`
       font-size: 3.5rem;
       margin-top: 15rem;
     `}
     
     ${media.lg`
-      margin-top: 15rem;
+      margin-top: 25rem;
       font-size: 3.2rem;
     `}
     
     ${media.md`
-      width: 100%;
       height: auto;
       font-size: 3rem;
       margin-top: 20rem;
-      padding-left: 5rem;
     `}
     
     ${media.sm`
-      width: 100%;
       height: auto;
-      font-size: 3vh;
+      font-size: 4vh;
       margin-top: 18rem;
-      
-      span {
-        margin-left: 5px;
-      }
     `} 
 `
 
@@ -165,6 +168,14 @@ export const SocialSection = styled.div`
       color: ${colors.yellow500};
       }
     }
+    
+    ${media.ultra`
+      position: absolute;
+      bottom: 0;
+      align-items: flex-end;
+      margin-bottom: 8rem;
+    `}
+    
     ${media.mon`
       position: absolute;
       bottom: 0;
@@ -172,12 +183,12 @@ export const SocialSection = styled.div`
       margin-bottom: 8rem;
     `}
     
-    ${media.mac13`
-    font-size: 1rem;
+    ${media.mac`
+      font-size: 1rem;
       position: absolute;
       bottom: 0;
       align-items: flex-end;
-      margin-bottom: 4rem;
+      margin-bottom: 5rem;
     `}
     
     ${media.lg`
@@ -186,19 +197,15 @@ export const SocialSection = styled.div`
       bottom: 0;
     `}
      ${media.md`
-      margin-top: 5rem;
+      margin-bottom: 0;
       position: absolute;
       bottom: 0;
     `}
     
     ${media.sm`
+      margin-bottom: 0;
       position: absolute;
-      display: flex;
-      font-size: .9rem;
       bottom: 0;
-      
-      a { 
-        margin-top: 5px;
-      }
+      font-size: .8rem;
     `}
 `

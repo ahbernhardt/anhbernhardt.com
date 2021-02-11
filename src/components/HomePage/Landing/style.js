@@ -2,50 +2,41 @@ import styled from "styled-components"
 import { colors, fonts, media } from "../../../style/constants"
 
 export const Wrapper = styled.div`
-  display: grid;
-  grid-template-areas: unset;
-  grid-template-columns: repeat(2, 2fr);
-  align-content: center;
-  grid-column-gap: 1rem;
-  width: 85vw;
+  display: flex;
+  width: 90vw;
   height: 100vh;
-  // border: dotted 1px ${colors.yellow500};
+  
+  ${media.ultra`
+    width: 100%;
+    height: 100vh;
+    padding-left: 120px;
+  `}
   
   ${media.mon`
-    grid-template-areas: unset;
-    grid-template-columns: repeat(2, 2fr);
-    align-content: center;
-    grid-column-gap: 1rem;
     width: 100%;
     height: 100vh;
     margin-right: 60px;
-    padding-left: 120px;
+    padding-left: 88px;
   `}
   
-  ${media.mac13`
-    grid-template-areas: unset;
-    grid-template-columns: repeat(2, 2fr);
-    align-content: center;
-    grid-column-gap: 1rem;
+  ${media.mac`
     width: 100%;
     height: 100vh;
-    margin-right: 60px;
-    padding-left: 120px;
+    margin-right: 50px;
+    padding-left: 94px;
   `}
+  
   ${media.lg`
     width: 100%;
   `}
+  
   ${media.md`
     width: 100%;
   `}
   
   ${media.sm`
-    width: 90vw;
-    margin-top: -2rem;
-    margin-left: -4rem;
-    grid-template-columns: repeat(1, 1.8fr);
-    grid-row: 1;
-    grid-column: 1;
+    width: 100%;
+    padding-left: 0px;
   `}
 `
 export const LandingTitle = styled.div`
@@ -58,41 +49,42 @@ export const LandingTitle = styled.div`
     margin-right: .2rem;
     color: ${colors.white};
     pointer-events: none;
-    // border: solid 1px #223232;
+    width: 100%;
     
-    ${media.mon`
-      height: 100%;
-      grid-row: 2;
-      grid-column: 3;
-      margin-top: -5rem;
-      margin-bottom: 20rem;
-    `}
-    
-    ${media.mac13`
-      height: 100%;
-      grid-row: 2;
-      grid-column: 3;
+    ${media.ultra`
+      height: auto;
+      margin-top: 13rem;
       margin-bottom: 8rem;
     `}
     
+    ${media.mon`
+      height: auto;
+      margin-top: 10rem;
+      margin-bottom: 5rem;
+    `}
+    
+    ${media.mac`
+      height: auto;
+      margin-top: 8rem;
+      margin-bottom: 5rem;
+    `}
+    
     ${media.lg`
-      width: 85vw;
-      height: 100%;
+      height: auto;
+      margin-top: 20rem;
       margin-bottom: 15rem;
     `}
     
     ${media.md`
-      width: 80vw;
-      height: 100%;
+      height: auto;
+      width: 100%;
       margin-bottom: 12rem;
     `}
     
     ${media.sm`
-      position: absolute;
-      width: 90%;
-      height: 60%;
+      width: 100%;
       bottom: 0;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
     `}
 `
 export const EachBlockOutlineText = styled.span`
@@ -106,19 +98,24 @@ export const EachBlockOutlineText = styled.span`
     font-weight: 400;
     font-style: normal;
     
-    ${media.mon`
-      font-size: 8.5vw;
-      height: 20vh;
+    ${media.ultra`
+      font-size: 9vw;
+      height: 19vh;
     `}
     
-    ${media.mac13`
+    ${media.mon`
       font-size: 8vw;
-      height: 20vh;
+      height: 18vh;
+    `}
+    
+    ${media.mac`
+      font-size: 7.5vw;
+      height: 15vh;
     `} 
     
     ${media.lg`
-      font-size: 11vw;
-      height: 10vh;
+      font-size: 9.5vw;
+      height: 9vh;
     `} 
     
     ${media.md`
@@ -143,28 +140,33 @@ export const EachBlockText = styled.span`
     font-weight: 400;
     font-style: normal;
     
+    ${media.ultra`
+      font-size: 9vw;
+      height: 19vh;
+    `}
+    
     ${media.mon`
-      font-size: 8.5vw;
+      font-size: 8vw;
       height: 18vh;
     `}
     
-    ${media.mac13`
-      font-size: 8vw;
-      height: 20vh;
+    ${media.mac`
+      font-size: 7.5vw;
+      height: 15vh;
     `} 
     
     ${media.lg`
-      font-size: 10vw;
-      height: 8vh;
+      font-size: 9.5vw;
+      height: 9vh;
     `}
     
     ${media.md`
-      font-size: 10vw;
+      font-size: 8vw;
       height: 8vh;
     `}
     ${media.sm`
-      height: 6vh;
-      font-size: 5.5vh;
+      font-size: 5vh;
+      height: 5vh;
     `}
 `
 
@@ -178,18 +180,22 @@ export const StatusWrapper = styled.div`
     right: 0;
     // border: dotted 1px ${colors.yellow500};
     
+    ${media.ultra`
+      position: absolute;
+      bottom: 0;
+      align-items: flex-end;
+    `}
+    
     ${media.mon`
       position: absolute;
       bottom: 0;
       align-items: flex-end;
-      margin-top: 3rem;
     `}
     
-    ${media.mac13`
+    ${media.mac`
       position: absolute;
       bottom: 0;
       align-items: flex-end;
-      margin-top: 3rem;
     `}
     
     ${media.lg`
@@ -197,6 +203,7 @@ export const StatusWrapper = styled.div`
       position: absolute;
       bottom: 0;
     `}
+    
      ${media.md`
       margin-top: 5rem;
       position: absolute;
