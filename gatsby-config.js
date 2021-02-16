@@ -20,6 +20,12 @@ module.exports = {
         path: `${__dirname}/static/images`
       }
     },{
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'docs',
+        path: `${__dirname}/static/docs`
+      }
+    },{
       resolve: "gatsby-source-filesystem",
       options: {
         name: "fonts",
