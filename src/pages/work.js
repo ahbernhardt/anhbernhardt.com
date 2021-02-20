@@ -8,10 +8,10 @@ import { StaticQuery, graphql } from "gatsby"
 
 const ProjectQuery = graphql`
   query ProjectsQuery {
-    projects: allMongodbWorksProjects {
+    projects: allMongodbWorksProjects(sort: {order: DESC, fields: date}) {
       edges {
         project: node {
-          year
+          date(formatString: "yyyy-mm")
           title
           company
           imageLink
