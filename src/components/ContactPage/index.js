@@ -33,7 +33,7 @@ export default ({  }) => {
         {/* Codepen */}
           <a href="https://codepen.io/ah_nguyen0208" rel="noopener noreferrer" target="_blank">Codepen↗</a>
         {/* LinkedIn*/}
-          <a href="https://linkedin.com/in/anhnguyen0208/" rel="noopener noreferrer" target="_blank">LinkedIn↗</a>
+          <a href="https://linkedin.com/in/anhbernhardt/" rel="noopener noreferrer" target="_blank">LinkedIn↗</a>
         {/* Resume */}
           <a href="https://drive.google.com/file/d/1s2pzjh0DAH5DTUFDWzuDfVBjmofwdaWg/view?usp=sharing" rel="noopener noreferrer" target="_blank">Resume↗</a>
       </SocialSection>
