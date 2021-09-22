@@ -93,7 +93,7 @@ export const Subtitle = styled.h2`
     z-index: 0;
     
     span{
-      font-size: 7vw;
+      font-size: 6.5vw;
       font-family: ${fonts.display};
       font-style: italic;
     }
@@ -102,14 +102,14 @@ export const Subtitle = styled.h2`
     grid-column: 1 / 3;
     grid-row; 1;
     align-self: unset;
-    font-size: 4vw;
+    font-size: 3.2vw;
     line-height: 1;
     margin-top: 17rem;
     margin-left: 14rem;
     z-index: 0;
     
     span{
-      font-size: 6.5vw;
+      font-size: 5.5vw;
       font-family: ${fonts.display};
       font-style: italic;
     }
@@ -126,7 +126,7 @@ export const Subtitle = styled.h2`
     z-index: 1;
     
     span{
-      font-size: 5.8vw;
+      font-size: 5vw;
       font-family: ${fonts.display};
       font-style: italic;
     }
@@ -142,7 +142,7 @@ export const Subtitle = styled.h2`
     bottom: 0;
     
     span{
-      font-size: 7vw;
+      font-size: 5.5vw;
       font-family: ${fonts.display};
       font-style: italic;
     }
@@ -159,7 +159,7 @@ export const Subtitle = styled.h2`
     bottom: 0;
     
     span{
-      font-size: 6vw;
+      font-size: 5.5vw;
       font-family: ${fonts.display};
       font-style: italic;
     }
@@ -176,7 +176,7 @@ export const Subtitle = styled.h2`
     bottom: 0;
     
     span{
-      font-size: 12.5vw;
+      font-size: 10vw;
       font-family: ${fonts.display};
       font-style: italic;
     }

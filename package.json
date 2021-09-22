@@ -1,9 +1,9 @@
 {
   "name": "anhnguyen.page",
   "version": "1.0.0",
-  "description": "Anh Nguyen's personal portfolio website",
+  "description": "Anh Bernhardt's personal portfolio website",
   "private": true,
-  "author": "Anh Nguyen <a.nguyen0208@gmail.com>",
+  "author": "Anh Bernhardt <anhbernhardt@gmail.com>",
   "license": "OBSD",
   "homepage": "https://anhnguyen.page/",
   "repository": {

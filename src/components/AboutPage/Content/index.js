@@ -26,7 +26,7 @@ export default ({ data }) => {
     <ContentWrapper>
       <Subtitle ref={revealTitle}>
         Xin ChÀo, I'm <br/>
-        <span>Anh  Nguyen.</span>
+        <span>Anh  Benrhardt.</span>
       </Subtitle>
 
       {/* COLUMN 1 */}
