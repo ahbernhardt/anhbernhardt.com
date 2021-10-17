@@ -10,7 +10,7 @@ require('dotenv').config({
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    siteUrl: 'https://www.anhnguyen.page/',
+    siteUrl: 'https://www.anhbernhardt.com/',
   },
   plugins: [
     {

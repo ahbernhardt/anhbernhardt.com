@@ -3,7 +3,7 @@
   <h4 align="center">
     Personal Website
   <p>
-    <a href="https://anhnguyen.page" target="_blank">View Demo</a>
+    <a href="https://anhbernhardt.com" target="_blank">View Demo</a>
         _
     <a href="https://github.com/anguyen0208/anhnguyen.page/issues" target="_blank">Report Bug</a>
         _
