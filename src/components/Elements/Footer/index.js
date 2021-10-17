@@ -12,7 +12,7 @@ const Footer = () =>
             {/*<a target="_blank" rel="noopener noreferrer" href='https://github.com/anguyen0208/anhnguyen.page'>Source code</a>*/}
           {/*<EmailLink text="Hello@anhnguyen.page"/>*/}
           {/*<br />*/}
-          <span>◻️ </span> Anh Nguyen _ {getCurrentYear()}
+          <span>◻️ </span> Anh Bernhardt _ {getCurrentYear()}
 
         </Item>
     </Wrapper>

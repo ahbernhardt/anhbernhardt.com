@@ -4,20 +4,20 @@ export const META = {
         image: '/images/og.png',
     },
     index: {
-        title: 'Anh Nguyen | Software Engineer & Designer',
-        description: 'I am Anh Nguyen, software engineer graduate student based in Minneapolis, MN. I focus' +
+        title: 'Anh Bernhardt | Software Engineer & Designer',
+        description: 'I am Anh Bernhardt, software engineer graduate student based in Minneapolis, MN. I focus' +
           ' primarily on building and designing usable and scalable websites and is always looking for exciting projects.'
     },
     about: {
-        title: 'About | Anh Nguyen',
+        title: 'About | Anh Bernhardt',
         description: 'Little bit about my background.'
     },
     work: {
-        title: 'Works | Anh Nguyen',
+        title: 'Works | Anh Bernhardt',
         description: 'A selection of the work which Websites, Web applications, coordinated design and more.'
     },
     contact: {
-        title: 'Contact | Anh Nguyen',
+        title: 'Contact | Anh Bernhardt',
         description: 'Get in touch'
     },
     oops: {

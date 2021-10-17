@@ -58,7 +58,7 @@ export default ({ data }) => {
       {/* COLUMN 3 */}
       <StyledImage
         src="/images/profile/me.jpg"
-        alt="Anh Nguyen - Software Engineer"
+        alt="Anh Bernhardt - Software Engineer"
         loader={({ isLoaded }) => <Loader isLoaded={isLoaded} />}
         sources={[{
           media: 'max-width: 25rem',

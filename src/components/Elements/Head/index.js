@@ -7,12 +7,12 @@ const Head = ({ title, description, image, favicons }) =>
       <link rel="icon" href={favicons} />
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content="front-end, designer, development, web, anguyen0208, anh, nguyen, javascript"/>
+      <meta name="keywords" content="front-end, designer, development, web, anguyen0208, anh, Bernhardt, javascript"/>
       <meta itemProp="name" content={title} />
       <meta itemProp="description" content={description} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://anhnguyen.page" />
+      <meta property="og:url" content="https://anhbernhardt.com" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image:type" content="/images/png" />

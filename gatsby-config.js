@@ -42,8 +42,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Anh Nguyen | Software Engineering',
-        short_name: 'Anh Nguyen',
+        name: 'Anh Bernhardt | Software Engineering',
+        short_name: 'Anh Bernhardt',
         start_url: '/',
         background_color: '#1e2732',
         theme_color: '#1e2732',
