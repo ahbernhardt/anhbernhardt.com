@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">anhnguyen.page</h1>
+  <h1 align="center">anhbernhardt.com</h1>
   <h4 align="center">
     Personal Website
   <p>
