@@ -15,7 +15,7 @@
 ---
 ![image](static/images/og.png)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f178832e-999f-4255-a65d-0e970da71f0a/deploy-status)](https://app.netlify.com/sites/anhnguyen/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f178832e-999f-4255-a65d-0e970da71f0a/deploy-status)](https://app.netlify.com/sites/anhbernhardt/deploys)
 
 
 ### Built With
@@ -29,4 +29,4 @@ Major frameworks that built this project using.
 
 
 ### Contact
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anhnguyen0208/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anhbernhardt/)
