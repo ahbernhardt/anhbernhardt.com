@@ -5,9 +5,9 @@
   <p>
     <a href="https://anhbernhardt.com" target="_blank">View Demo</a>
         _
-    <a href="https://github.com/anguyen0208/anhnguyen.page/issues" target="_blank">Report Bug</a>
+    <a href="https://github.com/anguyen0208/anhbernhardt.com/issues" target="_blank">Report Bug</a>
         _
-    <a href="https://github.com/anguyen0208/anhnguyen.page/issues" target="_blank">Request Feature</a>
+    <a href="https://github.com/anguyen0208/anhbernhardt.com/issues" target="_blank">Request Feature</a>
   </p>
   </h4>
 </div>

@@ -1,5 +1,5 @@
 {
-  "name": "anhnguyen.page",
+  "name": "anhbernhardt.com",
   "version": "1.0.0",
   "description": "Anh Bernhardt's personal portfolio website",
   "private": true,
@@ -8,7 +8,7 @@
   "homepage": "https://anhbernhardt.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anguyen0208/anhnguyen.page"
+    "url": "https://github.com/anguyen0208/anhbernhardt.com"
   },
   "scripts": {
     "start": "npm run develop",
