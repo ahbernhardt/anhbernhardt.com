@@ -35,7 +35,7 @@ export default ({  }) => {
         {/* LinkedIn*/}
           <a href="https://linkedin.com/in/anhbernhardt/" rel="noopener noreferrer" target="_blank">LinkedIn↗</a>
         {/* Resume */}
-          <a href="https://drive.google.com/file/d/1s2pzjh0DAH5DTUFDWzuDfVBjmofwdaWg/view?usp=sharing" rel="noopener noreferrer" target="_blank">Resume↗</a>
+          <a href="https://drive.google.com/file/d/1vWPM1YITSPG9h0JI4S7zEmqssvIadnzq/view?usp=sharing" rel="noopener noreferrer" target="_blank">Resume↗</a>
       </SocialSection>
     </Wrapper>
   </ContentWrapper>
