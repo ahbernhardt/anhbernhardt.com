@@ -75,7 +75,7 @@ module.exports = {
       },
       auth: {
         user: process.env.MONGO_USER,
-          password: process.env.MONGO_PASS
+        password: process.env.MONGO_PASS
       },
       extraParams: {
         replicaSet: 'PersonalWebsite-shard-00',
