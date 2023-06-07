@@ -19,7 +19,7 @@ const ProjectQuery = graphql`
   }
 `
 
-export default ({ location }) =>
+const WorkHome = ({ location }) =>
   <StaticQuery
     query= {ProjectQuery}
     render= {data =>
@@ -33,3 +33,4 @@ export default ({ location }) =>
     }
   />
 
+export default WorkHome;

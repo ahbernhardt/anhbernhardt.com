@@ -5,7 +5,7 @@ import { srConfig } from "../../../config"
 import sr from "../../../utils/sr"
 import SubLandingTitle from "../SubTitle"
 
-export default () => {
+const LandingHero = () => {
   const revealLanding = useRef(null);
   const revealStatus = useRef(null);
 
@@ -23,9 +23,8 @@ export default () => {
         <StatusWrapper ref={revealStatus}>
           <Status />
         </StatusWrapper>
-
       </LandingTitle>
     </Wrapper>
   )
 }
-// export default LandingHero
+export default LandingHero;

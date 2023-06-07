@@ -3,11 +3,9 @@ import { ContentWrapper} from "./styles"
 import { srConfig } from "@config"
 import sr from "@utils/sr"
 import ProjectItem from "../ProjectItem"
-// import { HoverInner, HoverReveal, ProjectImage } from "../ProjectItem/style"
-// import { Loader } from "../../../style/shared"
 
 
-  export default ({ data }) => {
+  const WorkPageContent = ({ data }) => {
     const revealProject = useRef(null)
     // const revealSocial = useRef(null)
 
@@ -24,3 +22,5 @@ import ProjectItem from "../ProjectItem"
       </ContentWrapper>
     )
   }
+
+  export default WorkPageContent;

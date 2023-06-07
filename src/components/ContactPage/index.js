@@ -7,7 +7,7 @@ import SubContact from "./SubTitle"
 
 
 
-export default ({  }) => {
+const ContactPage = ({  }) => {
   const revealEmail = useRef(null)
   const revealTagline = useRef(null)
   const revealSocial = useRef(null)
@@ -41,3 +41,5 @@ export default ({  }) => {
   </ContentWrapper>
   )
 }
+
+export default ContactPage;

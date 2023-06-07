@@ -7,7 +7,7 @@ const Head = ({ title, description, image, favicons }) =>
       <link rel="icon" href={favicons} />
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content="front-end, designer, development, web, anguyen0208, anh, Bernhardt, javascript"/>
+      <meta name="keywords" content="front-end, designer, development, web, ahbernhardt, anh, Bernhardt, javascript"/>
       <meta itemProp="name" content={title} />
       <meta itemProp="description" content={description} />
 

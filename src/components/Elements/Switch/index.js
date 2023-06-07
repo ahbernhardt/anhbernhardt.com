@@ -36,4 +36,4 @@ class Switch extends Component {
     )
   }
 }
-export default Switch
+export default Switch;

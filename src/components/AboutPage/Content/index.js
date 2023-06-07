@@ -7,8 +7,7 @@ import sr from "@utils/sr"
 import { Loader } from "../../../style/shared"
 
 
-export default ({ data }) => {
-    console.log(data)
+const AboutPageContent = ({ data }) => {
   // const { designs, languages, frameworks, tools } = data
   const revealTitle = useRef(null);
   const revealContainer = useRef(null);
@@ -122,3 +121,5 @@ export default ({ data }) => {
     </ContentWrapper>
   )
 }
+
+export default AboutPageContent;
