@@ -1,4 +1,4 @@
-import Link from 'gatsby-link'
+import {Link} from 'gatsby-link'
 import styled, { css } from 'styled-components'
 import { colors, media } from '../../../style/constants'
 

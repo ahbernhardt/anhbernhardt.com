@@ -8,7 +8,6 @@ import ProjectItem from "../ProjectItem"
 
 
   export default ({ data }) => {
-    const { projects} = data
     const revealProject = useRef(null)
     // const revealSocial = useRef(null)
 
@@ -18,8 +17,8 @@ import ProjectItem from "../ProjectItem"
 
     return (
       <ContentWrapper ref={revealProject}>
-        {projects.edges.length > 0 &&
-        projects.edges.map(({ project }, i) => (
+        {data.projects.nodes.length > 0 &&
+        data.projects.nodes.map((project, i) => (
           <ProjectItem key={i}
             {...project} />))}
       </ContentWrapper>

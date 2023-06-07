@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby-link'
 import M404 from './M404.svg'
 import { Wrapper } from './style'
 

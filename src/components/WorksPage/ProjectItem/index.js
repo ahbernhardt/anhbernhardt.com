@@ -2,7 +2,7 @@ import React from 'react'
 import { ProjectWrapper, EachProject, Text, Inner, TitleSub, HoverInner, ProjectImage, HoverReveal } from "./style"
 import { Loader } from "../../../style/shared"
 
-const ProjectItem = ({ title, company,imageLink,imageTitle, url }) =>
+const ProjectItem = ({ title, subTitle ,imageLink,imageTitle, url }) =>
     <ProjectWrapper className="menu">
       <EachProject className="counter" href={url} target='_blank'>
         <Text className="text">
@@ -10,7 +10,7 @@ const ProjectItem = ({ title, company,imageLink,imageTitle, url }) =>
             <span>{title}</span>
           </Inner>
           <TitleSub className="titleSub">
-            {company}
+            {subTitle}
           </TitleSub>
         </Text>
         <HoverReveal className="imageReveal">

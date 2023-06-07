@@ -118,32 +118,26 @@ export const StatusMessage = styled.div`
   font-family: ${fonts.display};
   font-style: italic;
   font-weight: 200;
-  letter-spacing: 0.5px;
-  margin-left: 15px;
+  letter-spacing: 0.75px;
+  margin-left: 6px;
   display: block;
   
   ${media.ultra`
     font-size: 1.4rem;
-    margin-left: 15px;
   `}
   ${media.mon`
     font-size: 1.2rem;
-    margin-left: 15px;
   `}
   ${media.mac`
     font-size: 1rem;
-    margin-left: 12px;
   `}
   ${media.lg`
     font-size: 1rem;
-    margin-left: 12px;
   `}
   ${media.md`
     font-size: 1rem;
-    margin-left: 12px;
   `}
   ${media.sm`
     font-size: .8rem;
-    margin-left: 10px;
   `}
 `

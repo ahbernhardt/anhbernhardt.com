@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby-link'
 import Index from '../components/Elements/Layout'
 import { fonts, colors, media } from '../style/constants'
 import Middle404 from "../components/404/index";
@@ -51,18 +51,23 @@ const BackToHome = styled(Link)`
   }
 `
 
-export default ({ location }) =>
-    <Index location={location}>
-        <Wrapper>
-            <Head
-                {...META.oops}
-                image={META.common.image}
-            />
-            <header>
-                <Middle404 />
-                <Title>Oops, sorry!</Title>
-                <Subtitle>This page cannot be found.</Subtitle>
-                <BackToHome to='/'>Go to index</BackToHome>
-            </header>
-        </Wrapper>
-    </Index>
+const ErrorHome = ({ location }) => {
+    return (
+        <Index location={location}>
+            <Wrapper>
+                <Head
+                    {...META.oops}
+                    image={META.common.image}
+                />
+                <header>
+                    <Middle404/>
+                    <Title>Oops, sorry!</Title>
+                    <Subtitle>This page cannot be found.</Subtitle>
+                    <BackToHome to='/'>Go to index</BackToHome>
+                </header>
+            </Wrapper>
+        </Index>
+    )
+}
+
+export default ErrorHome;

@@ -7,17 +7,14 @@ import { StaticQuery, graphql } from "gatsby"
 
 const ProjectQuery = graphql`
   query ProjectsQuery {
-    projects: allMongodbWorksProjects (sort: {order: DESC, fields: date}) {
-      edges {
-        project: node {
-          date(formatString: "yyyy-mm")
+    projects: allProjectsJson  {
+        nodes {
           title
-          company
+          subTitle
           imageLink
           imageTitle
           url
         }
-      }
     }
   }
 `

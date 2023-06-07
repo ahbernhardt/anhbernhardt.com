@@ -6,12 +6,18 @@ import { META } from '../utils/constants'
 
 import LandingHero from "../components/HomePage/Landing"
 
-export default ({ location }) =>
-    <Index location={location}>
-        <Head
-            {...META.index}
-            image={META.common.image}
-        />
-        <LandingHero/>
-        {/*<IntroSection fixed={true} />*/}
-    </Index>
+const IndexHome =({ location }) =>{
+
+    return (
+        <Index location={location}>
+            <Head
+                {...META.index}
+                image={META.common.image}
+            />
+            <LandingHero/>
+            {/*<IntroSection fixed={true} />*/}
+        </Index>
+    )
+}
+
+export default IndexHome;

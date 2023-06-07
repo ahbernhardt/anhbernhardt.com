@@ -29,7 +29,7 @@ export default ({  }) => {
 
       <SocialSection ref={revealSocial}>
         {/* Github */}
-          <a href="https://github.com/anguyen0208" rel="noopener noreferrer" target="_blank">Github↗</a>
+          <a href="https://github.com/ahbernhardt" rel="noopener noreferrer" target="_blank">Github↗</a>
         {/* Codepen */}
           <a href="https://codepen.io/ah_nguyen0208" rel="noopener noreferrer" target="_blank">Codepen↗</a>
         {/* LinkedIn*/}

@@ -8,7 +8,7 @@ const Status = () =>
       <StatusLed />
     </StatusLight>
     <StatusMessage>
-      available for full-time hire
+      currently unavailable for hiring
     </StatusMessage>
   </Wrapper>
 

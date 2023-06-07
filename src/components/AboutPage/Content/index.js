@@ -8,7 +8,8 @@ import { Loader } from "../../../style/shared"
 
 
 export default ({ data }) => {
-  const { designs, languages, frameworks, tools } = data
+    console.log(data)
+  // const { designs, languages, frameworks, tools } = data
   const revealTitle = useRef(null);
   const revealContainer = useRef(null);
   const revealImage = useRef(null);
@@ -31,8 +32,12 @@ export default ({ data }) => {
 
       {/* COLUMN 1 */}
       <ContentInfo ref={revealContainer}>
+        <p> I’m currently working for <a className='hover-effect' href="https://www.nba.com/timberwolves" target="_blank" rel="noopener noreferrer"> Minnesota Timberwolves</a>
+            <span style={{marginLeft:4+"px",marginRight:4+"px" }}>and</span>
+            <a className='hover-effect' href="https://lynx.wnba.com" target="_blank" rel="noopener noreferrer"> Minnesota Lynx</a>
+        </p>
         <p>
-          I’m currently completing my Master Degree in Software Engineering at <a className='hover-effect' href="https://www.stthomas.edu/gradsoftware/programs/masters/msse/" target="_blank" rel="noopener noreferrer"> University of St. Thomas</a> based in Minneapolis, Minnesota.
+          I’m completed my Master Degree in Software Engineering at <a className='hover-effect' href="https://www.stthomas.edu/gradsoftware/programs/masters/msse/" target="_blank" rel="noopener noreferrer"> University of St. Thomas</a> based in Minneapolis, Minnesota.
           I’m really into CSS, developer experience, and deleting code.
         </p>
         <p>
@@ -41,12 +46,12 @@ export default ({ data }) => {
           I focus primarily on building, prototyping and implementing user interfaces that are usable and scalable for
           any web-based platform.{" "}
           <a className='hover-effect' href="https://codepen.io/ah_nguyen0208" target="_blank" rel="noopener noreferrer">I enjoy
-            experimenting</a> and <a className='hover-effect' href="https://github.com/anguyen0208" target="_blank" rel="noopener noreferrer"> building out</a> with new
+            experimenting</a> and <a className='hover-effect' href="https://github.com/ahbernhardt" target="_blank" rel="noopener noreferrer"> building out</a> with new
           tools.
         </p>
 
         <p>When I'm not in front of a computer screen, I'm probably camping, researching new local restaurants, building LEGO, or crossing off another item on my bucket list and share photos
-          on <a className='hover-effect' href="https://www.instagram.com/ah_nguyen0208" target="_blank" rel="noopener noreferrer">Instagram</a>.
+          on <a className='hover-effect' href="https://www.instagram.com/ah_bernhardt" target="_blank" rel="noopener noreferrer">Instagram</a>.
         </p>
       </ContentInfo>
 
@@ -70,10 +75,10 @@ export default ({ data }) => {
       />
 
       <SkillsSection ref={revealSkill}>
-        {designs.edges.length > 0 &&
+        {data.designs.nodes.length > 0 &&
         <EachSkillList
           title='Design'
-          list={() => designs.edges.map(({ design }, i) => (
+          list={() => data.designs.nodes.map((design , i) => (
             <SkillListItem
               key={i}
               {...design}
@@ -81,10 +86,10 @@ export default ({ data }) => {
           ))}
         />}
 
-        {languages.edges.length > 0 &&
+        {data.languages.nodes.length > 0 &&
         <EachSkillList
           title='Languages'
-          list={() => languages.edges.map(({ language }, i) => (
+          list={() => data.languages.nodes.map((language, i) => (
             <SkillListItem
               key={i}
               {...language}
@@ -92,10 +97,10 @@ export default ({ data }) => {
           ))}
         />}
 
-        {frameworks.edges.length > 0 &&
+        {data.frameworks.nodes.length > 0 &&
         <EachSkillList
           title='Frameworks'
-          list={() => frameworks.edges.map(({ framework }, i) => (
+          list={() => data.frameworks.nodes.map((framework, i) => (
             <SkillListItem
               key={i}
               {...framework}
@@ -103,10 +108,10 @@ export default ({ data }) => {
           ))}
         />}
 
-        {tools.edges.length > 0 &&
+        {data.tools.nodes.length > 0 &&
         <EachSkillList
           title='Tools'
-          list={() => tools.edges.map(({ tool }, i) => (
+          list={() => data.tools.nodes.map((tool, i) => (
             <SkillListItem
               key={i}
               {...tool}

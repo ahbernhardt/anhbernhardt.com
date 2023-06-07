@@ -13,6 +13,20 @@ module.exports = {
     siteUrl: 'https://www.anhbernhardt.com/',
   },
   plugins: [
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-transformer-json`,
+      options: {
+        typeName:`Json`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'data',
+        path: `${__dirname}/static/data/`
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -62,55 +76,54 @@ module.exports = {
           }
         ]
       }
-    },{
-  // The name of the plugin
-    resolve: 'gatsby-source-mongodb',
-    options: {
-    // Name of the database and collection where are books reside
-      dbName: 'skills',
-      collection: ['designs','frameworks','languages','tools'],
-      server: {
-        address: 'personalwebsite-shard-00-01.0zltz.mongodb.net',
-        port: 27017
-      },
-      auth: {
-        user: process.env.MONGO_USER,
-        password: process.env.MONGO_PASS
-      },
-      extraParams: {
-        replicaSet: 'PersonalWebsite-shard-00',
-          ssl: true,
-          authSource: 'admin',
-          retryWrites: true
-      }
-    }
-    },{
-      // The name of the plugin
-      resolve: 'gatsby-source-mongodb',
-      options: {
-        // Name of the database and collection where are books reside
-        dbName: 'works',
-        collection: 'projects',
-        server: {
-          address: 'personalwebsite-shard-00-01.0zltz.mongodb.net',
-          port: 27017
-        },
-        auth: {
-          user: process.env.MONGO_USER,
-          password: process.env.MONGO_PASS
-        },
-        extraParams: {
-          replicaSet: 'PersonalWebsite-shard-00',
-          ssl: true,
-          authSource: 'admin',
-          retryWrites: true
-        }
-      }
     },
-    //'gatsby-plugin-react-next',
+  //   },{
+  // // The name of the plugin
+  //   resolve: 'gatsby-source-mongodb',
+  //   options: {
+  //   // Name of the database and collection where are books reside
+  //     dbName: 'skills',
+  //     collection: ['designs','frameworks','languages','tools'],
+  //     server: {
+  //       address: 'personalwebsite-shard-00-01.0zltz.mongodb.net',
+  //       port: 27017
+  //     },
+  //     auth: {
+  //       user: process.env.MONGO_USER,
+  //       password: process.env.MONGO_PASS
+  //     },
+  //     extraParams: {
+  //       replicaSet: 'PersonalWebsite-shard-00',
+  //         ssl: true,
+  //         authSource: 'admin',
+  //         retryWrites: true
+  //     }
+  //   }
+  //   },{
+  //     // The name of the plugin
+  //     resolve: 'gatsby-source-mongodb',
+  //     options: {
+  //       // Name of the database and collection where are books reside
+  //       dbName: 'works',
+  //       collection: 'projects',
+  //       server: {
+  //         address: 'personalwebsite-shard-00-01.0zltz.mongodb.net',
+  //         port: 27017
+  //       },
+  //       auth: {
+  //         user: process.env.MONGO_USER,
+  //         password: process.env.MONGO_PASS
+  //       },
+  //       extraParams: {
+  //         replicaSet: 'PersonalWebsite-shard-00',
+  //         ssl: true,
+  //         authSource: 'admin',
+  //         retryWrites: true
+  //       }
+  //     }
+  //   },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
-    'gatsby-transformer-json',
     'gatsby-plugin-react-svg',
     'gatsby-plugin-styled-components'
   ],
