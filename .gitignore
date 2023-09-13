@@ -21,7 +21,6 @@ yarn-error.log*
 .cache
 node_modules
 yarn-error.log
-package-lock.json
 
 # Hidden files
 .cache/
