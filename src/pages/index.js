@@ -15,7 +15,6 @@ const IndexHome =({ location }) =>{
                 image={META.common.image}
             />
             <LandingHero/>
-            {/*<IntroSection fixed={true} />*/}
         </Index>
     )
 }

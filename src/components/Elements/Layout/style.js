@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {  colors, media } from '../../../style/constants'
 
 export const App = styled.main`
-  min-height: 100vh;
+  max-height: 100vh;
   display: block;
   margin: 0 85px 0 0;
   opacity: 1;
