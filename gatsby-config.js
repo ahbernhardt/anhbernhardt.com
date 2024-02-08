@@ -10,7 +10,7 @@ require('dotenv').config({
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    siteUrl: 'https://www.anhbernhardt.com/',
+    siteUrl: 'https:/ahbernhardt.github.io/v2',
   },
   plugins: [
     `gatsby-transformer-json`,
